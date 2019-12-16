@@ -1,0 +1,9 @@
+<Solution>
+  <SourceControl>
+  </SourceControl>
+  <ItemGroup>
+    <Item id="b0f407ae-5b4b-447a-b0ae-72890baa868a" include="PLMBE\PLMBE.ubfmlproj" />
+    <Item id="29d7467a-7519-44a6-9835-e75d4a8fa379" include="PLMSV\PLMSV.ubfserproj" />
+  </ItemGroup>
+  <ServiceGroupInfo id="23867c3b-5234-4ddd-bb0e-db18507d217b" name="ECNProject" displayName="ECNProject" description="" help="" fullPath="E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\MODEL\ECNProject\ECNProject\ECNProject.ubfsln" applicationID="" />
+</Solution>

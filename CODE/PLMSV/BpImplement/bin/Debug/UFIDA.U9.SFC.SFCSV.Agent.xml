@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFIDA.U9.SFC.SFCSV.Agent</name>
+    </assembly>
+    <members>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.FillRBPDataSVProxy.FromDate">
+            <summary>
+            从日期 (该属性可为空,且无默认值)
+            增量填充计件表数据服务.Misc.从日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.FillRBPDataSVProxy.ToDate">
+            <summary>
+            到日期 (该属性可为空,且无默认值)
+            增量填充计件表数据服务.Misc.到日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.FillRBPDataSVProxy.RBPObjectDTOs">
+            <summary>
+            计件对象DTO集合 (该属性可为空,且无默认值)
+            增量填充计件表数据服务.Misc.计件对象DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.CreateSFCPlanSVProxy.MoopList_SKey">
+            <summary>
+            订单工序 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.CreateSFCPlanSVProxy.MoopList">
+            <summary>
+            订单工序 (该属性可为空,且无默认值)
+            创建车间作业计划SV.Misc.订单工序
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.CreateSFCPlanSVProxy.IsCreated">
+            <summary>
+            是否创建 (该属性可为空,但有默认值)
+            创建车间作业计划SV.Misc.是否创建
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.CreateSFCPlanSVProxy.DocState">
+            <summary>
+            订单状态 (该属性可为空,但有默认值)
+            创建车间作业计划SV.Misc.订单状态
+            </summary>
+            <value>UFIDA.U9.MO.Enums.MOStateEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.CreateSFCPlanSVProxy.MOOpInfoDTOList">
+            <summary>
+            工序信息集合 (该属性可为空,且无默认值)
+            创建车间作业计划SV.Misc.工序信息集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.GetRBPDataSVProxy.FromDate">
+            <summary>
+            从日期 (该属性可为空,且无默认值)
+            接口表取数服务.Misc.从日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.GetRBPDataSVProxy.ToDate">
+            <summary>
+            到日期 (该属性可为空,且无默认值)
+            接口表取数服务.Misc.到日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.GetRBPDataSVProxy.RBPAllDTOs">
+            <summary>
+            计件综合DTO集合 (该属性可为空,且无默认值)
+            接口表取数服务.Misc.计件综合DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.CreateRBPTableSVProxy.RBPElementDTOs">
+            <summary>
+            计件要素DTO集合 (该属性可为空,且无默认值)
+            创建计件表结构服务.Misc.计件要素DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.CreateSFCTaskForMOStartSVProxy.MOList_SKey">
+            <summary>
+            生产订单List 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.CreateSFCTaskForMOStartSVProxy.MOList">
+            <summary>
+            生产订单List (该属性可为空,且无默认值)
+            订单开工自动生成车间任务服务.Misc.生产订单List
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.CreateSFCTaskForMOStartSVProxy.IsCreate">
+            <summary>
+            是否生成 (该属性可为空,但有默认值)
+            订单开工自动生成车间任务服务.Misc.是否生成
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.CreateSFCTaskForMOStartSVProxy.StartInfoDTOList">
+            <summary>
+            开工信息DTO集合 (该属性可为空,且无默认值)
+            订单开工自动生成车间任务服务.Misc.开工信息DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.GetRBPDatasSVProxy.FromDate">
+            <summary>
+            从日期 (该属性可为空,且无默认值)
+            接口表取数服务s.Misc.从日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.GetRBPDatasSVProxy.ToDate">
+            <summary>
+            到日期 (该属性可为空,且无默认值)
+            接口表取数服务s.Misc.到日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.GetRBPDatasSVProxy.RBPAllDTOs">
+            <summary>
+            接口取数参数DTO集合 (该属性可为空,且无默认值)
+            接口表取数服务s.Misc.接口取数参数DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.DeleteRBPDataSVProxy.FromDate">
+            <summary>
+            从日期 (该属性可为空,且无默认值)
+            删除接口表数据服务.Misc.从日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.DeleteRBPDataSVProxy.ToDate">
+            <summary>
+            到日期 (该属性可为空,且无默认值)
+            删除接口表数据服务.Misc.到日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.DeleteRBPDataSVProxy.RBPObjectDTOs">
+            <summary>
+            计件对象DTO集合 (该属性可为空,且无默认值)
+            删除接口表数据服务.Misc.计件对象DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.CreateSFCPlanForAddedMOOpSVProxy.MoopList_SKey">
+            <summary>
+            订单工序 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.CreateSFCPlanForAddedMOOpSVProxy.MoopList">
+            <summary>
+            订单工序 (该属性可为空,且无默认值)
+            订单工序新增创建计划服务.Misc.订单工序
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.CreateSFCPlanForAddedMOOpSVProxy.IsCreated">
+            <summary>
+            是否创建 (该属性可为空,但有默认值)
+            订单工序新增创建计划服务.Misc.是否创建
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.CreateSFCPlanForAddedMOOpSVProxy.DocState">
+            <summary>
+            订单状态 (该属性可为空,但有默认值)
+            订单工序新增创建计划服务.Misc.订单状态
+            </summary>
+            <value>UFIDA.U9.MO.Enums.MOStateEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.CreateSFCPlanForAddedMOOpSVProxy.MOOpInfoDTOList">
+            <summary>
+            工序信息集合 (该属性可为空,且无默认值)
+            订单工序新增创建计划服务.Misc.工序信息集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.SynMOChangeSVProxy.MO_SKey">
+            <summary>
+            生产订单 序列化Key属性。（传递跨组织序列列字段）
+            同步订单变化服务.Misc.生产订单
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.SynMOChangeSVProxy.MO">
+            <summary>
+            生产订单 (该属性可为空,且无默认值)
+            同步订单变化服务.Misc.生产订单
+            </summary>
+            <value>UFIDA.U9.MO.MO.MO</value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.SynMOChangeSVProxy.ChangeType">
+            <summary>
+            变更类型 (该属性可为空,但有默认值)
+            同步订单变化服务.Misc.变更类型
+            </summary>
+            <value>UFIDA.U9.SFC.SFCEnumBE.MOChangeTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.SFC.SFCSV.Proxy.SynMOChangeSVProxy.ChangeInfoDTO">
+            <summary>
+            变更信息DTO (该属性可为空,且无默认值)
+            同步订单变化服务.Misc.变更信息DTO
+            </summary>
+            <value>UFIDA.U9.SFC.SFCSV.SynMOChangeInfoDTO</value>
+        </member>
+    </members>
+</doc>

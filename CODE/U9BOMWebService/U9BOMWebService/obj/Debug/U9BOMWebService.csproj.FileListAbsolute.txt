@@ -1,0 +1,8 @@
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\20181107\CODE\U9BOMWebService\U9BOMWebService\bin\U9BOMWebService.dll
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\20181107\CODE\U9BOMWebService\U9BOMWebService\bin\U9BOMWebService.pdb
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\20181107\CODE\U9BOMWebService\U9BOMWebService\obj\Debug\U9BOMWebService.dll
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\20181107\CODE\U9BOMWebService\U9BOMWebService\obj\Debug\U9BOMWebService.pdb
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\U9BOMWebService\U9BOMWebService\bin\U9BOMWebService.dll
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\U9BOMWebService\U9BOMWebService\bin\U9BOMWebService.pdb
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\U9BOMWebService\U9BOMWebService\obj\Debug\U9BOMWebService.dll
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\U9BOMWebService\U9BOMWebService\obj\Debug\U9BOMWebService.pdb

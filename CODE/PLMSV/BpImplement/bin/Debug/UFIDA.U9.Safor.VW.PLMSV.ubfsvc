@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.serviceModel>
+    <services>
+   
+	<service name="UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.ECNWHQueryStub">
+        <endpoint contract="UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.IECNWHQuery"
+                  binding="basicHttpBinding" />
+
+	</service>
+   
+	<service name="UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.ECNMOQueryStub">
+        <endpoint contract="UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.IECNMOQuery"
+                  binding="basicHttpBinding" />
+
+	</service>
+   
+	<service name="UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.CreatePLMECNStub">
+        <endpoint contract="UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.ICreatePLMECN"
+                  binding="basicHttpBinding" />
+
+	</service>
+   
+	<service name="UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.QueryPLMECNStub">
+        <endpoint contract="UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.IQueryPLMECN"
+                  binding="basicHttpBinding" />
+
+	</service>
+   
+	<service name="UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.ModifyMOPickListStub">
+        <endpoint contract="UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.IModifyMOPickList"
+                  binding="basicHttpBinding" />
+
+	</service>
+   
+	<service name="UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.ModifyBOMMaterStub">
+        <endpoint contract="UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.IModifyBOMMater"
+                  binding="basicHttpBinding" />
+
+	</service>
+ 
+    </services>
+</system.serviceModel>
+</configuration>

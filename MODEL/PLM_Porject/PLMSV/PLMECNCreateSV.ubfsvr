@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Component id="011fa37d-e431-47ad-9a42-e8d12705b3e1" name="PLMECNCreateSV" displayName="PLMECNCreateSV" description="" help="" type="SV" assemblyName="UFIDA.U9.Safor.VW.PLMSV">
+  <Namespace id="4fe23ab2-de6a-469e-97f1-b033eba476d1" name="UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV" displayName="UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV" description="" help="">
+    <Operation id="7229547a-15a8-45a4-ba4d-4fb40d55da18" name="CreatePLMECN" displayName="创建ECN变更纪录" description="" help="" mD_ParentClass_ID="" isFactEntity="False" returnTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isService="True" isDefault="False" isEntityKey="False" transactionType="0" isAuthorization="True" isISV="False">
+      <Groups>
+        <Group id="e95ea56a-960f-4788-8c39-755801c98b57" name="Misc" displayName="Misc" description="" help="" />
+      </Groups>
+      <Attributes>
+        <Attribute id="890783fd-f218-4069-8203-0b99639e8663" name="ECNAlterRequest" displayName="ECN变更请求" description="" help="创建ECN变更纪录.Misc.ECN变更请求" dataTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isKey="False" defaultValue="" length="50000" precise="5" scale="0" isNullable="True" isReadOnly="False" isHide="False" isCalculation="False" valueExpression="" maxValue="" minValue="" sequence="0" isDefaultDimensionAttribute="False" isDefaultMeasureAttribute="False" isGlobalization="False" idGenerator="" groupName="Misc" isEntityKey="False" isEntityData="True" isSystem="False" isBusinessKey="False" isSyncDictionary="False" dictionaryKey="" isExtendCode="False" isQuery="True" isForAsso="True" isModifyControl="False" isDynamic="False" isImpressible="False" isInCache="False" isKeySerializable="False" isColumnDefine="True" isFilterDefine="True" isSortDefine="True" isDefaultColumn="True" forOBAImport="False" />
+        <Attribute id="b30fef46-de98-4a7c-b3ca-26439e14469c" name="ContextInfo" displayName="执行上下文" description="" help="创建ECN变更纪录.Misc.执行上下文" dataTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isKey="False" defaultValue="" length="50000" precise="5" scale="0" isNullable="True" isReadOnly="False" isHide="False" isCalculation="False" valueExpression="" maxValue="" minValue="" sequence="1" isDefaultDimensionAttribute="False" isDefaultMeasureAttribute="False" isGlobalization="False" idGenerator="" groupName="Misc" isEntityKey="False" isEntityData="True" isSystem="False" isBusinessKey="False" isSyncDictionary="False" dictionaryKey="" isExtendCode="False" isQuery="True" isForAsso="True" isModifyControl="False" isDynamic="False" isImpressible="False" isInCache="False" isKeySerializable="False" isColumnDefine="True" isFilterDefine="True" isSortDefine="True" isDefaultColumn="True" forOBAImport="False" />
+      </Attributes>
+      <Implements>
+        <Operation id="93f05e32-d54f-4a33-a74e-79167b657ee6" name="Impement" displayName="实现" description="" help="" mD_ParentClass_ID="" isFactEntity="False" returnTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isService="False" isDefault="True" isEntityKey="False" transactionType="2" isAuthorization="True" isISV="False" />
+      </Implements>
+    </Operation>
+    <Operation id="7511b977-78c7-4124-9649-ba09b0034065" name="QueryPLMECN" displayName="ECN变更纪录对比查询" description="" help="" mD_ParentClass_ID="" isFactEntity="False" returnTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isService="True" isDefault="False" isEntityKey="False" transactionType="2" isAuthorization="True" isISV="False">
+      <Groups>
+        <Group id="7d9a89cd-44dc-4e27-8e29-75b849eddc95" name="Misc" displayName="Misc" description="" help="" />
+      </Groups>
+      <Attributes>
+        <Attribute id="9df32ba0-8ec2-4340-afbd-50f034f97144" name="ECNAlterInfo" displayName="ECN变更对比查询" description="" help="ECN变更纪录对比查询.Misc.ECN变更对比查询" dataTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isKey="False" defaultValue="" length="50000" precise="5" scale="0" isNullable="True" isReadOnly="False" isHide="False" isCalculation="False" valueExpression="" maxValue="" minValue="" sequence="0" isDefaultDimensionAttribute="False" isDefaultMeasureAttribute="False" isGlobalization="False" idGenerator="" groupName="Misc" isEntityKey="False" isEntityData="True" isSystem="False" isBusinessKey="False" isSyncDictionary="False" dictionaryKey="" isExtendCode="False" isQuery="True" isForAsso="True" isModifyControl="False" isDynamic="False" isImpressible="False" isInCache="False" isKeySerializable="False" isColumnDefine="True" isFilterDefine="True" isSortDefine="True" isDefaultColumn="True" forOBAImport="False" />
+        <Attribute id="fb173d9e-56dd-49fa-984b-28fc9417091e" name="ContextInfo" displayName="执行上下文" description="" help="ECN变更纪录对比查询.Misc.执行上下文" dataTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isKey="False" defaultValue="" length="50000" precise="5" scale="0" isNullable="True" isReadOnly="False" isHide="False" isCalculation="False" valueExpression="" maxValue="" minValue="" sequence="1" isDefaultDimensionAttribute="False" isDefaultMeasureAttribute="False" isGlobalization="False" idGenerator="" groupName="Misc" isEntityKey="False" isEntityData="True" isSystem="False" isBusinessKey="False" isSyncDictionary="False" dictionaryKey="" isExtendCode="False" isQuery="True" isForAsso="True" isModifyControl="False" isDynamic="False" isImpressible="False" isInCache="False" isKeySerializable="False" isColumnDefine="True" isFilterDefine="True" isSortDefine="True" isDefaultColumn="True" forOBAImport="False" />
+      </Attributes>
+      <Implements>
+        <Operation id="d9fba310-629d-48ff-ae23-aece05a0e7f8" name="Impement" displayName="实现" description="" help="" mD_ParentClass_ID="" isFactEntity="False" returnTypeID="378d45b4-375d-4b5d-8748-abc9575c26b3" isService="False" isDefault="True" isEntityKey="False" transactionType="2" isAuthorization="True" isISV="False" />
+      </Implements>
+    </Operation>
+    <Diagram id="b9d1275b-0b7e-43dc-92ca-0da8969d711f" name="PLMECNCreateSV" displayName="PLMECNCreateSV">
+      <Class Editable="True" ID="5c883117-db1d-4075-bc6d-eccdf8dbc1af" Type="Service" ADID="7229547a-15a8-45a4-ba4d-4fb40d55da18">
+        <Location X="114" Y="29" />
+        <Size width="120" height="58" />
+      </Class>
+      <Class Editable="True" ID="c2f73e6a-754b-40b3-9df4-c4382c42c615" Type="Service" ADID="7511b977-78c7-4124-9649-ba09b0034065">
+        <Location X="113" Y="117" />
+        <Size width="119" height="58" />
+      </Class>
+    </Diagram>
+  </Namespace>
+</Component>

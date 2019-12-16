@@ -1,0 +1,16 @@
+D:\yonyou\U9Project\GDLJProject\Code\PLMSV\BPAgent\bin\Debug\UFIDA.U9.Safor.VW.PLMSV.Agent.dll
+D:\yonyou\U9Project\GDLJProject\Code\PLMSV\BPAgent\bin\Debug\UFIDA.U9.Safor.VW.PLMSV.Agent.pdb
+D:\yonyou\U9Project\GDLJProject\Code\PLMSV\BPAgent\bin\Debug\UFIDA.U9.Safor.VW.PLMSV.Deploy.dll
+D:\yonyou\U9Project\GDLJProject\Code\PLMSV\BPAgent\bin\Debug\UFIDA.U9.Safor.VW.PLMSV.Deploy.pdb
+D:\yonyou\U9Project\GDLJProject\Code\PLMSV\BPAgent\bin\Debug\UFIDA.U9.Safor.VW.PLMSV.Deploy.xml
+D:\yonyou\U9Project\GDLJProject\Code\PLMSV\BPAgent\obj\Debug\UFIDA.U9.Safor.VW.PLMSV.Agent.dll
+D:\yonyou\U9Project\GDLJProject\Code\PLMSV\BPAgent\obj\Debug\UFIDA.U9.Safor.VW.PLMSV.Agent.pdb
+D:\yonyou\U9Project\GDLJProject\Code\PLMSV\BPAgent\obj\Debug\UFIDA.U9.Safor.VW.PLMSV.Agent.csprojResolveAssemblyReference.cache
+E:\PLM&U9\ECN\code\PLMSV\BPAgent\bin\Debug\UFIDA.U9.Safor.VW.PLMSV.Agent.dll
+E:\PLM&U9\ECN\code\PLMSV\BPAgent\bin\Debug\UFIDA.U9.Safor.VW.PLMSV.Agent.pdb
+E:\PLM&U9\ECN\code\PLMSV\BPAgent\bin\Debug\UFIDA.U9.Safor.VW.PLMSV.Deploy.dll
+E:\PLM&U9\ECN\code\PLMSV\BPAgent\bin\Debug\UFIDA.U9.Safor.VW.PLMSV.Deploy.pdb
+E:\PLM&U9\ECN\code\PLMSV\BPAgent\bin\Debug\UFIDA.U9.Safor.VW.PLMSV.Deploy.xml
+E:\PLM&U9\ECN\code\PLMSV\BPAgent\obj\Debug\UFIDA.U9.Safor.VW.PLMSV.Agent.csprojResolveAssemblyReference.cache
+E:\PLM&U9\ECN\code\PLMSV\BPAgent\obj\Debug\UFIDA.U9.Safor.VW.PLMSV.Agent.dll
+E:\PLM&U9\ECN\code\PLMSV\BPAgent\obj\Debug\UFIDA.U9.Safor.VW.PLMSV.Agent.pdb

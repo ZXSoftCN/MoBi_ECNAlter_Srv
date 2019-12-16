@@ -1,0 +1,2413 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFIDA.U9.CBO.FIBP.Agent</name>
+    </assembly>
+    <members>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.SelectEndLevelAccountProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            动态创建会计科目.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.SelectEndLevelAccountProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            动态创建会计科目.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.SelectEndLevelAccountProxy.CombineCode">
+            <summary>
+            组合码 (该属性可为空,且无默认值)
+            动态创建会计科目.Misc.组合码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.SelectEndLevelAccountProxy.Currency_SKey">
+            <summary>
+            币种  序列化Key属性。（传递跨组织序列列字段）
+            动态创建会计科目.Misc.币种 
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.SelectEndLevelAccountProxy.Currency">
+            <summary>
+            币种  (该属性可为空,且无默认值)
+            动态创建会计科目.Misc.币种 
+            </summary>
+            <value>UFIDA.U9.Base.Currency.Currency</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.SelectEndLevelAccountProxy.NotIsLeaf">
+            <summary>
+            非末级  (该属性可为空,但有默认值)
+            动态创建会计科目.Misc.非末级 
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.SelectEndLevelAccountProxy.AccountID">
+            <summary>
+            会计科目 (该属性可为空,但有默认值)
+            动态创建会计科目.Misc.会计科目
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.SelectEndLevelAccountProxy.NoUseCurrency">
+            <summary>
+            不需要返回币种信息 (该属性可为空,但有默认值)
+            动态创建会计科目.Misc.不需要返回币种信息
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountMemoOperationProxy.Accounts_SKey">
+            <summary>
+            科目 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountMemoOperationProxy.Accounts">
+            <summary>
+            科目 (该属性可为空,且无默认值)
+            获取科目备查操作.Misc.科目
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountMemoOperationProxy.IsDistinct">
+            <summary>
+            属性 (该属性可为空,但有默认值)
+            获取科目备查操作.Misc.属性
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.CreateAccountsProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            批量生成会计科目.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.CreateAccountsProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            批量生成会计科目.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.CreateAccountsProxy.CombineCodes">
+            <summary>
+            编码集合 (该属性可为空,且无默认值)
+            批量生成会计科目.Misc.编码集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.CheckCombinCodeProxy.SOB_SKey">
+            <summary>
+            账薄 序列化Key属性。（传递跨组织序列列字段）
+            校验组合码是否合法(运用段可使用规则).Misc.账薄
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.CheckCombinCodeProxy.SOB">
+            <summary>
+            账薄 (该属性可为空,且无默认值)
+            校验组合码是否合法(运用段可使用规则).Misc.账薄
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.CheckCombinCodeProxy.CombineCodes">
+            <summary>
+            组合码 (该属性可为空,且无默认值)
+            校验组合码是否合法(运用段可使用规则).Misc.组合码
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountBySOBandCurrencyBPProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            根据币种和账簿查找会计科目.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountBySOBandCurrencyBPProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            根据币种和账簿查找会计科目.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountBySOBandCurrencyBPProxy.Currency_SKey">
+            <summary>
+            币种 序列化Key属性。（传递跨组织序列列字段）
+            根据币种和账簿查找会计科目.Misc.币种
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountBySOBandCurrencyBPProxy.Currency">
+            <summary>
+            币种 (该属性可为空,且无默认值)
+            根据币种和账簿查找会计科目.Misc.币种
+            </summary>
+            <value>UFIDA.U9.Base.Currency.Currency</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountByAccAndSegCodeProxy.Account_SKey">
+            <summary>
+            科目 序列化Key属性。（传递跨组织序列列字段）
+            查询科目段和普通段组合会计科目.Misc.科目
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountByAccAndSegCodeProxy.Account">
+            <summary>
+            科目 (该属性可为空,且无默认值)
+            查询科目段和普通段组合会计科目.Misc.科目
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Account.Account</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountByAccAndSegCodeProxy.SegCode">
+            <summary>
+            科目段和普通段Code (该属性可为空,且无默认值)
+            查询科目段和普通段组合会计科目.Misc.科目段和普通段Code
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountByAccAndSegCodeProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            查询科目段和普通段组合会计科目.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountByAccAndSegCodeProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            查询科目段和普通段组合会计科目.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.CreateAccountWhenOneSegProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            全局段时按账簿创建科目.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.CreateAccountWhenOneSegProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            全局段时按账簿创建科目.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.ConvertToLegalAccountCodeProxy.Codes">
+            <summary>
+            组合码列表 (该属性可为空,且无默认值)
+            将传入组合码转换成合法组合码.Misc.组合码列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.ConvertToLegalAccountCodeProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            将传入组合码转换成合法组合码.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.ConvertToLegalAccountCodeProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            将传入组合码转换成合法组合码.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.UpdateHierarchyByAccountProxy.Account_SKey">
+            <summary>
+            科目 序列化Key属性。（传递跨组织序列列字段）
+            更新插入科目层级关系.Misc.科目
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.UpdateHierarchyByAccountProxy.Account">
+            <summary>
+            科目 (该属性可为空,且无默认值)
+            更新插入科目层级关系.Misc.科目
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Account.Account</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceAccCurrencyBPProxy.Accounts_SKey">
+            <summary>
+            会计科目 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceAccCurrencyBPProxy.Accounts">
+            <summary>
+            会计科目 (该属性可为空,且无默认值)
+            会计科目币种批量维护操作.Misc.会计科目
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceAccCurrencyBPProxy.AccCurrencys">
+            <summary>
+            会计科目币种DTO集合 (该属性可为空,且无默认值)
+            会计科目币种批量维护操作.Misc.会计科目币种DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceAccCurrencyBPProxy.OperateType">
+            <summary>
+            操作方式 (该属性可为空,但有默认值)
+            会计科目币种批量维护操作.Misc.操作方式
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Account.OperateTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceAccMemoBooksBPProxy.Accounts_SKey">
+            <summary>
+            会计科目 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceAccMemoBooksBPProxy.Accounts">
+            <summary>
+            会计科目 (该属性可为空,且无默认值)
+            会计科目备查批量维护BP.Misc.会计科目
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceAccMemoBooksBPProxy.AccMemoBooks">
+            <summary>
+            会计科目备查DTO集合 (该属性可为空,且无默认值)
+            会计科目备查批量维护BP.Misc.会计科目备查DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceAccMemoBooksBPProxy.OperateType">
+            <summary>
+            操作方式 (该属性可为空,但有默认值)
+            会计科目备查批量维护BP.Misc.操作方式
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Account.OperateTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceAccApplicationBPProxy.Accounts_SKey">
+            <summary>
+            会计科目 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceAccApplicationBPProxy.Accounts">
+            <summary>
+            会计科目 (该属性可为空,且无默认值)
+            会计科目受控批量维护BP.Misc.会计科目
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceAccApplicationBPProxy.AccApplications">
+            <summary>
+            会计科目授控集合 (该属性可为空,且无默认值)
+            会计科目受控批量维护BP.Misc.会计科目授控集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceAccApplicationBPProxy.OperateType">
+            <summary>
+            操作方式 (该属性可为空,但有默认值)
+            会计科目受控批量维护BP.Misc.操作方式
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Account.OperateTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceAccApplicationBPProxy.IsConstraintAccount">
+            <summary>
+            授控科目 (该属性可为空,但有默认值)
+            会计科目受控批量维护BP.Misc.授控科目
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountDisplayValueProxy.Accounts_SKey">
+            <summary>
+            会计科目 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountDisplayValueProxy.Accounts">
+            <summary>
+            会计科目 (该属性可为空,且无默认值)
+            获取科目显示值.Misc.会计科目
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountDisplayValueProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            获取科目显示值.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.GetAccountDisplayValueProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            获取科目显示值.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceBaseInfoBPProxy.Accounts_SKey">
+            <summary>
+            会计科目集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceBaseInfoBPProxy.Accounts">
+            <summary>
+            会计科目集合 (该属性可为空,且无默认值)
+            会计科目基本信息批量维护操作.Misc.会计科目集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceBaseInfoBPProxy.BaseInfo">
+            <summary>
+            会计科目基本信息DTO (该属性可为空,且无默认值)
+            会计科目基本信息批量维护操作.Misc.会计科目基本信息DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Account.AccountBaseInfoDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchMaintenanceBaseInfoBPProxy.OperateType">
+            <summary>
+            操作方式 (该属性可为空,但有默认值)
+            会计科目基本信息批量维护操作.Misc.操作方式
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Account.OperateTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchGetParentAccountIDsBPProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            批量获取父项科目ID集合.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchGetParentAccountIDsBPProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            批量获取父项科目ID集合.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchGetParentAccountIDsBPProxy.IDSet">
+            <summary>
+            会计科目ID集合 (该属性可为空,且无默认值)
+            批量获取父项科目ID集合.Misc.会计科目ID集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchSyncAccNameBPProxy.SOBs">
+            <summary>
+            账簿列表 (该属性可为空,且无默认值)
+            批量同步会计科目名称.Misc.账簿列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.BatchSyncAccNameBPProxy.IsName">
+            <summary>
+            是否同步名称 (该属性可为空,但有默认值)
+            批量同步会计科目名称.Misc.是否同步名称
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.CBOCommonQueryBPProxy.SelectStr">
+            <summary>
+            查询字符串 (该属性可为空,且无默认值)
+            常用查询.Misc.查询字符串
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.CBOCommonQueryBPProxy.OqlWhere">
+            <summary>
+            查询条件 (该属性可为空,且无默认值)
+            常用查询.Misc.查询条件
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.Account.Proxy.CBOCommonQueryBPProxy.EntityName">
+            <summary>
+            查询实体名称 (该属性可为空,且无默认值)
+            常用查询.Misc.查询实体名称
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.CreateSOBNaturalAccountBPProxy.NA_SKey">
+            <summary>
+            自然科目 序列化Key属性。（传递跨组织序列列字段）
+            创建SOB自然科目.Misc.自然科目
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.CreateSOBNaturalAccountBPProxy.NA">
+            <summary>
+            自然科目 (该属性可为空,且无默认值)
+            创建SOB自然科目.Misc.自然科目
+            </summary>
+            <value>UFIDA.U9.CBO.FI.NaturalAccount.NaturalAccount</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.CopyNaturalAccountByNASetOperationProxy.SourceNASet_SKey">
+            <summary>
+            源科目体系 序列化Key属性。（传递跨组织序列列字段）
+            根据自然科目分类复制自然科目.Misc.源科目体系
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.CopyNaturalAccountByNASetOperationProxy.SourceNASet">
+            <summary>
+            源科目体系 (该属性可为空,且无默认值)
+            根据自然科目分类复制自然科目.Misc.源科目体系
+            </summary>
+            <value>UFIDA.U9.CBO.FI.NaturalAccount.NaturalAccountSet</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.CopyNaturalAccountByNASetOperationProxy.DescNASet_SKey">
+            <summary>
+            目标科目体系 序列化Key属性。（传递跨组织序列列字段）
+            根据自然科目分类复制自然科目.Misc.目标科目体系
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.CopyNaturalAccountByNASetOperationProxy.DescNASet">
+            <summary>
+            目标科目体系 (该属性可为空,且无默认值)
+            根据自然科目分类复制自然科目.Misc.目标科目体系
+            </summary>
+            <value>UFIDA.U9.CBO.FI.NaturalAccount.NaturalAccountSet</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.CopyNaturalAccountByNAOperationProxy.SourceNA_SKey">
+            <summary>
+            源自然科目 序列化Key属性。（传递跨组织序列列字段）
+            复制自然科目所有下级科目操作.Misc.源自然科目
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.CopyNaturalAccountByNAOperationProxy.SourceNA">
+            <summary>
+            源自然科目 (该属性可为空,且无默认值)
+            复制自然科目所有下级科目操作.Misc.源自然科目
+            </summary>
+            <value>UFIDA.U9.CBO.FI.NaturalAccount.NaturalAccount</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.CopyNaturalAccountByNAOperationProxy.DescNA_SKey">
+            <summary>
+            目标自然科目 序列化Key属性。（传递跨组织序列列字段）
+            复制自然科目所有下级科目操作.Misc.目标自然科目
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.CopyNaturalAccountByNAOperationProxy.DescNA">
+            <summary>
+            目标自然科目 (该属性可为空,且无默认值)
+            复制自然科目所有下级科目操作.Misc.目标自然科目
+            </summary>
+            <value>UFIDA.U9.CBO.FI.NaturalAccount.NaturalAccount</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.GetParentNABPProxy.NASet_SKey">
+            <summary>
+            自然科目体系 序列化Key属性。（传递跨组织序列列字段）
+            获取编码对应的顶级自然科目操作.Misc.自然科目体系
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.GetParentNABPProxy.NASet">
+            <summary>
+            自然科目体系 (该属性可为空,且无默认值)
+            获取编码对应的顶级自然科目操作.Misc.自然科目体系
+            </summary>
+            <value>UFIDA.U9.CBO.FI.NaturalAccount.NaturalAccountSet</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.GetParentNABPProxy.Code">
+            <summary>
+            科目编码 (该属性可为空,且无默认值)
+            获取编码对应的顶级自然科目操作.Misc.科目编码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.GetSOBsByNASetProxy.NASet_SKey">
+            <summary>
+            目标标准科目表 序列化Key属性。（传递跨组织序列列字段）
+            根据标准科目表获取账簿信息.Misc.目标标准科目表
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.GetSOBsByNASetProxy.NASet">
+            <summary>
+            目标标准科目表 (该属性可为空,且无默认值)
+            根据标准科目表获取账簿信息.Misc.目标标准科目表
+            </summary>
+            <value>UFIDA.U9.CBO.FI.NaturalAccount.NaturalAccountSet</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.UISeparateNaturalAccountBPProxy.SeparatedNA_SKey">
+            <summary>
+            被拆分自然科目 序列化Key属性。（传递跨组织序列列字段）
+            标准科目拆分操作.Misc.被拆分自然科目
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.UISeparateNaturalAccountBPProxy.SeparatedNA">
+            <summary>
+            被拆分自然科目 (该属性可为空,且无默认值)
+            标准科目拆分操作.Misc.被拆分自然科目
+            </summary>
+            <value>UFIDA.U9.CBO.FI.NaturalAccount.NaturalAccount</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.UISeparateNaturalAccountBPProxy.SubNACodeList">
+            <summary>
+            下级科目Code集合 (该属性可为空,且无默认值)
+            标准科目拆分操作.Misc.下级科目Code集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.UISeparateNaturalAccountBPProxy.SubNANameList">
+            <summary>
+            下级科目Name集合 (该属性可为空,且无默认值)
+            标准科目拆分操作.Misc.下级科目Name集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.UISeparateNaturalAccountBPProxy.OnlyValidate">
+            <summary>
+            校验被拆分自然科目 (该属性可为空,但有默认值)
+            标准科目拆分操作.Misc.校验被拆分自然科目
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.UIMergerNaturalAccountBPProxy.MergeredNA_SKey">
+            <summary>
+            要合并的标准科目 序列化Key属性。（传递跨组织序列列字段）
+            标准科目合并操作.Misc.要合并的标准科目
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.UIMergerNaturalAccountBPProxy.MergeredNA">
+            <summary>
+            要合并的标准科目 (该属性可为空,且无默认值)
+            标准科目合并操作.Misc.要合并的标准科目
+            </summary>
+            <value>UFIDA.U9.CBO.FI.NaturalAccount.NaturalAccount</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.GetNaturalAccountNameByCodeBPProxy.Code">
+            <summary>
+            编码 (该属性可为空,且无默认值)
+            根据编码获取名称.Misc.编码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.GetNaturalAccountNameByCodeBPProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            根据编码获取名称.Misc.账簿
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.NaturalAccount.Proxy.GetNaturalAccountNameByCodeBPProxy.IsDisplayName">
+            <summary>
+            查显示名称 (该属性可为空,但有默认值)
+            根据编码获取名称.Misc.查显示名称
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.CompileAccountMappingRuleProxy.SOBMapRule_SKey">
+            <summary>
+            账簿映射规则 序列化Key属性。（传递跨组织序列列字段）
+            编译会计科目映射规则操作.Misc.账簿映射规则
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.CompileAccountMappingRuleProxy.SOBMapRule">
+            <summary>
+            账簿映射规则 (该属性可为空,且无默认值)
+            编译会计科目映射规则操作.Misc.账簿映射规则
+            </summary>
+            <value>UFIDA.U9.CBO.FI.SOBTransfer.SOBMappingRule</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.CompileSegmentMappingRuleProxy.SegmentMappingRule_SKey">
+            <summary>
+            段映射规则 序列化Key属性。（传递跨组织序列列字段）
+            编译段值映射规则操作.Misc.段映射规则
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.CompileSegmentMappingRuleProxy.SegmentMappingRule">
+            <summary>
+            段映射规则 (该属性可为空,且无默认值)
+            编译段值映射规则操作.Misc.段映射规则
+            </summary>
+            <value>UFIDA.U9.CBO.FI.SOBTransfer.SegmentMappingRule</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.GetTransferInAccountProxy.OutAccount">
+            <summary>
+            转出会计科目 (该属性可为空,且无默认值)
+            得到转入会计科目操作.Misc.转出会计科目
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Account.Account</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.GetTransferInAccountProxy.SOBMappingRule">
+            <summary>
+            账簿映射规则 (该属性可为空,且无默认值)
+            得到转入会计科目操作.Misc.账簿映射规则
+            </summary>
+            <value>UFIDA.U9.CBO.FI.SOBTransfer.SOBMappingRule</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.GetTransferInAccountProxy.Org">
+            <summary>
+            关系企业 (该属性可为空,且无默认值)
+            得到转入会计科目操作.Misc.关系企业
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetApplicationProxy.AppCode">
+            <summary>
+            应用编码 (该属性可为空,且无默认值)
+            获取应用操作.Misc.应用编码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSegInfoBySOBBPProxy.SOB_SKey">
+            <summary>
+            账薄 序列化Key属性。（传递跨组织序列列字段）
+            根据SOB获取段信息操作.Misc.账薄
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSegInfoBySOBBPProxy.SOB">
+            <summary>
+            账薄 (该属性可为空,且无默认值)
+            根据SOB获取段信息操作.Misc.账薄
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSegInfoBySOBBPProxy.AccountList_SKey">
+            <summary>
+            科目列表 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSegInfoBySOBBPProxy.AccountList">
+            <summary>
+            科目列表 (该属性可为空,且无默认值)
+            根据SOB获取段信息操作.Misc.科目列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSegInfoBySOBBPProxy.DateList">
+            <summary>
+            日期列表 (该属性可为空,且无默认值)
+            根据SOB获取段信息操作.Misc.日期列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBInfoForAccountBPProxy.SOB_SKey">
+            <summary>
+            账薄 序列化Key属性。（传递跨组织序列列字段）
+            获取账簿科目的SOB信息.Misc.账薄
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBInfoForAccountBPProxy.SOB">
+            <summary>
+            账薄 (该属性可为空,且无默认值)
+            获取账簿科目的SOB信息.Misc.账薄
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBInfoForAccountBPProxy.AccountList_SKey">
+            <summary>
+            科目列表 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBInfoForAccountBPProxy.AccountList">
+            <summary>
+            科目列表 (该属性可为空,且无默认值)
+            获取账簿科目的SOB信息.Misc.科目列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBInfoForAccountBPProxy.DateList">
+            <summary>
+            日期列表 (该属性可为空,且无默认值)
+            获取账簿科目的SOB信息.Misc.日期列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBInfoForAccountBPProxy.CurrencyExchangeType">
+            <summary>
+            币种汇率列表 (该属性可为空,且无默认值)
+            获取账簿科目的SOB信息.Misc.币种汇率列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBInfoForAccountBPProxy.ISGetSOBSetInfo">
+            <summary>
+            获取账簿总账参数 (该属性可为空,但有默认值)
+            获取账簿科目的SOB信息.Misc.获取账簿总账参数
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBInfoForAccountBPProxy.StartYear">
+            <summary>
+            弹性域年度 (该属性可为空,但有默认值)
+            获取账簿科目的SOB信息.Misc.弹性域年度
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetCashFlowItemStatusBPProxy.CashFlowSet_SKey">
+            <summary>
+            现金流量表 序列化Key属性。（传递跨组织序列列字段）
+            得到现金流量项目状态.Misc.现金流量表
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetCashFlowItemStatusBPProxy.CashFlowSet">
+            <summary>
+            现金流量表 (该属性可为空,且无默认值)
+            得到现金流量项目状态.Misc.现金流量表
+            </summary>
+            <value>UFIDA.U9.CBO.FI.CashFlow.CashFlowItemMain</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetCashFlowItemStatusBPProxy.Code">
+            <summary>
+            编码 (该属性可为空,且无默认值)
+            得到现金流量项目状态.Misc.编码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetPrimarySOBProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            获得主账簿.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetPrimarySOBProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            获得主账簿.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBByNASetProxy.NASet_SKey">
+            <summary>
+            目标标准科目表 序列化Key属性。（传递跨组织序列列字段）
+            获取标准科目表对应的账簿集合.Misc.目标标准科目表
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBByNASetProxy.NASet">
+            <summary>
+            目标标准科目表 (该属性可为空,且无默认值)
+            获取标准科目表对应的账簿集合.Misc.目标标准科目表
+            </summary>
+            <value>UFIDA.U9.CBO.FI.NaturalAccount.NaturalAccountSet</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBInfoDataProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            获取账簿信息数据操作.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBInfoDataProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            获取账簿信息数据操作.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.CopySysPreCFToCurrentCFMainProxy.CurrentCashFlowItemMain_SKey">
+            <summary>
+            选择的现金流量表 序列化Key属性。（传递跨组织序列列字段）
+            复制系统现金流量表中的项目.Misc.选择的现金流量表
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.CopySysPreCFToCurrentCFMainProxy.CurrentCashFlowItemMain">
+            <summary>
+            选择的现金流量表 (该属性可为空,且无默认值)
+            复制系统现金流量表中的项目.Misc.选择的现金流量表
+            </summary>
+            <value>UFIDA.U9.CBO.FI.CashFlow.CashFlowItemMain</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.CopySysPreCFToCurrentCFMainProxy.AimCashFlowItemMain_SKey">
+            <summary>
+            目标现金流量表 序列化Key属性。（传递跨组织序列列字段）
+            复制系统现金流量表中的项目.Misc.目标现金流量表
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.CopySysPreCFToCurrentCFMainProxy.AimCashFlowItemMain">
+            <summary>
+            目标现金流量表 (该属性可为空,且无默认值)
+            复制系统现金流量表中的项目.Misc.目标现金流量表
+            </summary>
+            <value>UFIDA.U9.CBO.FI.CashFlow.CashFlowItemMain</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBSegDisplayOrderBPProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            获取账簿的段显示顺序操作.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBSegDisplayOrderBPProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            获取账簿的段显示顺序操作.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBSegDisplayOrderBPProxy.Year">
+            <summary>
+            年度 (该属性可为空,但有默认值)
+            获取账簿的段显示顺序操作.Misc.年度
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetPublicCaseInfosForGLBPProxy.QryModelID">
+            <summary>
+            查询模型ID (该属性可为空,且无默认值)
+            得到公共方案信息操作.Misc.查询模型ID
+            </summary>
+            <value>System.Guid</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetPublicCaseInfosForGLBPProxy.Organization">
+            <summary>
+            组织ID (该属性可为空,但有默认值)
+            得到公共方案信息操作.Misc.组织ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetPublicCaseInfosForGLBPProxy.SourceID">
+            <summary>
+            来源ID (该属性可为空,且无默认值)
+            得到公共方案信息操作.Misc.来源ID
+            </summary>
+            <value>System.Guid</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetPublicCaseInfosForGLBPProxy.ExtendTag">
+            <summary>
+            扩展标记 (该属性可为空,且无默认值)
+            得到公共方案信息操作.Misc.扩展标记
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetPublicCaseInfosForGLBPProxy.UserID">
+            <summary>
+            用户ID (该属性可为空,但有默认值)
+            得到公共方案信息操作.Misc.用户ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetPublicCaseInfosForGLBPProxy.SecondOrg">
+            <summary>
+            第二组织ID (该属性可为空,但有默认值)
+            得到公共方案信息操作.Misc.第二组织ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetSOBOrgBySOBIDBPProxy.SOBID">
+            <summary>
+            账簿ID (该属性可为空,但有默认值)
+            根据SOBID取得SOB所属组织.Misc.账簿ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetRelativeOrgsForGLBPProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            得到相关联组织列操作.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetRelativeOrgsForGLBPProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            得到相关联组织列操作.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.UICSVoucherCategoryDeleteProxy.CSVoucherCategory_SKey">
+            <summary>
+            协同凭证类型 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.UICSVoucherCategoryDeleteProxy.CSVoucherCategory">
+            <summary>
+            协同凭证类型 (该属性可为空,且无默认值)
+            删除协同凭证类型操作.Misc.协同凭证类型
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetBListMainIDBPProxy.IDList">
+            <summary>
+            ID集合 (该属性可为空,且无默认值)
+            获取主表ID集合操作.Misc.ID集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetBListMainIDBPProxy.ParentEntityFullName">
+            <summary>
+            主表实体全名 (该属性可为空,且无默认值)
+            获取主表ID集合操作.Misc.主表实体全名
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetBListMainIDBPProxy.ChildEntityFullName">
+            <summary>
+            子表实体全名 (该属性可为空,且无默认值)
+            获取主表ID集合操作.Misc.子表实体全名
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.UI.Proxy.GetBListMainIDBPProxy.ParentField">
+            <summary>
+            父实体属性名 (该属性可为空,且无默认值)
+            获取主表ID集合操作.Misc.父实体属性名
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.CopyNASOBPropertyBySOBProxy.SourceSOB_SKey">
+            <summary>
+            源账簿 序列化Key属性。（传递跨组织序列列字段）
+            账簿科目属性复制.Misc.源账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.CopyNASOBPropertyBySOBProxy.SourceSOB">
+            <summary>
+            源账簿 (该属性可为空,且无默认值)
+            账簿科目属性复制.Misc.源账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.CopyNASOBPropertyBySOBProxy.DescSOB_SKey">
+            <summary>
+            目的账簿 序列化Key属性。（传递跨组织序列列字段）
+            账簿科目属性复制.Misc.目的账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.CopyNASOBPropertyBySOBProxy.DescSOB">
+            <summary>
+            目的账簿 (该属性可为空,且无默认值)
+            账簿科目属性复制.Misc.目的账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetUsableSegListBPProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            获取可使用段操作.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetUsableSegListBPProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            获取可使用段操作.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetUsableSegListBPProxy.BalanceSeg">
+            <summary>
+            平衡段 (该属性可为空,且无默认值)
+            获取可使用段操作.Misc.平衡段
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetUsableSegListBPProxy.AccountSeg">
+            <summary>
+            科目段 (该属性可为空,且无默认值)
+            获取可使用段操作.Misc.科目段
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetUsableSegListBPProxy.IsApply">
+            <summary>
+            是否获取核销段 (该属性可为空,但有默认值)
+            获取可使用段操作.Misc.是否获取核销段
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetUsableSegListBPProxy.SOBAccountPeriod_SKey">
+            <summary>
+            过滤规则条件_账簿会计期间 序列化Key属性。（传递跨组织序列列字段）
+            获取可使用段操作.Misc.过滤规则条件_账簿会计期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetUsableSegListBPProxy.SOBAccountPeriod">
+            <summary>
+            过滤规则条件_账簿会计期间 (该属性可为空,且无默认值)
+            获取可使用段操作.Misc.过滤规则条件_账簿会计期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetUsableSegListBPProxy.SOBAccDateTime">
+            <summary>
+            过滤规则条件_期间为空时获取期间的条件 (该属性可为空,且无默认值)
+            获取可使用段操作.Misc.过滤规则条件_期间为空时获取期间的条件
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetSOBNaturalAccountInfoBPProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            根据SOB和科目编码获取SOB自然科目属性信息操作.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetSOBNaturalAccountInfoBPProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            根据SOB和科目编码获取SOB自然科目属性信息操作.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetSOBNaturalAccountInfoBPProxy.CombinInfos">
+            <summary>
+            段信息 (该属性可为空,且无默认值)
+            根据SOB和科目编码获取SOB自然科目属性信息操作.Misc.段信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetSOBNACurrencyBPProxy.SOBNaturalAccount_SKey">
+            <summary>
+            SOB自然科目 序列化Key属性。（传递跨组织序列列字段）
+            获取SOB科目币种操作.Misc.SOB自然科目
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetSOBNACurrencyBPProxy.SOBNaturalAccount">
+            <summary>
+            SOB自然科目 (该属性可为空,且无默认值)
+            获取SOB科目币种操作.Misc.SOB自然科目
+            </summary>
+            <value>UFIDA.U9.CBO.FI.NaturalAccount.NaturalAccountSOBProperty</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetSOBNACurrencyBPProxy.Code">
+            <summary>
+            科目编码 (该属性可为空,且无默认值)
+            获取SOB科目币种操作.Misc.科目编码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.CreateSOBNaturalAccountBPProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            创建账簿科目.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.CreateSOBNaturalAccountBPProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            创建账簿科目.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.CopySOBNAPropertyToChildBPProxy.SOBNaturalAccount_SKey">
+            <summary>
+            账簿科目  序列化Key属性。（传递跨组织序列列字段）
+            复制账簿科目属性到下级.Misc.账簿科目 
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.CopySOBNAPropertyToChildBPProxy.SOBNaturalAccount">
+            <summary>
+            账簿科目  (该属性可为空,且无默认值)
+            复制账簿科目属性到下级.Misc.账簿科目 
+            </summary>
+            <value>UFIDA.U9.CBO.FI.NaturalAccount.NaturalAccountSOBProperty</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.BatchMaintenanceAccountBPProxy.SOBNA_SKey">
+            <summary>
+            账簿科目集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.BatchMaintenanceAccountBPProxy.SOBNA">
+            <summary>
+            账簿科目集合 (该属性可为空,且无默认值)
+            账簿科目批量维护操作.Misc.账簿科目集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetApplySegListBPProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            获取核销段操作.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetApplySegListBPProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            获取核销段操作.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetApplySegListBPProxy.AccountSeg">
+            <summary>
+            科目段 (该属性可为空,且无默认值)
+            获取核销段操作.Misc.科目段
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetApplySegListBPProxy.BalanceSeg">
+            <summary>
+            平衡段编码  (该属性可为空,且无默认值)
+            获取核销段操作.Misc.平衡段编码 
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.BatchHandleSegmentUseRoleBPProxy.NaturalAccountKeyList_SKey">
+            <summary>
+            账簿科目列表 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.BatchHandleSegmentUseRoleBPProxy.NaturalAccountKeyList">
+            <summary>
+            账簿科目列表 (该属性可为空,且无默认值)
+            批量维护辅助核算.Misc.账簿科目列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.BatchHandleSegmentUseRoleBPProxy.NAUseRoleDTOList">
+            <summary>
+            段使用规则列表 (该属性可为空,且无默认值)
+            批量维护辅助核算.Misc.段使用规则列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.BatchHandleSegmentUseRoleBPProxy.OperationType">
+            <summary>
+            操作类型 (该属性可为空,但有默认值)
+            批量维护辅助核算.Misc.操作类型
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Account.OperateTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetLatestPostPeriodOfUseRoleBPProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            获取辅助核算最新期间操作.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBNaturalAccount.Proxy.GetLatestPostPeriodOfUseRoleBPProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            获取辅助核算最新期间操作.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetSOBPeriodBySOBDateListProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            根据SOB和日期列表获取SOB会计期间.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetSOBPeriodBySOBDateListProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            根据SOB和日期列表获取SOB会计期间.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetSOBPeriodBySOBDateListProxy.DateList">
+            <summary>
+            日期集合 (该属性可为空,且无默认值)
+            根据SOB和日期列表获取SOB会计期间.Misc.日期集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetRelativeSOBAccountPeriodBPProxy.SOBAccountPeriod_SKey">
+            <summary>
+            SOB会计期间 序列化Key属性。（传递跨组织序列列字段）
+            得到相对SOB会计期间.Misc.SOB会计期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetRelativeSOBAccountPeriodBPProxy.SOBAccountPeriod">
+            <summary>
+            SOB会计期间 (该属性可为空,且无默认值)
+            得到相对SOB会计期间.Misc.SOB会计期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetRelativeSOBAccountPeriodBPProxy.Offset">
+            <summary>
+            偏移量 (该属性可为空,但有默认值)
+            得到相对SOB会计期间.Misc.偏移量
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetRelativeSOBAccountPeriodBPProxy.IsIncludeAdjust">
+            <summary>
+            是否包含调整期 (该属性可为空,但有默认值)
+            得到相对SOB会计期间.Misc.是否包含调整期
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetSOBPeriodProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            获取SOB会计期间.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetSOBPeriodProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            获取SOB会计期间.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetSOBPeriodProxy.DateList">
+            <summary>
+            日期集合 (该属性可为空,且无默认值)
+            获取SOB会计期间.Misc.日期集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetSOBPeriodProxy.IsIncludeAdjustPeriod">
+            <summary>
+            是否包含调整期 (该属性可为空,但有默认值)
+            获取SOB会计期间.Misc.是否包含调整期
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetAllPeriodYearsProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            获得账簿会计年度.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetAllPeriodYearsProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            获得账簿会计年度.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetAllPeriodsByYearProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            根据年度获得所有账簿会计期间.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetAllPeriodsByYearProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            根据年度获得所有账簿会计期间.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetAllPeriodsByYearProxy.Year">
+            <summary>
+            年 (该属性可为空,但有默认值)
+            根据年度获得所有账簿会计期间.Misc.年
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetSOBDataProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            获取账簿基本信息操作.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.GetSOBDataProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            获取账簿基本信息操作.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.CBOGetFDFromGLParamValueProxy.AccFDFuncStr">
+            <summary>
+            科目取数函数串 (该属性可为空,且无默认值)
+            获得科目取数函数参数值.Misc.科目取数函数串
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.Base.SOB.Proxy.CBOGetFDFromGLParamValueProxy.FuncType">
+            <summary>
+            取数函数 (该属性可为空,且无默认值)
+            获得科目取数函数参数值.Misc.取数函数
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetAddressInfoByCustSiteBPProxy.CustSiteKey_SKey">
+            <summary>
+            客户地址Key 序列化Key属性。（传递跨组织序列列字段）
+            根据客户地址找客户的办公地址信息.Misc.客户地址Key
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetAddressInfoByCustSiteBPProxy.CustSiteKey">
+            <summary>
+            客户地址Key (该属性可为空,且无默认值)
+            根据客户地址找客户的办公地址信息.Misc.客户地址Key
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.CustomerSite</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetContactInfoByCustBPProxy.CustKey_SKey">
+            <summary>
+            客户Key 序列化Key属性。（传递跨组织序列列字段）
+            根据客户找客户的默认联系人信息.Misc.客户Key
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetContactInfoByCustBPProxy.CustKey">
+            <summary>
+            客户Key (该属性可为空,且无默认值)
+            根据客户找客户的默认联系人信息.Misc.客户Key
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.Customer</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.ARAPCalcTaxByTaxDocLineBPProxy.OrgKey_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            应收应付按单据行计税操作.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.ARAPCalcTaxByTaxDocLineBPProxy.OrgKey">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            应收应付按单据行计税操作.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.ARAPCalcTaxByTaxDocLineBPProxy.TaxScheduleKey_SKey">
+            <summary>
+            税组合 序列化Key属性。（传递跨组织序列列字段）
+            应收应付按单据行计税操作.Misc.税组合
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.ARAPCalcTaxByTaxDocLineBPProxy.TaxScheduleKey">
+            <summary>
+            税组合 (该属性可为空,且无默认值)
+            应收应付按单据行计税操作.Misc.税组合
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Tax.TaxSchedule</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.ARAPCalcTaxByTaxDocLineBPProxy.IsIncludeTax">
+            <summary>
+            是否含税 (该属性可为空,但有默认值)
+            应收应付按单据行计税操作.Misc.是否含税
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.ARAPCalcTaxByTaxDocLineBPProxy.TaxBase">
+            <summary>
+            税基金额 (该属性可为空,但有默认值)
+            应收应付按单据行计税操作.Misc.税基金额
+            </summary>
+            <value>System.Decimal</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.ARAPCalcTaxByTaxDocLineBPProxy.CurrencyKey_SKey">
+            <summary>
+            计税币种 序列化Key属性。（传递跨组织序列列字段）
+            应收应付按单据行计税操作.Misc.计税币种
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.ARAPCalcTaxByTaxDocLineBPProxy.CurrencyKey">
+            <summary>
+            计税币种 (该属性可为空,且无默认值)
+            应收应付按单据行计税操作.Misc.计税币种
+            </summary>
+            <value>UFIDA.U9.Base.Currency.Currency</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.ARAPCalcTaxByTaxDocLineBPProxy.TaxRateDTOs">
+            <summary>
+            税率DTO集合 (该属性可为空,且无默认值)
+            应收应付按单据行计税操作.Misc.税率DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetItemFreeDefForARAPBPProxy.ItemID">
+            <summary>
+            物料ID (该属性可为空,但有默认值)
+            获取物料自由项定义信息.Misc.物料ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetRelativeOrgsForARAPBPProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            获取关系组织操作.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetRelativeOrgsForARAPBPProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            获取关系组织操作.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetRelativeOrgsForARAPBPProxy.BusinessRelationTypeList">
+            <summary>
+            业务关系类型集合 (该属性可为空,且无默认值)
+            获取关系组织操作.Misc.业务关系类型集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetRelativeOrgsForARAPBPProxy.IsRelationCompanyFlag">
+            <summary>
+            是否关系企业 (该属性可为空,但有默认值)
+            获取关系组织操作.Misc.是否关系企业
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetRelativeOrgsForARAPBPProxy.IsGetHierarchy">
+            <summary>
+            是否获取组织上下级关系 (该属性可为空,但有默认值)
+            获取关系组织操作.Misc.是否获取组织上下级关系
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetRelativeOrgsForARAPBPProxy.OrgHierachyType">
+            <summary>
+            组织上下级关系类型 (该属性可为空,但有默认值)
+            获取关系组织操作.Misc.组织上下级关系类型
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetRelativeOrgsForARAPBPProxy.DocDate">
+            <summary>
+            单据日期 (该属性可为空,且无默认值)
+            获取关系组织操作.Misc.单据日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetRelativeOrgsForARAPBPProxy.IsIncludeSelf">
+            <summary>
+            是否包含当前组织 (该属性可为空,但有默认值)
+            获取关系组织操作.Misc.是否包含当前组织
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetRelativeOrgsForARAPBPProxy.IsFromOnly">
+            <summary>
+            是否单向 (该属性可为空,但有默认值)
+            获取关系组织操作.Misc.是否单向
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetItemValueForARAPBPProxy.ItemID">
+            <summary>
+            物料ID (该属性可为空,但有默认值)
+            获取物料自由项值.Misc.物料ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetItemValueForARAPBPProxy.Depvaluelist">
+            <summary>
+            依赖项ID集合 (该属性可为空,且无默认值)
+            获取物料自由项值.Misc.依赖项ID集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetItemValueForARAPBPProxy.SequentNo">
+            <summary>
+            序号 (该属性可为空,但有默认值)
+            获取物料自由项值.Misc.序号
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.FindExRatePrecisionListBPProxy.Condition">
+            <summary>
+            查询条件DTO (该属性可为空,且无默认值)
+            查询汇率集合操作.Misc.查询条件DTO
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetItemInfoBPProxy.ItemMaster_SKey">
+            <summary>
+            物料 序列化Key属性。（传递跨组织序列列字段）
+            获取物料信息操作.Misc.物料
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetItemInfoBPProxy.ItemMaster">
+            <summary>
+            物料 (该属性可为空,且无默认值)
+            获取物料信息操作.Misc.物料
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Item.ItemMaster</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetItemInfoBPProxy.Customer_SKey">
+            <summary>
+            客户 序列化Key属性。（传递跨组织序列列字段）
+            获取物料信息操作.Misc.客户
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetItemInfoBPProxy.Customer">
+            <summary>
+            客户 (该属性可为空,且无默认值)
+            获取物料信息操作.Misc.客户
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.Customer</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetItemInfoBPProxy.CustomerSite_SKey">
+            <summary>
+            属性2 序列化Key属性。（传递跨组织序列列字段）
+            获取物料信息操作.Misc.属性2
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetItemInfoBPProxy.CustomerSite">
+            <summary>
+            属性2 (该属性可为空,且无默认值)
+            获取物料信息操作.Misc.属性2
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.CustomerSite</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetCurrencyInfoBPProxy.CurrencyKey_SKey">
+            <summary>
+            币种 序列化Key属性。（传递跨组织序列列字段）
+            取币种信息操作.Misc.币种
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetCurrencyInfoBPProxy.CurrencyKey">
+            <summary>
+            币种 (该属性可为空,且无默认值)
+            取币种信息操作.Misc.币种
+            </summary>
+            <value>UFIDA.U9.Base.Currency.Currency</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetCurrencyExRateInfoBPProxy.FromCurrencyKey_SKey">
+            <summary>
+            来源币种 序列化Key属性。（传递跨组织序列列字段）
+            取币种汇率信息操作.Misc.来源币种
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetCurrencyExRateInfoBPProxy.FromCurrencyKey">
+            <summary>
+            来源币种 (该属性可为空,且无默认值)
+            取币种汇率信息操作.Misc.来源币种
+            </summary>
+            <value>UFIDA.U9.Base.Currency.Currency</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetCurrencyExRateInfoBPProxy.ToCurrencyKey_SKey">
+            <summary>
+            目标币种 序列化Key属性。（传递跨组织序列列字段）
+            取币种汇率信息操作.Misc.目标币种
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetCurrencyExRateInfoBPProxy.ToCurrencyKey">
+            <summary>
+            目标币种 (该属性可为空,且无默认值)
+            取币种汇率信息操作.Misc.目标币种
+            </summary>
+            <value>UFIDA.U9.Base.Currency.Currency</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetCurrencyExRateInfoBPProxy.ExRateType">
+            <summary>
+            汇率类型 (该属性可为空,但有默认值)
+            取币种汇率信息操作.Misc.汇率类型
+            </summary>
+            <value>UFIDA.U9.Base.Currency.ExchangeRateTypesEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetCurrencyExRateInfoBPProxy.ExRateDate">
+            <summary>
+            日期 (该属性可为空,且无默认值)
+            取币种汇率信息操作.Misc.日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.ARAPFCMoneyCalcBPProxy.ARAPFCMoneyCalcDTOs">
+            <summary>
+            应收应付本币计算DTO (该属性可为空,且无默认值)
+            应收应付本币计算操作.Misc.应收应付本币计算DTO
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetLegacyOrgForARAPBPProxy.OrgID_SKey">
+            <summary>
+            组织ID 序列化Key属性。（传递跨组织序列列字段）
+            获取应收应付所需的法人组织操作.Misc.组织ID
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetLegacyOrgForARAPBPProxy.OrgID">
+            <summary>
+            组织ID (该属性可为空,且无默认值)
+            获取应收应付所需的法人组织操作.Misc.组织ID
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.BatchGetItemFreeDefForARAPBPProxy.Items_SKey">
+            <summary>
+            料品集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.BatchGetItemFreeDefForARAPBPProxy.Items">
+            <summary>
+            料品集合 (该属性可为空,且无默认值)
+            批量获取料品自由项操作.Misc.料品集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetAccountFromCombCodeBPProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            检查试助记码还是编码操作.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetAccountFromCombCodeBPProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            检查试助记码还是编码操作.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetAccountFromCombCodeBPProxy.Code">
+            <summary>
+            编码 (该属性可为空,且无默认值)
+            检查试助记码还是编码操作.Misc.编码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetCustInfoByCustSiteBPProxy.CustSiteKey_SKey">
+            <summary>
+            客户地址 序列化Key属性。（传递跨组织序列列字段）
+            根据客户地址获取客户信息.Misc.客户地址
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetCustInfoByCustSiteBPProxy.CustSiteKey">
+            <summary>
+            客户地址 (该属性可为空,且无默认值)
+            根据客户地址获取客户信息.Misc.客户地址
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.CustomerSite</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetSuppInfoBySuppSiteBPProxy.SuppSiteKey_SKey">
+            <summary>
+            属性 序列化Key属性。（传递跨组织序列列字段）
+            根据供应商地址获取供应商信息.Misc.属性
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetSuppInfoBySuppSiteBPProxy.SuppSiteKey">
+            <summary>
+            属性 (该属性可为空,且无默认值)
+            根据供应商地址获取供应商信息.Misc.属性
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Supplier.SupplierSite</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetDefaultACBPForARAPProxy.ID">
+            <summary>
+            客户OR供应商ID (该属性可为空,但有默认值)
+            根据客户客户位置以及供应商或供应商位置操作.Misc.客户OR供应商ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetDefaultACBPForARAPProxy.SiteID">
+            <summary>
+            位置ID (该属性可为空,但有默认值)
+            根据客户客户位置以及供应商或供应商位置操作.Misc.位置ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetDefaultACBPForARAPProxy.ISCustOrSupp">
+            <summary>
+            客户或供应商 (该属性可为空,但有默认值)
+            根据客户客户位置以及供应商或供应商位置操作.Misc.客户或供应商
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetSuppAndSiteByCustBPProxy.SiteID">
+            <summary>
+            位置ID (该属性可为空,但有默认值)
+            根据客户或位置得到供应商和位置操作.Misc.位置ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetSuppAndSiteByCustBPProxy.CustID">
+            <summary>
+            客户ID (该属性可为空,但有默认值)
+            根据客户或位置得到供应商和位置操作.Misc.客户ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetSuppAndSiteByCustBPProxy.IsCustOrSupp">
+            <summary>
+            客户或供应商 (该属性可为空,但有默认值)
+            根据客户或位置得到供应商和位置操作.Misc.客户或供应商
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetCurrencyAllowBalanceProxy.Currency_SKey">
+            <summary>
+            币种 序列化Key属性。（传递跨组织序列列字段）
+            取币种的允差.Misc.币种
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetCurrencyAllowBalanceProxy.Currency">
+            <summary>
+            币种 (该属性可为空,且无默认值)
+            取币种的允差.Misc.币种
+            </summary>
+            <value>UFIDA.U9.Base.Currency.Currency</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetSOBVoucherCategoryListProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            获取SOB凭证类型列表.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetSOBVoucherCategoryListProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            获取SOB凭证类型列表.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetIncomeExpendItemByBkAccountBPProxy.BankAccount_SKey">
+            <summary>
+            银行账号 序列化Key属性。（传递跨组织序列列字段）
+            根据账号和方向查找末级收支项目操作.Misc.银行账号
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetIncomeExpendItemByBkAccountBPProxy.BankAccount">
+            <summary>
+            银行账号 (该属性可为空,且无默认值)
+            根据账号和方向查找末级收支项目操作.Misc.银行账号
+            </summary>
+            <value>UFIDA.U9.CBO.FI.BankAccount.BankAccount</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetIncomeExpendItemByBkAccountBPProxy.IsAR">
+            <summary>
+            是否收方向 (该属性可为空,但有默认值)
+            根据账号和方向查找末级收支项目操作.Misc.是否收方向
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetIncExpItemListByBkAccountBPProxy.BankAccount">
+            <summary>
+            银行账号 (该属性可为空,但有默认值)
+            根据账号和方向查找末级收支项目列表操作.Misc.银行账号
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetIncExpItemListByBkAccountBPProxy.Direction">
+            <summary>
+            方向 (该属性可为空,但有默认值)
+            根据账号和方向查找末级收支项目列表操作.Misc.方向
+            </summary>
+            <value>UFIDA.U9.CBO.FI.IncExpItem.DirectionEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetBankAccByIDBPProxy.BankAccID">
+            <summary>
+            银行账号ID (该属性可为空,但有默认值)
+            根据ID获取银行账号实体操作.Misc.银行账号ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetRelateCustByCustBPProxy.CustID_SKey">
+            <summary>
+            客户ID 序列化Key属性。（传递跨组织序列列字段）
+            取客户的关联客户操作.Misc.客户ID
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetRelateCustByCustBPProxy.CustID">
+            <summary>
+            客户ID (该属性可为空,且无默认值)
+            取客户的关联客户操作.Misc.客户ID
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.Customer</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetRelateSupplierBySuppBPProxy.SupplierID_SKey">
+            <summary>
+            供应商ID 序列化Key属性。（传递跨组织序列列字段）
+            取供应商的关联供应商操作.Misc.供应商ID
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.GetRelateSupplierBySuppBPProxy.SupplierID">
+            <summary>
+            供应商ID (该属性可为空,且无默认值)
+            取供应商的关联供应商操作.Misc.供应商ID
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Supplier.Supplier</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.JudgeLegacyOrgBPProxy.AccountOrg_SKey">
+            <summary>
+            核算组织 序列化Key属性。（传递跨组织序列列字段）
+            判断来源组织与核算组织是否为同一法人组织操作.Misc.核算组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.JudgeLegacyOrgBPProxy.AccountOrg">
+            <summary>
+            核算组织 (该属性可为空,且无默认值)
+            判断来源组织与核算组织是否为同一法人组织操作.Misc.核算组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForUI.Proxy.JudgeLegacyOrgBPProxy.SrcOrgs">
+            <summary>
+            来源组织集合 (该属性可为空,且无默认值)
+            判断来源组织与核算组织是否为同一法人组织操作.Misc.来源组织集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.AccountMatch.Proxy.GetMatchAccountByAccountRuleProxy.RuleInfo">
+            <summary>
+            科目规则信息 (该属性可为空,且无默认值)
+            根据科目规则取得会计科目.Misc.科目规则信息
+            </summary>
+            <value>UFIDA.U9.CBO.FI.AccountMatch.AccountRuleInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.AccountMatch.Proxy.GetAccountIsIncludeAccRuleProxy.AccountKey_SKey">
+            <summary>
+            会计科目关键字 序列化Key属性。（传递跨组织序列列字段）
+            判断科目是否在此科目规则包含的集合中.Misc.会计科目关键字
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.AccountMatch.Proxy.GetAccountIsIncludeAccRuleProxy.AccountKey">
+            <summary>
+            会计科目关键字 (该属性可为空,且无默认值)
+            判断科目是否在此科目规则包含的集合中.Misc.会计科目关键字
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Account.Account</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.AccountMatch.Proxy.GetAccountIsIncludeAccRuleProxy.RuleInfo">
+            <summary>
+            会计科目规则字符串 (该属性可为空,且无默认值)
+            判断科目是否在此科目规则包含的集合中.Misc.会计科目规则字符串
+            </summary>
+            <value>UFIDA.U9.CBO.FI.AccountMatch.AccountRuleInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.AccountMatch.Proxy.GetAccountInfosProxy.SobKey_SKey">
+            <summary>
+            账簿Key 序列化Key属性。（传递跨组织序列列字段）
+            得到会计科目信息的集合.Misc.账簿Key
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.AccountMatch.Proxy.GetAccountInfosProxy.SobKey">
+            <summary>
+            账簿Key (该属性可为空,且无默认值)
+            得到会计科目信息的集合.Misc.账簿Key
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.AccountMatch.Proxy.GetAccountInfosProxy.AccountMatch">
+            <summary>
+            科目匹配串 (该属性可为空,且无默认值)
+            得到会计科目信息的集合.Misc.科目匹配串
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.AccountMatch.Proxy.GetAccountInfosProxy.AccountBasicKey_SKey">
+            <summary>
+            会计要素 序列化Key属性。（传递跨组织序列列字段）
+            得到会计科目信息的集合.Misc.会计要素
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.AccountMatch.Proxy.GetAccountInfosProxy.AccountBasicKey">
+            <summary>
+            会计要素 (该属性可为空,且无默认值)
+            得到会计科目信息的集合.Misc.会计要素
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Account.AccountBasic</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.AccountMatch.Proxy.GetAccountInfosProxy.AccPropertyKey_SKey">
+            <summary>
+            科目属性 序列化Key属性。（传递跨组织序列列字段）
+            得到会计科目信息的集合.Misc.科目属性
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.AccountMatch.Proxy.GetAccountInfosProxy.AccPropertyKey">
+            <summary>
+            科目属性 (该属性可为空,且无默认值)
+            得到会计科目信息的集合.Misc.科目属性
+            </summary>
+            <value>UFIDA.U9.CBO.FI.NaturalAccount.AccountProperty</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.AccountMatch.Proxy.GetAccountInfosProxy.IsVoucher">
+            <summary>
+            是否可制单 (该属性可为空,但有默认值)
+            得到会计科目信息的集合.Misc.是否可制单
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.AccountMatch.Proxy.GetAccountInfosProxy.IsSumLowLevel">
+            <summary>
+            是否汇总下级科目 (该属性可为空,但有默认值)
+            得到会计科目信息的集合.Misc.是否汇总下级科目
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.BalanceEntity.Proxy.CreateBalanceEntityBPProxy.SOB_SKey">
+            <summary>
+            账薄 序列化Key属性。（传递跨组织序列列字段）
+            创建平衡体.Misc.账薄
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.BalanceEntity.Proxy.CreateBalanceEntityBPProxy.SOB">
+            <summary>
+            账薄 (该属性可为空,且无默认值)
+            创建平衡体.Misc.账薄
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.BalanceEntity.Proxy.CreateBalanceEntityBPProxy.CodeStr">
+            <summary>
+            编码串 (该属性可为空,且无默认值)
+            创建平衡体.Misc.编码串
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.BalanceEntity.Proxy.CreateBalanceEntityBPProxy.NameStr">
+            <summary>
+            名称串 (该属性可为空,且无默认值)
+            创建平衡体.Misc.名称串
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.GetPeriodMappingBySOBBPProxy.OutSOB_SKey">
+            <summary>
+            转出SOB 序列化Key属性。（传递跨组织序列列字段）
+            获取会计期间映射关系.Misc.转出SOB
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.GetPeriodMappingBySOBBPProxy.OutSOB">
+            <summary>
+            转出SOB (该属性可为空,且无默认值)
+            获取会计期间映射关系.Misc.转出SOB
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.GetPeriodMappingBySOBBPProxy.InSOB_SKey">
+            <summary>
+            转入SOB 序列化Key属性。（传递跨组织序列列字段）
+            获取会计期间映射关系.Misc.转入SOB
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.GetPeriodMappingBySOBBPProxy.InSOB">
+            <summary>
+            转入SOB (该属性可为空,且无默认值)
+            获取会计期间映射关系.Misc.转入SOB
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.GetPeriodMappingBySOBBPProxy.SOBMappingRule_SKey">
+            <summary>
+            账簿映射规则 序列化Key属性。（传递跨组织序列列字段）
+            获取会计期间映射关系.Misc.账簿映射规则
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.GetPeriodMappingBySOBBPProxy.SOBMappingRule">
+            <summary>
+            账簿映射规则 (该属性可为空,且无默认值)
+            获取会计期间映射关系.Misc.账簿映射规则
+            </summary>
+            <value>UFIDA.U9.CBO.FI.SOBTransfer.SOBMappingRule</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.GetTransferSOBBPProxy.OutSOB_SKey">
+            <summary>
+            转出账簿 序列化Key属性。（传递跨组织序列列字段）
+            获取转入SOB.Misc.转出账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.GetTransferSOBBPProxy.OutSOB">
+            <summary>
+            转出账簿 (该属性可为空,且无默认值)
+            获取转入SOB.Misc.转出账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.GetTransferSOBBPProxy.InSOB_SKey">
+            <summary>
+            转入账簿 序列化Key属性。（传递跨组织序列列字段）
+            获取转入SOB.Misc.转入账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.GetTransferSOBBPProxy.InSOB">
+            <summary>
+            转入账簿 (该属性可为空,且无默认值)
+            获取转入SOB.Misc.转入账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBTransfer.Proxy.GetTransferSOBBPProxy.Direction">
+            <summary>
+            获取方向(1:由转出获取转入;2:由转入获取转出) (该属性可为空,但有默认值)
+            获取转入SOB.Misc.获取方向(1:由转出获取转入;2:由转入获取转出)
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetSobSegmentTreeRuleBPProxy.SOB_SKey">
+            <summary>
+            账薄 序列化Key属性。（传递跨组织序列列字段）
+            得到SOB弹性域结构段层级关系.Misc.账薄
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetSobSegmentTreeRuleBPProxy.SOB">
+            <summary>
+            账薄 (该属性可为空,且无默认值)
+            得到SOB弹性域结构段层级关系.Misc.账薄
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetSobSegmentTreeRuleBPProxy.Year">
+            <summary>
+            年度 (该属性可为空,但有默认值)
+            得到SOB弹性域结构段层级关系.Misc.年度
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetGLUsableSOBBPProxy.SOBTypeList">
+            <summary>
+            账簿类型 (该属性可为空,且无默认值)
+            得到可使用的账簿.Misc.账簿类型
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetSOBHasBalanceInOrgProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            得到当前组织有平衡体的所有SOB.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetSOBHasBalanceInOrgProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            得到当前组织有平衡体的所有SOB.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetDefaultSOBByOrgBPProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            得到默认操作账簿BP.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetDefaultSOBByOrgBPProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            得到默认操作账簿BP.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetDefaultSOBByOrgBPProxy.IsMain">
+            <summary>
+            主账簿 (该属性可为空,但有默认值)
+            得到默认操作账簿BP.Misc.主账簿
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetSOBSetAndEffectievSOBPeriodProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            获得有效SOBset及会计期间.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetSOBSetAndEffectievSOBPeriodProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            获得有效SOBset及会计期间.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetSOBSetAndEffectievSOBPeriodProxy.IsReturnPeriod">
+            <summary>
+            是否返回期间 (该属性可为空,但有默认值)
+            获得有效SOBset及会计期间.Misc.是否返回期间
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetSOBSetAndEffectievSOBPeriodProxy.CreateDate">
+            <summary>
+            制单日期 (该属性可为空,且无默认值)
+            获得有效SOBset及会计期间.Misc.制单日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.UpdateACCBySOBStruAdjustProxy.SOBAccountStru_SKey">
+            <summary>
+            账簿结构 序列化Key属性。（传递跨组织序列列字段）
+            会计制度调整后更新会计科目.Misc.账簿结构
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.UpdateACCBySOBStruAdjustProxy.SOBAccountStru">
+            <summary>
+            账簿结构 (该属性可为空,且无默认值)
+            会计制度调整后更新会计科目.Misc.账簿结构
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountStructure</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.UpdateACCBySOBStruAdjustProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            会计制度调整后更新会计科目.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.UpdateACCBySOBStruAdjustProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            会计制度调整后更新会计科目.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetMergeSOBByOrgBPProxy.Org">
+            <summary>
+            组织 (该属性可为空,但有默认值)
+            取得第一个合并账簿BP.Misc.组织
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetMergeSOBByOrgBPProxy.IsForRpt">
+            <summary>
+            是否报表用（只查合并结构里的） (该属性可为空,但有默认值)
+            取得第一个合并账簿BP.Misc.是否报表用（只查合并结构里的）
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetAccSegsByEntityFullNameProxy.EntityFullName">
+            <summary>
+            实体全名 (该属性可为空,且无默认值)
+            根据值集实体全名获取科目段.Misc.实体全名
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetAccSegsByEntityFullNameProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            根据值集实体全名获取科目段.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetAccSegsByEntityFullNameProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            根据值集实体全名获取科目段.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.CheckCombineCodesBPProxy.CombineCodes">
+            <summary>
+            会计科目 (该属性可为空,且无默认值)
+            会计科目编码校验.Misc.会计科目
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.CheckCombineCodesBPProxy.IsThrowException">
+            <summary>
+            异常处理 (该属性可为空,但有默认值)
+            会计科目编码校验.Misc.异常处理
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.CheckCombineCodesBPProxy.Stru_SKey">
+            <summary>
+            科目编码结构 序列化Key属性。（传递跨组织序列列字段）
+            会计科目编码校验.Misc.科目编码结构
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.CheckCombineCodesBPProxy.Stru">
+            <summary>
+            科目编码结构 (该属性可为空,且无默认值)
+            会计科目编码校验.Misc.科目编码结构
+            </summary>
+            <value>UFIDA.U9.Base.FlexField.KeyFlexField.KeyFlexFieldStru</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetARBalanceRptDefaultValueBPProxy.IsFICall">
+            <summary>
+            是否财务机能进入 (该属性可为空,但有默认值)
+            应收余额表默认值操作.Misc.是否财务机能进入
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetARDetailedLedgerRptDefaultValueBPProxy.IsFICall">
+            <summary>
+            是否财务机能进入 (该属性可为空,但有默认值)
+            应收明细账默认值操作.Misc.是否财务机能进入
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetKeyFlexSegmentBPProxy.KeyFlexSegmentType">
+            <summary>
+            段类型 (该属性可为空,但有默认值)
+            获取关键弹性域结构操作.Misc.段类型
+            </summary>
+            <value>UFIDA.U9.Base.FlexField.KeyFlexField.KeyFlexNameEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetARAnalysisRptDefaultValueBPProxy.IsFICall">
+            <summary>
+            是否财务机能进入 (该属性可为空,但有默认值)
+            应收余额分析表默认值操作.Misc.是否财务机能进入
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetMemoDescSegInfoBySOBBPProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            获取备查描述弹性域操作.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetMemoDescSegInfoBySOBBPProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            获取备查描述弹性域操作.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetAPBalanceRptDefaultValueBPProxy.IsFICall">
+            <summary>
+            是否财务机能进入 (该属性可为空,但有默认值)
+            应付余额表默认值操作.Misc.是否财务机能进入
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetAPAnalysisRptDefaultValueBPProxy.IsFICall">
+            <summary>
+            是否财务机能进入 (该属性可为空,但有默认值)
+            应付余额分析表默认值操作.Misc.是否财务机能进入
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetEntryDescSegInfoBPProxy.ContextFieldValue">
+            <summary>
+            参考字段 (该属性可为空,且无默认值)
+            获取凭证分录描述性弹性域操作.Misc.参考字段
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetUIDataListForCommonQueryBPProxy.Condition">
+            <summary>
+            条件 (该属性可为空,且无默认值)
+            根据实体全名和OPath集合获取UI展现数据集合操作.Misc.条件
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetUIDataForCommonQueryBPProxy.Condition">
+            <summary>
+            过滤条件 (该属性可为空,且无默认值)
+            根据实体全名和OPath获取UI展现数据操作.Misc.过滤条件
+            </summary>
+            <value>UFIDA.U9.CBO.FI.ForRpt.ConditionForCommonQueryDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetAgingAnalysisRptDefaultValueBPProxy.IsFICall">
+            <summary>
+            是否财务机能进入 (该属性可为空,但有默认值)
+            账龄分析表默认值操作.Misc.是否财务机能进入
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetVoucherDescSegInfoBPProxy.ContextFieldValue">
+            <summary>
+            参考字段 (该属性可为空,且无默认值)
+            获取凭证头描述性弹性域操作1.Misc.参考字段
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetGeaterEqualPeriodTypeListBySOBBPProxy.OrgCode">
+            <summary>
+            组织编码 (该属性可为空,且无默认值)
+            获取大于等于SOB对应期间类别的集合操作.Misc.组织编码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetDescSegInfoBPProxy.ContextFieldValue">
+            <summary>
+            参考字段 (该属性可为空,且无默认值)
+            获取实体描述性弹性域操作.Misc.参考字段
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetDescSegInfoBPProxy.FullOPath">
+            <summary>
+            实体命名空间 (该属性可为空,且无默认值)
+            获取实体描述性弹性域操作.Misc.实体命名空间
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.ForRpt.Proxy.GetMainSOBForRptBPProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            获取主SOB操作.Misc.组织
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetGLDefaultProfileBPProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            得到总账默认参数值.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetGLDefaultProfileBPProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            得到总账默认参数值.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetGLDefaultProfileBPProxy.VoucherCategory_SKey">
+            <summary>
+            凭证类型 序列化Key属性。（传递跨组织序列列字段）
+            得到总账默认参数值.Misc.凭证类型
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetGLDefaultProfileBPProxy.VoucherCategory">
+            <summary>
+            凭证类型 (该属性可为空,且无默认值)
+            得到总账默认参数值.Misc.凭证类型
+            </summary>
+            <value>UFIDA.U9.CBO.FI.VoucherCategory.VoucherCategory</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetGLDefaultProfileBPProxy.IsReturnPeriod">
+            <summary>
+            是否返回期间 (该属性可为空,但有默认值)
+            得到总账默认参数值.Misc.是否返回期间
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.SOBSet.Proxy.GetGLDefaultProfileBPProxy.IsReturnAccDisMethod">
+            <summary>
+            是否返回科目显示方式 (该属性可为空,但有默认值)
+            得到总账默认参数值.Misc.是否返回科目显示方式
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:AccountPropertyBP.Proxy.CopyAccountPropertyByABSetBPProxy.SourceABSet_SKey">
+            <summary>
+            源会计要素表 序列化Key属性。（传递跨组织序列列字段）
+            会计要素表导入复制操作.Misc.源会计要素表
+            </summary>
+        </member>
+        <member name="P:AccountPropertyBP.Proxy.CopyAccountPropertyByABSetBPProxy.SourceABSet">
+            <summary>
+            源会计要素表 (该属性可为空,且无默认值)
+            会计要素表导入复制操作.Misc.源会计要素表
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Account.AccountBasicSetting</value>
+        </member>
+        <member name="P:AccountPropertyBP.Proxy.CopyAccountPropertyByABSetBPProxy.DescABSet_SKey">
+            <summary>
+            目标会计要素表 序列化Key属性。（传递跨组织序列列字段）
+            会计要素表导入复制操作.Misc.目标会计要素表
+            </summary>
+        </member>
+        <member name="P:AccountPropertyBP.Proxy.CopyAccountPropertyByABSetBPProxy.DescABSet">
+            <summary>
+            目标会计要素表 (该属性可为空,且无默认值)
+            会计要素表导入复制操作.Misc.目标会计要素表
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Account.AccountBasicSetting</value>
+        </member>
+        <member name="P:AccountPropertyBP.Proxy.CopyAccountPropertyByABSetBPProxy.NaturalAccountSet_SKey">
+            <summary>
+            标准科目表 序列化Key属性。（传递跨组织序列列字段）
+            会计要素表导入复制操作.Misc.标准科目表
+            </summary>
+        </member>
+        <member name="P:AccountPropertyBP.Proxy.CopyAccountPropertyByABSetBPProxy.NaturalAccountSet">
+            <summary>
+            标准科目表 (该属性可为空,且无默认值)
+            会计要素表导入复制操作.Misc.标准科目表
+            </summary>
+            <value>UFIDA.U9.CBO.FI.NaturalAccount.NaturalAccountSet</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.CMNMFA.Proxy.GetDescFieldListProxy.BEFullName">
+            <summary>
+            BE实体全名列表 (该属性可为空,且无默认值)
+            获取描述性弹性域段信息.Misc.BE实体全名列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.CMNMFA.Proxy.GetDescFieldListProxy.ContextValue">
+            <summary>
+            上下文值 (该属性可为空,且无默认值)
+            获取描述性弹性域段信息.Misc.上下文值
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.FNBP.Proxy.GetDefaultBAByOrgBPProxy.OrgID">
+            <summary>
+            组织 (该属性可为空,但有默认值)
+            获得组织的默认账号信息.Misc.组织
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.FNBP.Proxy.GetBAByOrgCurrencyBPProxy.OrgID">
+            <summary>
+            组织ID (该属性可为空,但有默认值)
+            根据组织币种获得默认账号信息BP.Misc.组织ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.FNBP.Proxy.GetBAByOrgCurrencyBPProxy.OrgCode">
+            <summary>
+            组织编码 (该属性可为空,且无默认值)
+            根据组织币种获得默认账号信息BP.Misc.组织编码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.FNBP.Proxy.GetBAByOrgCurrencyBPProxy.CurrencyID">
+            <summary>
+            币种ID (该属性可为空,但有默认值)
+            根据组织币种获得默认账号信息BP.Misc.币种ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.CBO.FI.FNBP.Proxy.GetBAByOrgCurrencyBPProxy.CurrencyCode">
+            <summary>
+            币种编码 (该属性可为空,且无默认值)
+            根据组织币种获得默认账号信息BP.Misc.币种编码
+            </summary>
+            <value>System.String</value>
+        </member>
+    </members>
+</doc>

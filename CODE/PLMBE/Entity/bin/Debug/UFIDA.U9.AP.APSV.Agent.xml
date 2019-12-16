@@ -1,0 +1,3565 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFIDA.U9.AP.APSV.Agent</name>
+    </assembly>
+    <members>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APAccrueSVProxy.APBillHead">
+            <summary>
+            应付单头 (该属性可为空,且无默认值)
+            应付立账服务.Misc.应付单头
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APAccrueSVProxy.IsMerge">
+            <summary>
+            是否合并开票 (该属性可为空,但有默认值)
+            应付立账服务.Misc.是否合并开票
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APAccrueSVProxy.APMergeAccrueCfgDTO">
+            <summary>
+            应付合并开票配置参数DTO (该属性可为空,且无默认值)
+            应付立账服务.Misc.应付合并开票配置参数DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI_SCM.DTOs.APMergeAccrueCfgDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.UsePrePaySVProxy.SrcBillType">
+            <summary>
+            属性 (该属性可为空,但有默认值)
+            使用预付款服务.Misc.属性
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.APBillSourceEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APAccrueForRecBillSVProxy.APBillHead">
+            <summary>
+            应付单头 (该属性可为空,且无默认值)
+            收款单应付立账服务.Misc.应付单头
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.GetDefaultDocTypeByIDSVProxy.DocTypeID">
+            <summary>
+            单据类型ID (该属性可为空,但有默认值)
+            获取应付单据类型服务.Misc.单据类型ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.GetDefaultDocTypeByIDSVProxy.BusinessType">
+            <summary>
+            业务类型 (该属性可为空,但有默认值)
+            获取应付单据类型服务.Misc.业务类型
+            </summary>
+            <value>UFIDA.U9.Base.Doc.BusinessTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.BatchDeleteMSFAPBillSVProxy.BillTag">
+            <summary>
+            单据标识 (该属性可为空,但有默认值)
+            批量删除管销费用单生成的内部应付单服务.Misc.单据标识
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForGL.Proxy.CheckAPCloseSVProxy.PostPeriod_SKey">
+            <summary>
+            记账期间 序列化Key属性。（传递跨组织序列列字段）
+            检查应付系统是否结账服务.Misc.记账期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForGL.Proxy.CheckAPCloseSVProxy.PostPeriod">
+            <summary>
+            记账期间 (该属性可为空,且无默认值)
+            检查应付系统是否结账服务.Misc.记账期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForGL.Proxy.FIPeriodOpenCloseSVProxy.PostPeriod_SKey">
+            <summary>
+            记账期间 序列化Key属性。（传递跨组织序列列字段）
+            财务期间打开关闭服务AP.Misc.记账期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForGL.Proxy.FIPeriodOpenCloseSVProxy.PostPeriod">
+            <summary>
+            记账期间 (该属性可为空,且无默认值)
+            财务期间打开关闭服务AP.Misc.记账期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForGL.Proxy.FIPeriodOpenCloseSVProxy.IsClose">
+            <summary>
+            是否关闭 (该属性可为空,但有默认值)
+            财务期间打开关闭服务AP.Misc.是否关闭
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForGL.Proxy.AP_GetPrimaryEntitySVProxy.AAIDTO">
+            <summary>
+            AAI来源实体转换DTO (该属性可为空,且无默认值)
+            取AAI来源实体信息服务AP.Misc.AAI来源实体转换DTO
+            </summary>
+            <value>UFIDA.U9.AAI.TransEntry.AAIEntityTransDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CreatePayBillSVProxy.PayBillHead">
+            <summary>
+            付款单头 (该属性可为空,且无默认值)
+            付款单产生服务.Misc.付款单头
+            </summary>
+            <value>UFIDA.U9.AP.Payment.PayBillHead</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CreateBatchPayBillSVProxy.PayBillHeadList">
+            <summary>
+            付款单头 (该属性可为空,且无默认值)
+            批量生成付款单服务.Misc.付款单头
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.DeletePayBillSVProxy.PayBillHead_SKey">
+            <summary>
+            付款单头 序列化Key属性。（传递跨组织序列列字段）
+            删除付款单服务PayBill.Misc.付款单头
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.DeletePayBillSVProxy.PayBillHead">
+            <summary>
+            付款单头 (该属性可为空,且无默认值)
+            删除付款单服务PayBill.Misc.付款单头
+            </summary>
+            <value>UFIDA.U9.AP.Payment.PayBillHead</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.DeletePayBillSVProxy.RewritedPrePay">
+            <summary>
+            是否已经回写预付和质保金来源(为避免重复回写) (该属性可为空,但有默认值)
+            删除付款单服务PayBill.Misc.是否已经回写预付和质保金来源(为避免重复回写)
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.BankNotifyPaymentReceiptSVProxy.PayBillLineList_SKey">
+            <summary>
+            付款单表行集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.BankNotifyPaymentReceiptSVProxy.PayBillLineList">
+            <summary>
+            付款单表行集合 (该属性可为空,且无默认值)
+            银行通知付款到账服务.Misc.付款单表行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.PayBillLineReverseSVProxy.PayBillHeadID_SKey">
+            <summary>
+            付款单标识 序列化Key属性。（传递跨组织序列列字段）
+            付款单行转回服务.Misc.付款单标识
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.PayBillLineReverseSVProxy.PayBillHeadID">
+            <summary>
+            付款单标识 (该属性可为空,且无默认值)
+            付款单行转回服务.Misc.付款单标识
+            </summary>
+            <value>UFIDA.U9.AP.Payment.PayBillHead</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.PayBillLineReverseSVProxy.PayBillLineID_SKey">
+            <summary>
+            付款单行标识 序列化Key属性。（传递跨组织序列列字段）
+            付款单行转回服务.Misc.付款单行标识
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.PayBillLineReverseSVProxy.PayBillLineID">
+            <summary>
+            付款单行标识 (该属性可为空,且无默认值)
+            付款单行转回服务.Misc.付款单行标识
+            </summary>
+            <value>UFIDA.U9.AP.Payment.PayBillLine</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.PayBillLineReverseSVProxy.ReverseReason">
+            <summary>
+            转回原因 (该属性可为空,且无默认值)
+            付款单行转回服务.Misc.转回原因
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.POBillUpdatePrePaySVProxy.POBillUpdatePrePayDTOs">
+            <summary>
+            采购单据更新预付款DTO (该属性可为空,且无默认值)
+            采购单据更新预付款.Misc.采购单据更新预付款DTO
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.AdjustPayBillBalanceSVProxy.AdjustDTO">
+            <summary>
+            调整收款单余额DTO (该属性可为空,且无默认值)
+            调整付款单余额服务.Misc.调整收款单余额DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.AdjustPayBillBalanceDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CovertPayBillToComingApplyDataSVProxy.ComingApplyMoneyInfoDTOs">
+            <summary>
+            待核销金额信息 (该属性可为空,且无默认值)
+            转换付款单数据为待核销数据.Misc.待核销金额信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CovertPayBillToComingApplyDataSVProxy.Cust">
+            <summary>
+            客户信息 (该属性可为空,且无默认值)
+            转换付款单数据为待核销数据.Misc.客户信息
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.CustomerMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CovertPayBillToComingApplyDataSVProxy.CustInfo">
+            <summary>
+            客户地址信息 (该属性可为空,且无默认值)
+            转换付款单数据为待核销数据.Misc.客户地址信息
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.CustomerSiteMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.DivisePayBillBaseSuppSVProxy.ComingRecPayToSRSPDataDTOs">
+            <summary>
+            收付款转暂收付待转数据 (该属性可为空,且无默认值)
+            根据供应商分单服务.Misc.收付款转暂收付待转数据
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.TransferToTempPayBillSVProxy.PayBillHead">
+            <summary>
+            付款单 (该属性可为空,但有默认值)
+            转暂付服务.Misc.付款单
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            可使用预付款查询服务.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            可使用预付款查询服务.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.RecSite_SKey">
+            <summary>
+            付款地址 序列化Key属性。（传递跨组织序列列字段）
+            可使用预付款查询服务.Misc.付款地址
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.RecSite">
+            <summary>
+            付款地址 (该属性可为空,且无默认值)
+            可使用预付款查询服务.Misc.付款地址
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Supplier.SupplierSite</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.Currency_SKey">
+            <summary>
+            币种 序列化Key属性。（传递跨组织序列列字段）
+            可使用预付款查询服务.Misc.币种
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.Currency">
+            <summary>
+            币种 (该属性可为空,且无默认值)
+            可使用预付款查询服务.Misc.币种
+            </summary>
+            <value>UFIDA.U9.Base.Currency.Currency</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.ItemInfo">
+            <summary>
+            物料信息 (该属性可为空,且无默认值)
+            可使用预付款查询服务.Misc.物料信息
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Item.ItemInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.SrcBillOrg_SKey">
+            <summary>
+            来源组织 序列化Key属性。（传递跨组织序列列字段）
+            可使用预付款查询服务.Misc.来源组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.SrcBillOrg">
+            <summary>
+            来源组织 (该属性可为空,且无默认值)
+            可使用预付款查询服务.Misc.来源组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.ItemLineID">
+            <summary>
+            物料行ID (该属性可为空,但有默认值)
+            可使用预付款查询服务.Misc.物料行ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.APBillLineID">
+            <summary>
+            应付单行 (该属性可为空,但有默认值)
+            可使用预付款查询服务.Misc.应付单行
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.BizOrg_SKey">
+            <summary>
+            业务组织 序列化Key属性。（传递跨组织序列列字段）
+            可使用预付款查询服务.Misc.业务组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.BizOrg">
+            <summary>
+            业务组织 (该属性可为空,且无默认值)
+            可使用预付款查询服务.Misc.业务组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.SettleOrg_SKey">
+            <summary>
+            结算组织 序列化Key属性。（传递跨组织序列列字段）
+            可使用预付款查询服务.Misc.结算组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.SettleOrg">
+            <summary>
+            结算组织 (该属性可为空,且无默认值)
+            可使用预付款查询服务.Misc.结算组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.Project_SKey">
+            <summary>
+            项目 序列化Key属性。（传递跨组织序列列字段）
+            可使用预付款查询服务.Misc.项目
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.Project">
+            <summary>
+            项目 (该属性可为空,且无默认值)
+            可使用预付款查询服务.Misc.项目
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.ProjectTask.Project</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.Task_SKey">
+            <summary>
+            任务 序列化Key属性。（传递跨组织序列列字段）
+            可使用预付款查询服务.Misc.任务
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.Task">
+            <summary>
+            任务 (该属性可为空,且无默认值)
+            可使用预付款查询服务.Misc.任务
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.ProjectTask.Task</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CanUsePrePayQuerySVProxy.RecSiteName">
+            <summary>
+            供应商位置名称 (该属性可为空,且无默认值)
+            可使用预付款查询服务.Misc.供应商位置名称
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.TransToTempRecByCustSVProxy.RecBillInstantApplyDTOs">
+            <summary>
+            付款单核销DTO (该属性可为空,且无默认值)
+            根据客户信息转暂收.Misc.付款单核销DTO
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.QueryPayBillBalanecByCusstomAndPayTypeSVProxy.LstPayBillHead">
+            <summary>
+            付款单ID (该属性可为空,且无默认值)
+            根据客户地址付款性质汇总总金额余额服务.Misc.付款单ID
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.QueryPayBillBalanecByCusstomAndPayTypeSVProxy.Cuss">
+            <summary>
+            客户 (该属性可为空,且无默认值)
+            根据客户地址付款性质汇总总金额余额服务.Misc.客户
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.CustomerMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.QueryPayBillBalanecByCusstomAndPayTypeSVProxy.CussSite">
+            <summary>
+            客户位置 (该属性可为空,且无默认值)
+            根据客户地址付款性质汇总总金额余额服务.Misc.客户位置
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.CustomerSiteMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.QueryPayBillBalanecByCusstomAndPayTypeSVProxy.PayProperty">
+            <summary>
+            付款性质 (该属性可为空,但有默认值)
+            根据客户地址付款性质汇总总金额余额服务.Misc.付款性质
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.PayPropertyEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.TempPayRollBackSVProxy.UseLines">
+            <summary>
+            用途行集合 (该属性可为空,且无默认值)
+            暂付款转回.Misc.用途行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.DeletePayLogSVProxy.PayBillHead">
+            <summary>
+            付款单 (该属性可为空,但有默认值)
+            删除付款单日志.Misc.付款单
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.DeletePayLogSVProxy.PayBillOperateType">
+            <summary>
+            操作类型 (该属性可为空,但有默认值)
+            删除付款单日志.Misc.操作类型
+            </summary>
+            <value>UFIDA.U9.AP.Enums.PayBillOperateTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.GetAPMinNoCloseSOBAccountPeriodSVProxy.PayDate">
+            <summary>
+            日期 (该属性可为空,且无默认值)
+            获取应付最小未结账的会计期间.Misc.日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.GetAPMinNoCloseSOBAccountPeriodSVProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            获取应付最小未结账的会计期间.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.GetAPMinNoCloseSOBAccountPeriodSVProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            获取应付最小未结账的会计期间.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.IsHasTempPaySVProxy.Cust">
+            <summary>
+            客户 (该属性可为空,且无默认值)
+            是否有转暂付.Misc.客户
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.CustomerMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.IsHasTempPaySVProxy.CustSite">
+            <summary>
+            客户位置 (该属性可为空,且无默认值)
+            是否有转暂付.Misc.客户位置
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.CustomerSiteMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.IsHasTempPaySVProxy.PayBillHeads">
+            <summary>
+            付款单集合 (该属性可为空,且无默认值)
+            是否有转暂付.Misc.付款单集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.AddPayLogSVProxy.Org">
+            <summary>
+            组织 (该属性可为空,但有默认值)
+            增加付款单日志.Misc.组织
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.AddPayLogSVProxy.OperateType">
+            <summary>
+            操作类型 (该属性可为空,但有默认值)
+            增加付款单日志.Misc.操作类型
+            </summary>
+            <value>UFIDA.U9.AP.Enums.PayBillOperateTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.AddPayLogSVProxy.PayBillHeadKey">
+            <summary>
+            付款单 (该属性可为空,但有默认值)
+            增加付款单日志.Misc.付款单
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.AddPayLogSVProxy.PayBillUseLineKey">
+            <summary>
+            付款单用途行 (该属性可为空,但有默认值)
+            增加付款单日志.Misc.付款单用途行
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.AddPayLogSVProxy.BizProessData">
+            <summary>
+            业务单据 (该属性可为空,但有默认值)
+            增加付款单日志.Misc.业务单据
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.AddPayLogSVProxy.BizProcessDetail">
+            <summary>
+            业务单据明细 (该属性可为空,但有默认值)
+            增加付款单日志.Misc.业务单据明细
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.AddPayLogSVProxy.BillType">
+            <summary>
+            单据类型 (该属性可为空,且无默认值)
+            增加付款单日志.Misc.单据类型
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.DeletePayLogByBizBillSVProxy.BizBillID">
+            <summary>
+            业务单据ID (该属性可为空,但有默认值)
+            根据业务单据删除付款单日志.Misc.业务单据ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.DeletePayLogByBizBillSVProxy.BizDetailID">
+            <summary>
+            属性1 (该属性可为空,但有默认值)
+            根据业务单据删除付款单日志.Misc.属性1
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.RecQueryARAPListSVProxy.APBillHeadIDs">
+            <summary>
+            应付单头ID集合 (该属性可为空,但有默认值)
+            收款单获取应付单服务.Misc.应付单头ID集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.UpdatePayLineReachInfoSVProxy.ReachInfo">
+            <summary>
+            到帐信息 (该属性可为空,且无默认值)
+            更新付款单行到帐信息服务.Misc.到帐信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.UpdatePayBillNoteClueSVProxy.UpdateRecBillNoteClueDTOs">
+            <summary>
+            更新收款单票据线索DTO集合 (该属性可为空,且无默认值)
+            更新付款单票据线索服务.Misc.更新收款单票据线索DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.PayQueryARBillSVProxy.PayBillID">
+            <summary>
+            付款单ID (该属性可为空,但有默认值)
+            付款单获取对应应收单服务.Misc.付款单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.DeleteNudityPayBillSVProxy.PayBillID">
+            <summary>
+            付款单ID (该属性可为空,但有默认值)
+            删除付款单裸单服务.Misc.付款单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.PayBillSaveAndApplySameTimeSVProxy.ProcessMode">
+            <summary>
+            处理方式 (该属性可为空,但有默认值)
+            付款单保存同时及时核销服务.Misc.处理方式
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.BillProcessModeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.PayBillSaveAndApplySameTimeSVProxy.PayBillID">
+            <summary>
+            付款单ID (该属性可为空,但有默认值)
+            付款单保存同时及时核销服务.Misc.付款单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.PayBillSaveAndApplySameTimeSVProxy.IsNeedApplyAgain">
+            <summary>
+            是否需要再次核销 (该属性可为空,但有默认值)
+            付款单保存同时及时核销服务.Misc.是否需要再次核销
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.DeletePayBillBySrcBillSVProxy.SrcType">
+            <summary>
+            来源类型 (该属性可为空,但有默认值)
+            按来源删除付款单服务.Misc.来源类型
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.PaySourceEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.DeletePayBillBySrcBillSVProxy.SrcBill">
+            <summary>
+            来源单据标识 (该属性可为空,但有默认值)
+            按来源删除付款单服务.Misc.来源单据标识
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CancelPayBillBySrcBillSVProxy.SrcType">
+            <summary>
+            来源类型 (该属性可为空,但有默认值)
+            按来源作废付款单服务.Misc.来源类型
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.PaySourceEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CancelPayBillBySrcBillSVProxy.SrcBill">
+            <summary>
+            来源单据标识 (该属性可为空,但有默认值)
+            按来源作废付款单服务.Misc.来源单据标识
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CancelPayBillBySrcBillSVProxy.CancelReason">
+            <summary>
+            作废原因 (该属性可为空,且无默认值)
+            按来源作废付款单服务.Misc.作废原因
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CancelPayBillBySrcBillSVProxy.CancelPerson">
+            <summary>
+            作废人 (该属性可为空,且无默认值)
+            按来源作废付款单服务.Misc.作废人
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.CancelPayBillBySrcBillSVProxy.CancelDate">
+            <summary>
+            作废时间 (该属性可为空,且无默认值)
+            按来源作废付款单服务.Misc.作废时间
+            </summary>
+            <value>System.Time</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.GetUseLineBySupplierAndRecPropertySVProxy.RecInfo">
+            <summary>
+            客户 (该属性可为空,且无默认值)
+            根据付款用途和供应商取用途行服务.Misc.客户
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.CustomerMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.GetUseLineBySupplierAndRecPropertySVProxy.RecSiteInfo">
+            <summary>
+            客户位置 (该属性可为空,且无默认值)
+            根据付款用途和供应商取用途行服务.Misc.客户位置
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.CustomerSiteMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.GetUseLineBySupplierAndRecPropertySVProxy.PayProperty">
+            <summary>
+            付款用途 (该属性可为空,但有默认值)
+            根据付款用途和供应商取用途行服务.Misc.付款用途
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.PayPropertyEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.GetUseLineBySupplierAndRecPropertySVProxy.PayBillHeadID">
+            <summary>
+            付款单 (该属性可为空,但有默认值)
+            根据付款用途和供应商取用途行服务.Misc.付款单
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.PayBillSysApproveSVProxy.Payment_SKey">
+            <summary>
+            付款单 序列化Key属性。（传递跨组织序列列字段）
+            付款单系统核准服务.Misc.付款单
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.PayBillSysApproveSVProxy.Payment">
+            <summary>
+            付款单 (该属性可为空,且无默认值)
+            付款单系统核准服务.Misc.付款单
+            </summary>
+            <value>UFIDA.U9.AP.Payment.PayBillHead</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.PayBillVerifySVProxy.PayBillHeadID_SKey">
+            <summary>
+            付款单标识 序列化Key属性。（传递跨组织序列列字段）
+            付款单核对服务.Misc.付款单标识
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.PayBillVerifySVProxy.PayBillHeadID">
+            <summary>
+            付款单标识 (该属性可为空,且无默认值)
+            付款单核对服务.Misc.付款单标识
+            </summary>
+            <value>UFIDA.U9.AP.Payment.PayBillHead</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.ModifyAPApplySVProxy.APApplyHeadKey_SKey">
+            <summary>
+            核销单头 序列化Key属性。（传递跨组织序列列字段）
+            修改应付核销单服务.Misc.核销单头
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.ModifyAPApplySVProxy.APApplyHeadKey">
+            <summary>
+            核销单头 (该属性可为空,且无默认值)
+            修改应付核销单服务.Misc.核销单头
+            </summary>
+            <value>UFIDA.U9.AP.APApply.APApplyHead</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.ModifyAPApplySVProxy.PostPeriodKey_SKey">
+            <summary>
+            记账期间 序列化Key属性。（传递跨组织序列列字段）
+            修改应付核销单服务.Misc.记账期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentSV.Proxy.ModifyAPApplySVProxy.PostPeriodKey">
+            <summary>
+            记账期间 (该属性可为空,且无默认值)
+            修改应付核销单服务.Misc.记账期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBillLinkageSV.Proxy.APBillModifyLinkageSVProxy.APBillHeadID_SKey">
+            <summary>
+            应付单标识 序列化Key属性。（传递跨组织序列列字段）
+            应付单修改联动服务.Misc.应付单标识
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBillLinkageSV.Proxy.APBillModifyLinkageSVProxy.APBillHeadID">
+            <summary>
+            应付单标识 (该属性可为空,且无默认值)
+            应付单修改联动服务.Misc.应付单标识
+            </summary>
+            <value>UFIDA.U9.AP.APBill.APBillHead</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBillLinkageSV.Proxy.APBillDeleteLinkageSVProxy.APBillHeadID_SKey">
+            <summary>
+            应付单标识 序列化Key属性。（传递跨组织序列列字段）
+            应付单删除联动服务.Misc.应付单标识
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBillLinkageSV.Proxy.APBillDeleteLinkageSVProxy.APBillHeadID">
+            <summary>
+            应付单标识 (该属性可为空,且无默认值)
+            应付单删除联动服务.Misc.应付单标识
+            </summary>
+            <value>UFIDA.U9.AP.APBill.APBillHead</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.GetUnApplyedStdUsePayBillsSVProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            取得未核销标准用途付款单集合服务.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.GetUnApplyedStdUsePayBillsSVProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            取得未核销标准用途付款单集合服务.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.GetUnApplyedStdUsePayBillsSVProxy.AccountPeriod_SKey">
+            <summary>
+            会计期间 序列化Key属性。（传递跨组织序列列字段）
+            取得未核销标准用途付款单集合服务.Misc.会计期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.GetUnApplyedStdUsePayBillsSVProxy.AccountPeriod">
+            <summary>
+            会计期间 (该属性可为空,且无默认值)
+            取得未核销标准用途付款单集合服务.Misc.会计期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.GetUnApplyedStdUsePayBillsSVProxy.App_SKey">
+            <summary>
+            应用 序列化Key属性。（传递跨组织序列列字段）
+            取得未核销标准用途付款单集合服务.Misc.应用
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.GetUnApplyedStdUsePayBillsSVProxy.App">
+            <summary>
+            应用 (该属性可为空,且无默认值)
+            取得未核销标准用途付款单集合服务.Misc.应用
+            </summary>
+            <value>UFIDA.U9.Base.Application.Application</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.GetUnApplyedStdUsePayBillsSVProxy.IsMustRecPayBill">
+            <summary>
+            当前期间收付款单全部核准 (该属性可为空,但有默认值)
+            取得未核销标准用途付款单集合服务.Misc.当前期间收付款单全部核准
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.IsStdUsePayBillsApplyedSVProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            当期标准用途付款单是否全部核销服务.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.IsStdUsePayBillsApplyedSVProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            当期标准用途付款单是否全部核销服务.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.IsStdUsePayBillsApplyedSVProxy.AccountPeriod_SKey">
+            <summary>
+            会计期间 序列化Key属性。（传递跨组织序列列字段）
+            当期标准用途付款单是否全部核销服务.Misc.会计期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.IsStdUsePayBillsApplyedSVProxy.AccountPeriod">
+            <summary>
+            会计期间 (该属性可为空,且无默认值)
+            当期标准用途付款单是否全部核销服务.Misc.会计期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.IsStdUsePayBillsApplyedSVProxy.App_SKey">
+            <summary>
+            应用 序列化Key属性。（传递跨组织序列列字段）
+            当期标准用途付款单是否全部核销服务.Misc.应用
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.IsStdUsePayBillsApplyedSVProxy.App">
+            <summary>
+            应用 (该属性可为空,且无默认值)
+            当期标准用途付款单是否全部核销服务.Misc.应用
+            </summary>
+            <value>UFIDA.U9.Base.Application.Application</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.IsStdUsePayBillsApplyedSVProxy.IsMustRecPayBill">
+            <summary>
+            当前期间收付款单全部核准 (该属性可为空,但有默认值)
+            当期标准用途付款单是否全部核销服务.Misc.当前期间收付款单全部核准
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.IsPayBillsApprovedSVProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            当期付款单据是否全部核准服务.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.IsPayBillsApprovedSVProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            当期付款单据是否全部核准服务.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.IsPayBillsApprovedSVProxy.AccountPeriod_SKey">
+            <summary>
+            会计期间 序列化Key属性。（传递跨组织序列列字段）
+            当期付款单据是否全部核准服务.Misc.会计期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.IsPayBillsApprovedSVProxy.AccountPeriod">
+            <summary>
+            会计期间 (该属性可为空,且无默认值)
+            当期付款单据是否全部核准服务.Misc.会计期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.IsPayBillsApprovedSVProxy.App_SKey">
+            <summary>
+            应用 序列化Key属性。（传递跨组织序列列字段）
+            当期付款单据是否全部核准服务.Misc.应用
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.IsPayBillsApprovedSVProxy.App">
+            <summary>
+            应用 (该属性可为空,且无默认值)
+            当期付款单据是否全部核准服务.Misc.应用
+            </summary>
+            <value>UFIDA.U9.Base.Application.Application</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.UnApplyedStdUsePayBillSV.Proxy.IsPayBillsApprovedSVProxy.IsMustRecPayBill">
+            <summary>
+            当前期间收付款单全部核准 (该属性可为空,但有默认值)
+            当期付款单据是否全部核准服务.Misc.当前期间收付款单全部核准
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsPeriodCloseSVProxy.PostPeriod_SKey">
+            <summary>
+            记账期间 序列化Key属性。（传递跨组织序列列字段）
+            是否已结账服务AP.Misc.记账期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsPeriodCloseSVProxy.PostPeriod">
+            <summary>
+            记账期间 (该属性可为空,且无默认值)
+            是否已结账服务AP.Misc.记账期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsPeriodCloseSVProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            是否已结账服务AP.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsPeriodCloseSVProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            是否已结账服务AP.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GenPeriodCloseDataSVProxy.SOB_SKey">
+            <summary>
+            SOB 序列化Key属性。（传递跨组织序列列字段）
+            月结数据产生服务AP.Misc.SOB
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GenPeriodCloseDataSVProxy.SOB">
+            <summary>
+            SOB (该属性可为空,且无默认值)
+            月结数据产生服务AP.Misc.SOB
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GenPeriodCloseDataSVProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            月结数据产生服务AP.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GenPeriodCloseDataSVProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            月结数据产生服务AP.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GenPeriodCloseDataSVProxy.Year">
+            <summary>
+            会计年度 (该属性可为空,但有默认值)
+            月结数据产生服务AP.Misc.会计年度
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GenPeriodCloseDataSVProxy.PeriodDate">
+            <summary>
+            日期 (该属性可为空,且无默认值)
+            月结数据产生服务AP.Misc.日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsHasUnGenAAIPayBillForCustSVProxy.OrgKey_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            是否存在付款对象为客户的未生成分录的付款单.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsHasUnGenAAIPayBillForCustSVProxy.OrgKey">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            是否存在付款对象为客户的未生成分录的付款单.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsHasUnGenAAIPayBillForCustSVProxy.PeriodKey_SKey">
+            <summary>
+            期间 序列化Key属性。（传递跨组织序列列字段）
+            是否存在付款对象为客户的未生成分录的付款单.Misc.期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsHasUnGenAAIPayBillForCustSVProxy.PeriodKey">
+            <summary>
+            期间 (该属性可为空,且无默认值)
+            是否存在付款对象为客户的未生成分录的付款单.Misc.期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsHasUnGenAAIPayBillForCustSVProxy.IsMustRecPayBill">
+            <summary>
+            当前期间的收付款单全部核准 (该属性可为空,但有默认值)
+            是否存在付款对象为客户的未生成分录的付款单.Misc.当前期间的收付款单全部核准
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GetUnGenAAIPayBillForCustListProxy.OrgKey_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            获取未生成分录的付款对象为客户付款单列表.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GetUnGenAAIPayBillForCustListProxy.OrgKey">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            获取未生成分录的付款对象为客户付款单列表.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GetUnGenAAIPayBillForCustListProxy.PeriodKey_SKey">
+            <summary>
+            期间 序列化Key属性。（传递跨组织序列列字段）
+            获取未生成分录的付款对象为客户付款单列表.Misc.期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GetUnGenAAIPayBillForCustListProxy.PeriodKey">
+            <summary>
+            期间 (该属性可为空,且无默认值)
+            获取未生成分录的付款对象为客户付款单列表.Misc.期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GetUnGenAAIPayBillForCustListProxy.IsMustRecPayBill">
+            <summary>
+            当前期间的收付款单是否需核准 (该属性可为空,但有默认值)
+            获取未生成分录的付款对象为客户付款单列表.Misc.当前期间的收付款单是否需核准
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsPayBillPostedToGLSVProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            当期已核准付款单是否全部转总账.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsPayBillPostedToGLSVProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            当期已核准付款单是否全部转总账.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsPayBillPostedToGLSVProxy.AccountPeriod_SKey">
+            <summary>
+            会计期间 序列化Key属性。（传递跨组织序列列字段）
+            当期已核准付款单是否全部转总账.Misc.会计期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsPayBillPostedToGLSVProxy.AccountPeriod">
+            <summary>
+            会计期间 (该属性可为空,且无默认值)
+            当期已核准付款单是否全部转总账.Misc.会计期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsPayBillPostedToGLSVProxy.App_SKey">
+            <summary>
+            应用 序列化Key属性。（传递跨组织序列列字段）
+            当期已核准付款单是否全部转总账.Misc.应用
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsPayBillPostedToGLSVProxy.App">
+            <summary>
+            应用 (该属性可为空,且无默认值)
+            当期已核准付款单是否全部转总账.Misc.应用
+            </summary>
+            <value>UFIDA.U9.Base.Application.Application</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.IsPayBillPostedToGLSVProxy.GLEnableDate">
+            <summary>
+            总账启用日期 (该属性可为空,且无默认值)
+            当期已核准付款单是否全部转总账.Misc.总账启用日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GetUnPostedToGLPayBillSVProxy.OrgKey_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            获取未过总账的付款单.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GetUnPostedToGLPayBillSVProxy.OrgKey">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            获取未过总账的付款单.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GetUnPostedToGLPayBillSVProxy.PeriodKey_SKey">
+            <summary>
+            期间 序列化Key属性。（传递跨组织序列列字段）
+            获取未过总账的付款单.Misc.期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GetUnPostedToGLPayBillSVProxy.PeriodKey">
+            <summary>
+            期间 (该属性可为空,且无默认值)
+            获取未过总账的付款单.Misc.期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GetUnPostedToGLPayBillSVProxy.Application_SKey">
+            <summary>
+            应用 序列化Key属性。（传递跨组织序列列字段）
+            获取未过总账的付款单.Misc.应用
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GetUnPostedToGLPayBillSVProxy.Application">
+            <summary>
+            应用 (该属性可为空,且无默认值)
+            获取未过总账的付款单.Misc.应用
+            </summary>
+            <value>UFIDA.U9.Base.Application.Application</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PeriodClose.Proxy.GetUnPostedToGLPayBillSVProxy.GLEnableDate">
+            <summary>
+            总账启用期间 (该属性可为空,且无默认值)
+            获取未过总账的付款单.Misc.总账启用期间
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APPost.Proxy.RegistAPPostSVProxy.APPostDTOs">
+            <summary>
+            应付记帐数据集合 (该属性可为空,且无默认值)
+            登记应付已记帐服务.Misc.应付记帐数据集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APPost.Proxy.RegistAPUnPostSVProxy.APPostDTOs">
+            <summary>
+            应付记帐数据集合 (该属性可为空,且无默认值)
+            登记应付未记帐服务.Misc.应付记帐数据集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APPost.Proxy.RegistAPUnPostSVProxy.DocStatus">
+            <summary>
+            单据状态 (该属性可为空,但有默认值)
+            登记应付未记帐服务.Misc.单据状态
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.DirectHandleBillDocStatusEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APPost.Proxy.GetPayDocTypeSVProxy.PayBillID">
+            <summary>
+            属性 (该属性可为空,但有默认值)
+            取付款单单据类型服务.Misc.属性
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APPost.Proxy.GetPayBillDataSVProxy.PayBillTags">
+            <summary>
+            付款单数据集合 (该属性可为空,且无默认值)
+            取付款单数据服务.Misc.付款单数据集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APPost.Proxy.DeleteAPPostSVProxy.DelAPPostDTO">
+            <summary>
+            删除应付记帐DTO (该属性可为空,且无默认值)
+            删除应付记帐服务.Misc.删除应付记帐DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.DelAPPostDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APPost.Proxy.DeleteAPUnPostSVProxy.DelAPPostDTO">
+            <summary>
+            删除应付记帐DTO (该属性可为空,且无默认值)
+            删除应付未记帐服务.Misc.删除应付记帐DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.DelAPPostDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APPost.Proxy.UpdateAPPostDocStatusWithBillTagSVProxy.IDList">
+            <summary>
+            BillTag列表 (该属性可为空,且无默认值)
+            修改应付记帐服务.Misc.BillTag列表
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APPost.Proxy.UpdateAPPostDocStatusWithBillTagSVProxy.DocStatus">
+            <summary>
+            单据状态 (该属性可为空,但有默认值)
+            修改应付记帐服务.Misc.单据状态
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.BillStatusEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.SaveMatchDetailSOBData.Proxy.SaveMatchDetailSOBDataForInvProxy.MatchResultDTO">
+            <summary>
+            匹配结果DTO (该属性可为空,且无默认值)
+            匹配明细SOB数据_保存(存货).Misc.匹配结果DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI_SCM.DTOs.MatchResultDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.SaveMatchDetailSOBData.Proxy.SaveMatchDetailSOBDataForInvProxy.OppSOBSumDataList">
+            <summary>
+            对方SOB汇总数据集合 (该属性可为空,且无默认值)
+            匹配明细SOB数据_保存(存货).Misc.对方SOB汇总数据集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.SaveMatchDetailSOBData.Proxy.SaveMatchDetailSOBDataForInvProxy.OppSOBERDataList">
+            <summary>
+            对方SOB汇率数据集合 (该属性可为空,且无默认值)
+            匹配明细SOB数据_保存(存货).Misc.对方SOB汇率数据集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.SaveMatchDetailSOBData.Proxy.SaveMatchDetailSOBDataForInvProxy.IsWriteFeeTaxDetail">
+            <summary>
+            是否写费税明细 (该属性可为空,但有默认值)
+            匹配明细SOB数据_保存(存货).Misc.是否写费税明细
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.SaveMatchDetailSOBData.Proxy.SaveMatchDetailSOBDataForInvProxy.MatchResultSOBDataDTOList">
+            <summary>
+            匹配结果SOB数据DTO集合 (该属性可为空,且无默认值)
+            匹配明细SOB数据_保存(存货).Misc.匹配结果SOB数据DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.SaveMatchDetailSOBData.Proxy.SaveMatchDetailSOBDataForMFGProxy.MatchResultDTO">
+            <summary>
+            匹配结果DTO (该属性可为空,且无默认值)
+            匹配明细SOB数据_保存(制造).Misc.匹配结果DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI_SCM.DTOs.MatchResultDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.SaveMatchDetailSOBData.Proxy.SaveMatchDetailSOBDataForMFGProxy.OppSOBSumDataList">
+            <summary>
+            对方SOB汇总数据集合 (该属性可为空,且无默认值)
+            匹配明细SOB数据_保存(制造).Misc.对方SOB汇总数据集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.SaveMatchDetailSOBData.Proxy.SaveMatchDetailSOBDataForMFGProxy.OppSOBERDataList">
+            <summary>
+            对方SOB汇率数据集合 (该属性可为空,且无默认值)
+            匹配明细SOB数据_保存(制造).Misc.对方SOB汇率数据集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.SaveMatchDetailSOBData.Proxy.SaveMatchDetailSOBDataForMFGProxy.IsWriteFeeTaxDetail">
+            <summary>
+            是否写费税明细 (该属性可为空,但有默认值)
+            匹配明细SOB数据_保存(制造).Misc.是否写费税明细
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.SaveMatchDetailSOBData.Proxy.SaveMatchDetailSOBDataForMFGProxy.MatchResultSOBDataDTOList">
+            <summary>
+            匹配结果SOB数据DTO集合 (该属性可为空,且无默认值)
+            匹配明细SOB数据_保存(制造).Misc.匹配结果SOB数据DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.SaveMatchDetailSOBData.Proxy.WriteBackSettleFlagProxy.APMatchLineIDs">
+            <summary>
+            匹配行ID集合  (该属性可为空,且无默认值)
+            回写结算结果标识.Misc.匹配行ID集合 
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.SaveMatchDetailSOBData.Proxy.WriteBackSettleFlagProxy.IsCancel">
+            <summary>
+            是否是取消结算操作 (该属性可为空,但有默认值)
+            回写结算结果标识.Misc.是否是取消结算操作
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.FindMatchDetailDataSVProxy.DocType">
+            <summary>
+            单据类别 (该属性可为空,但有默认值)
+            查询采购匹配明细数据服务.Misc.单据类别
+            </summary>
+            <value>UFIDA.U9.CBO.Enums.DocTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.FindMatchDetailDataSVProxy.DataIDs">
+            <summary>
+            单据行标识集合 (该属性可为空,且无默认值)
+            查询采购匹配明细数据服务.Misc.单据行标识集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.FindMatchDetailSumByOppBillDataSrvProxy.FromDate">
+            <summary>
+            起始日期 (该属性可为空,且无默认值)
+            根据对方单据数据标识查询匹配明细汇总.Misc.起始日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.FindMatchDetailSumByOppBillDataSrvProxy.ToDate">
+            <summary>
+            终止日期 (该属性可为空,且无默认值)
+            根据对方单据数据标识查询匹配明细汇总.Misc.终止日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.FindMatchDetailSumByOppBillDataSrvProxy.ListRcvLineID">
+            <summary>
+            Rcv行ID集合 (该属性可为空,且无默认值)
+            根据对方单据数据标识查询匹配明细汇总.Misc.Rcv行ID集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.FindMatchDetailSumByOppBillDataSrvProxy.ListPOShipLineID">
+            <summary>
+            POShip行ID集合 (该属性可为空,且无默认值)
+            根据对方单据数据标识查询匹配明细汇总.Misc.POShip行ID集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.FindMatchDetailSumByOppBillDataSrvProxy.ListReturnRcvLineID">
+            <summary>
+            退货RCV行ID集合 (该属性可为空,但有默认值)
+            根据对方单据数据标识查询匹配明细汇总.Misc.退货RCV行ID集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.APBillPromptMatchSVProxy.APBillHeadKey_SKey">
+            <summary>
+            应付单 序列化Key属性。（传递跨组织序列列字段）
+            应付单即时匹配服务.Misc.应付单
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.APBillPromptMatchSVProxy.APBillHeadKey">
+            <summary>
+            应付单 (该属性可为空,且无默认值)
+            应付单即时匹配服务.Misc.应付单
+            </summary>
+            <value>UFIDA.U9.AP.APBill.APBillHead</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.APBillPromptMatchSVProxy.InsDTOs">
+            <summary>
+            插入时来源单据本次匹配DTO (该属性可为空,且无默认值)
+            应付单即时匹配服务.Misc.插入时来源单据本次匹配DTO
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.APBillPromptMatchSVProxy.DelAPBillLineIDs">
+            <summary>
+            需删除的应付单行ID (该属性可为空,且无默认值)
+            应付单即时匹配服务.Misc.需删除的应付单行ID
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.APBillPromptMatchSVProxy.DelAPBillHeadID">
+            <summary>
+            需删除的应付单头ID (该属性可为空,但有默认值)
+            应付单即时匹配服务.Misc.需删除的应付单头ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.APBillPromptMatchSVProxy.UpdDTOs">
+            <summary>
+            修改时本来源单据本次匹配DTO (该属性可为空,且无默认值)
+            应付单即时匹配服务.Misc.修改时本来源单据本次匹配DTO
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.GetMatchStateOfLinesSVProxy.DocType">
+            <summary>
+            单据类型 (该属性可为空,但有默认值)
+            判断单据行是否有匹配记录服务.Misc.单据类型
+            </summary>
+            <value>UFIDA.U9.CBO.Enums.DocTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.GetMatchStateOfLinesSVProxy.Lines">
+            <summary>
+            单据行集合 (该属性可为空,且无默认值)
+            判断单据行是否有匹配记录服务.Misc.单据行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.HasFeeApportationSVProxy.DocType">
+            <summary>
+            单据类型 (该属性可为空,但有默认值)
+            判断单据行是否有费用分摊记录服务.Misc.单据类型
+            </summary>
+            <value>UFIDA.U9.CBO.Enums.DocTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.HasFeeApportationSVProxy.Lines">
+            <summary>
+            单据行集合 (该属性可为空,且无默认值)
+            判断单据行是否有费用分摊记录服务.Misc.单据行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.GetOQLForPurMnySVProxy.FromDate">
+            <summary>
+            起始时间 (该属性可为空,且无默认值)
+            获取采购金额OQL服务.Misc.起始时间
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APMatch.Proxy.GetOQLForPurMnySVProxy.ToDate">
+            <summary>
+            终止时间 (该属性可为空,且无默认值)
+            获取采购金额OQL服务.Misc.终止时间
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForFA.Proxy.PullAPToAssetCardSVProxy.ApLineList">
+            <summary>
+            应付单行DTO集合 (该属性可为空,且无默认值)
+            拉式生单转换为资产卡片服务.Misc.应付单行DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForFA.Proxy.PullAPToAssetCardSVProxy.PullParam">
+            <summary>
+            拉式生单参数DTO (该属性可为空,且无默认值)
+            拉式生单转换为资产卡片服务.Misc.拉式生单参数DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.FA.FAPullParam</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForFA.Proxy.APQueryForAssetCardSVProxy.ApLineList">
+            <summary>
+            应付单行DTO集合 (该属性可为空,且无默认值)
+            应付查询生成资产卡片服务.Misc.应付单行DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForFA.Proxy.APQueryForAssetCardSVProxy.PullParam">
+            <summary>
+            拉式生单DTO (该属性可为空,且无默认值)
+            应付查询生成资产卡片服务.Misc.拉式生单DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.FA.FAPullParam</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForFA.Proxy.AssertCardToAPSVProxy.AssertCardToAPDTOs">
+            <summary>
+            资产卡片回写应付DTO集合 (该属性可为空,且无默认值)
+            资产卡片回写应付单服务.Misc.资产卡片回写应付DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForFA.Proxy.QueryAPDocForUISVProxy.Conds">
+            <summary>
+            查询条件 (该属性可为空,且无默认值)
+            查找应付单数据UI服务.Misc.查询条件
+            </summary>
+            <value>UFIDA.U9.CBO.FA.CBO_FA_DTO.PullConditionDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForFA.Proxy.QueryAPDocSVProxy.DocDTOs">
+            <summary>
+            查询单据集合 (该属性可为空,且无默认值)
+            查找应付单数据服务.Misc.查询单据集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForFA.Proxy.FindAPBillForFABySrcAPBillSVProxy.APBillLines">
+            <summary>
+            应付单行集合 (该属性可为空,且无默认值)
+            来源应付单的资产卡片应付单查询服务.Misc.应付单行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForFA.Proxy.FindAPBillForFABySrcRCVSVProxy.RCVLines">
+            <summary>
+            收货单行集合 (该属性可为空,且无默认值)
+            来源收货单的资产卡片应付单查询服务.Misc.收货单行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.GetBillInfoForBudgetSV.Proxy.GetAPBillInfoForBudgetSVProxy.LineID">
+            <summary>
+            应付单行ID (该属性可为空,但有默认值)
+            获得应付单行保留信息请求服务.Misc.应付单行ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.GetBillInfoForBudgetSV.Proxy.GetPayBillInfoForBudgetSVProxy.LineID">
+            <summary>
+            单据行ID (该属性可为空,但有默认值)
+            获得付款单行保留信息请求服务.Misc.单据行ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.GetBillInfoForBudgetSV.Proxy.GetReqBillInfoForBudgetSVProxy.LineID">
+            <summary>
+            单据行ID (该属性可为空,但有默认值)
+            获得请款单行保留信息请求服务.Misc.单据行ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForContractSV.Proxy.QueryUsablePrePaySVProxy.OrgKey_SKey">
+            <summary>
+            组织key 序列化Key属性。（传递跨组织序列列字段）
+            合同可挪用预付查询服务AP.Misc.组织key
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForContractSV.Proxy.QueryUsablePrePaySVProxy.OrgKey">
+            <summary>
+            组织key (该属性可为空,且无默认值)
+            合同可挪用预付查询服务AP.Misc.组织key
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForContractSV.Proxy.QueryUsablePrePaySVProxy.ContractIDs">
+            <summary>
+            合同IDs (该属性可为空,且无默认值)
+            合同可挪用预付查询服务AP.Misc.合同IDs
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForVoucherSV.Proxy.WriteBackVoucherSVProxy.VoucherInfos">
+            <summary>
+            单据凭证信息集合 (该属性可为空,且无默认值)
+            回写凭证线索服务AP.Misc.单据凭证信息集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForVoucherSV.Proxy.WriteBackVoucherInfoAPForOtherAppProxy.MainBillVoucherList">
+            <summary>
+            主单凭证集合 (该属性可为空,且无默认值)
+            回写应付凭证线索（for其它财务应用）.Misc.主单凭证集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.DeleteAPBillSVProxy.APBillHeadIDs">
+            <summary>
+            应付单IDs (该属性可为空,且无默认值)
+            删除应付单请求.Misc.应付单IDs
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.DeleteAPBillBySrcSVProxy.SrcDocType">
+            <summary>
+            来源单据类型 (该属性可为空,但有默认值)
+            按来源删除应付单请求.Misc.来源单据类型
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.APBillSourceEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.DeleteAPBillBySrcSVProxy.SrcBillID">
+            <summary>
+            来源单据ID (该属性可为空,但有默认值)
+            按来源删除应付单请求.Misc.来源单据ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.AccrueSrcLinkageDeleteAPBillSVProxy.DataTags">
+            <summary>
+            立账数据标识集合 (该属性可为空,且无默认值)
+            立账源单联动删除应付单请求.Misc.立账数据标识集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.GetLastestPriceOfInvoiceSVProxy.PriceDTOs">
+            <summary>
+            发票采购最新价DTO (该属性可为空,且无默认值)
+            取发票最新采购价服务.Misc.发票采购最新价DTO
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.GetLastestPriceForINVSVProxy.CondsDTO">
+            <summary>
+            查询参数dto (该属性可为空,且无默认值)
+            取发票最新采购价服务INV.Misc.查询参数dto
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.CO.ItemPriceParamDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.DeleteAPBillLineBySrcSVProxy.SrcDocType">
+            <summary>
+            来源单据类型 (该属性可为空,但有默认值)
+            按来源删除应付单行请求.Misc.来源单据类型
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.APBillSrcDocTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.DeleteAPBillLineBySrcSVProxy.SrcDataIDs">
+            <summary>
+            来源数据标识集合 (该属性可为空,但有默认值)
+            按来源删除应付单行请求.Misc.来源数据标识集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.GetAPBillInfoForComingApplyDataSVProxy.EntityID">
+            <summary>
+            实体ID (该属性可为空,但有默认值)
+            获取应付单信息For应收核销.Misc.实体ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.GetAPBillInfoForComingApplyDataSVProxy.CurrencyApplyMoney">
+            <summary>
+            可核销金额 (该属性可为空,但有默认值)
+            获取应付单信息For应收核销.Misc.可核销金额
+            </summary>
+            <value>System.Decimal</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.GetAPBillInfoForComingApplyDataSVProxy.CanEnjoyedDiscount">
+            <summary>
+            可享受折扣 (该属性可为空,但有默认值)
+            获取应付单信息For应收核销.Misc.可享受折扣
+            </summary>
+            <value>System.Decimal</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.GetAPBillInfoForComingApplyDataSVProxy.VerificationDetail">
+            <summary>
+            供应商核销明细程度 (该属性可为空,但有默认值)
+            获取应付单信息For应收核销.Misc.供应商核销明细程度
+            </summary>
+            <value>UFIDA.U9.CBO.Enums.SupplierVerificationModesEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.GetIsPeriodBeginInfoSVProxy.APBillHeadIDs">
+            <summary>
+            应付单IDs (该属性可为空,但有默认值)
+            取应付单是否期初服务.Misc.应付单IDs
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APDiscountSV.Proxy.CalcDiscountForIncludeSVProxy.ID">
+            <summary>
+            单据或数据ID (该属性可为空,但有默认值)
+            计算应付折扣服务.Misc.单据或数据ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APDiscountSV.Proxy.CalcDiscountForIncludeSVProxy.APBillID">
+            <summary>
+            应付单ID (该属性可为空,但有默认值)
+            计算应付折扣服务.Misc.应付单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APDiscountSV.Proxy.CalcDiscountForIncludeSVProxy.ApplyDate">
+            <summary>
+            核销日期 (该属性可为空,且无默认值)
+            计算应付折扣服务.Misc.核销日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APDiscountSV.Proxy.CalcDiscountForIncludeSVProxy.ThisApplyMoney">
+            <summary>
+            本次核销金额 (该属性可为空,但有默认值)
+            计算应付折扣服务.Misc.本次核销金额
+            </summary>
+            <value>System.Decimal</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APDiscountSV.Proxy.CalcDiscountForIncludeSVProxy.IsContainDiscount">
+            <summary>
+            本次核销金额是否包含折扣 (该属性可为空,但有默认值)
+            计算应付折扣服务.Misc.本次核销金额是否包含折扣
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APDiscountSV.Proxy.CalcDiscountForIncludeSVProxy.ProcessingMoneyDTOs">
+            <summary>
+            行正在处理金额集合 (该属性可为空,且无默认值)
+            计算应付折扣服务.Misc.行正在处理金额集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APBillApproveSVProxy.APBillHeadKey_SKey">
+            <summary>
+            应付单头 序列化Key属性。（传递跨组织序列列字段）
+            应付单核准服务.Misc.应付单头
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APBillApproveSVProxy.APBillHeadKey">
+            <summary>
+            应付单头 (该属性可为空,且无默认值)
+            应付单核准服务.Misc.应付单头
+            </summary>
+            <value>UFIDA.U9.AP.APBill.APBillHead</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APBillPromptApplySVProxy.InsAPBillHeadKeys_SKey">
+            <summary>
+            需要产生即时核销的应付单集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APBillPromptApplySVProxy.InsAPBillHeadKeys">
+            <summary>
+            需要产生即时核销的应付单集合 (该属性可为空,且无默认值)
+            应付单即时核销服务.Misc.需要产生即时核销的应付单集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APBillPromptApplySVProxy.DelAPBillHeadKeys_SKey">
+            <summary>
+            需要删除即时核销单的应付单集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APBillPromptApplySVProxy.DelAPBillHeadKeys">
+            <summary>
+            需要删除即时核销单的应付单集合 (该属性可为空,且无默认值)
+            应付单即时核销服务.Misc.需要删除即时核销单的应付单集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APBillPromptApplySVProxy.DelAPApplyHeadKeys_SKey">
+            <summary>
+            需要删除的核销单集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APBillPromptApplySVProxy.DelAPApplyHeadKeys">
+            <summary>
+            需要删除的核销单集合 (该属性可为空,且无默认值)
+            应付单即时核销服务.Misc.需要删除的核销单集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APBillPromptApplySVProxy.DeletedAPBillLines">
+            <summary>
+            已删掉的应付单行 (该属性可为空,且无默认值)
+            应付单即时核销服务.Misc.已删掉的应付单行
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APBillPromptApplySVProxy.DeletedAPInsts">
+            <summary>
+            已删掉的应收单分期行 (该属性可为空,且无默认值)
+            应付单即时核销服务.Misc.已删掉的应收单分期行
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APBillSureAccrueSVProxy.APBillHeadKey_SKey">
+            <summary>
+            应付单头 序列化Key属性。（传递跨组织序列列字段）
+            应付单确认立账服务.Misc.应付单头
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APBillSureAccrueSVProxy.APBillHeadKey">
+            <summary>
+            应付单头 (该属性可为空,且无默认值)
+            应付单确认立账服务.Misc.应付单头
+            </summary>
+            <value>UFIDA.U9.AP.APBill.APBillHead</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APBillLockUnLockSVProxy.LockUnLockDTOs">
+            <summary>
+            锁定解锁DTOs (该属性可为空,且无默认值)
+            应付单锁定解锁服务.Misc.锁定解锁DTOs
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APBillSubtractBalanceSVProxy.APInstalSubBalanceDTOs">
+            <summary>
+            分期行冲减余额DTO (该属性可为空,且无默认值)
+            应付单冲减余额服务.Misc.分期行冲减余额DTO
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.APBillSubtractBalanceSVProxy.LineAdjustDiscountDTOs">
+            <summary>
+            行调整折扣DTO (该属性可为空,且无默认值)
+            应付单冲减余额服务.Misc.行调整折扣DTO
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.ReWriteMatchSVProxy.MatchMode">
+            <summary>
+            匹配处理方式 (该属性可为空,但有默认值)
+            回写匹配服务.Misc.匹配处理方式
+            </summary>
+            <value>UFIDA.U9.CBO.Enums.MatchWayEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.ReWriteMatchSVProxy.APBillMatchDatas">
+            <summary>
+            应付单本次匹配数据 (该属性可为空,且无默认值)
+            回写匹配服务.Misc.应付单本次匹配数据
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.ReWriteMatchSVProxy.APFeeDetailDatas">
+            <summary>
+            应付单费明细本次匹配数据 (该属性可为空,且无默认值)
+            回写匹配服务.Misc.应付单费明细本次匹配数据
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.ReWriteMatchSVProxy.APTaxDetailDatas">
+            <summary>
+            应付单税明细本次匹配数据 (该属性可为空,且无默认值)
+            回写匹配服务.Misc.应付单税明细本次匹配数据
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.NotifyAPBillContrlProcessSVProxy.APBillHeads_SKey">
+            <summary>
+            应付单标识集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.NotifyAPBillContrlProcessSVProxy.APBillHeads">
+            <summary>
+            应付单标识集合 (该属性可为空,且无默认值)
+            通知应付单控制后续处理服务.Misc.应付单标识集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.NotifyAPBillContrlProcessSVProxy.IsCtlAfterProcess">
+            <summary>
+            是否控制后续处理 (该属性可为空,但有默认值)
+            通知应付单控制后续处理服务.Misc.是否控制后续处理
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.NotifyAPBillContrlProcessSVProxy.IsReached">
+            <summary>
+            是否到账 (该属性可为空,但有默认值)
+            通知应付单控制后续处理服务.Misc.是否到账
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APHoldSV.Proxy.DeleteAPHoldRecordByAPBillSVProxy.APBillHeadKey_SKey">
+            <summary>
+            应付单Key 序列化Key属性。（传递跨组织序列列字段）
+            按单删除核准前应付挂起记录服务.Misc.应付单Key
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APHoldSV.Proxy.DeleteAPHoldRecordByAPBillSVProxy.APBillHeadKey">
+            <summary>
+            应付单Key (该属性可为空,且无默认值)
+            按单删除核准前应付挂起记录服务.Misc.应付单Key
+            </summary>
+            <value>UFIDA.U9.AP.APBill.APBillHead</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APPromptApplySVProxy.ACExRateDTO">
+            <summary>
+            核销币种DTO (该属性可为空,且无默认值)
+            应付即时核销服务.Misc.核销币种DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.CurExRateDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APPromptApplySVProxy.Supp">
+            <summary>
+            供应商 (该属性可为空,且无默认值)
+            应付即时核销服务.Misc.供应商
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Supplier.SupplierMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APPromptApplySVProxy.SuppSite">
+            <summary>
+            供应商位置 (该属性可为空,且无默认值)
+            应付即时核销服务.Misc.供应商位置
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Supplier.SupplierSiteMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APPromptApplySVProxy.PromptApplyDocType">
+            <summary>
+            即时核销单据类型 (该属性可为空,但有默认值)
+            应付即时核销服务.Misc.即时核销单据类型
+            </summary>
+            <value>UFIDA.U9.AP.Enums.PromptApplySrcDocTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APPromptApplySVProxy.PromptApplyDocTag">
+            <summary>
+            即时核销单据标识 (该属性可为空,但有默认值)
+            应付即时核销服务.Misc.即时核销单据标识
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APPromptApplySVProxy.ApplyDate">
+            <summary>
+            核销日期 (该属性可为空,且无默认值)
+            应付即时核销服务.Misc.核销日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APPromptApplySVProxy.ApplyPeriodKey_SKey">
+            <summary>
+            核销期间 序列化Key属性。（传递跨组织序列列字段）
+            应付即时核销服务.Misc.核销期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APPromptApplySVProxy.ApplyPeriodKey">
+            <summary>
+            核销期间 (该属性可为空,且无默认值)
+            应付即时核销服务.Misc.核销期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APPromptApplySVProxy.BizOrgKey_SKey">
+            <summary>
+            业务组织 序列化Key属性。（传递跨组织序列列字段）
+            应付即时核销服务.Misc.业务组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APPromptApplySVProxy.BizOrgKey">
+            <summary>
+            业务组织 (该属性可为空,且无默认值)
+            应付即时核销服务.Misc.业务组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APPromptApplySVProxy.SettleOrgKey_SKey">
+            <summary>
+            结算组织 序列化Key属性。（传递跨组织序列列字段）
+            应付即时核销服务.Misc.结算组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APPromptApplySVProxy.SettleOrgKey">
+            <summary>
+            结算组织 (该属性可为空,且无默认值)
+            应付即时核销服务.Misc.结算组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.RecBillToSRApplySVProxy.ChangeDTOs">
+            <summary>
+            收款单转暂收DTO集合 (该属性可为空,且无默认值)
+            核销时收款单转暂收服务.Misc.收款单转暂收DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.RecBillToSRForPCSVProxy.ChangeDTOs">
+            <summary>
+            收款单转暂收DTO集合 (该属性可为空,且无默认值)
+            月结时收款单转暂收服务.Misc.收款单转暂收DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.FetchContent">
+            <summary>
+            取数内容 (该属性可为空,但有默认值)
+            应付核销准备服务.Misc.取数内容
+            </summary>
+            <value>UFIDA.U9.AP.Enums.FetchContentEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.Sup">
+            <summary>
+            供应商 (该属性可为空,且无默认值)
+            应付核销准备服务.Misc.供应商
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Supplier.SupplierMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.SupSite">
+            <summary>
+            供应商Site (该属性可为空,且无默认值)
+            应付核销准备服务.Misc.供应商Site
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Supplier.SupplierSiteMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.ApplyModes">
+            <summary>
+            核销明细程度 (该属性可为空,但有默认值)
+            应付核销准备服务.Misc.核销明细程度
+            </summary>
+            <value>UFIDA.U9.CBO.Enums.SupplierVerificationModesEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.MatchObjCondition">
+            <summary>
+            匹配对象条件 (该属性可为空,且无默认值)
+            应付核销准备服务.Misc.匹配对象条件
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.MatchObjConditionDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.IsCalcDiscount">
+            <summary>
+            是否计算折扣 (该属性可为空,但有默认值)
+            应付核销准备服务.Misc.是否计算折扣
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.ApplyDate">
+            <summary>
+            核销操作日期 (该属性可为空,且无默认值)
+            应付核销准备服务.Misc.核销操作日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.ApplyBizDate">
+            <summary>
+            核销业务日期 (该属性可为空,且无默认值)
+            应付核销准备服务.Misc.核销业务日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.APOQL">
+            <summary>
+            应付单其它OQL条件 (该属性可为空,且无默认值)
+            应付核销准备服务.Misc.应付单其它OQL条件
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.RecOQL">
+            <summary>
+            收款单其它OQL条件 (该属性可为空,且无默认值)
+            应付核销准备服务.Misc.收款单其它OQL条件
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.PayOQL">
+            <summary>
+            付款单其它OQL条件 (该属性可为空,且无默认值)
+            应付核销准备服务.Misc.付款单其它OQL条件
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.DRCur_SKey">
+            <summary>
+            借方币种 序列化Key属性。（传递跨组织序列列字段）
+            应付核销准备服务.Misc.借方币种
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.DRCur">
+            <summary>
+            借方币种 (该属性可为空,且无默认值)
+            应付核销准备服务.Misc.借方币种
+            </summary>
+            <value>UFIDA.U9.Base.Currency.Currency</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.CRCur_SKey">
+            <summary>
+            贷方币种 序列化Key属性。（传递跨组织序列列字段）
+            应付核销准备服务.Misc.贷方币种
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.CRCur">
+            <summary>
+            贷方币种 (该属性可为空,且无默认值)
+            应付核销准备服务.Misc.贷方币种
+            </summary>
+            <value>UFIDA.U9.Base.Currency.Currency</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.IsForUI">
+            <summary>
+            UI调用 (该属性可为空,但有默认值)
+            应付核销准备服务.Misc.UI调用
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.DrColSet">
+            <summary>
+            借方栏目设置 (该属性可为空,且无默认值)
+            应付核销准备服务.Misc.借方栏目设置
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyReadySVProxy.CrColSet">
+            <summary>
+            贷方栏目设置 (该属性可为空,且无默认值)
+            应付核销准备服务.Misc.贷方栏目设置
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyProcessSVProxy.IsDiffCurApply">
+            <summary>
+            异币种核销 (该属性可为空,但有默认值)
+            应付核销处理服务.Misc.异币种核销
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyProcessSVProxy.CurExRateDTO">
+            <summary>
+            核销币种DTO (该属性可为空,且无默认值)
+            应付核销处理服务.Misc.核销币种DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.CurExRateDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyProcessSVProxy.DiffCurApplyDTO">
+            <summary>
+            异币种核销数据 (该属性可为空,且无默认值)
+            应付核销处理服务.Misc.异币种核销数据
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.DiffCurApplyDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyProcessSVProxy.ApplyModes">
+            <summary>
+            核销明细程度 (该属性可为空,但有默认值)
+            应付核销处理服务.Misc.核销明细程度
+            </summary>
+            <value>UFIDA.U9.CBO.Enums.SupplierVerificationModesEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyProcessSVProxy.ApplyOrder">
+            <summary>
+            核销顺序 (该属性可为空,但有默认值)
+            应付核销处理服务.Misc.核销顺序
+            </summary>
+            <value>UFIDA.U9.CBO.Enums.InvoiceVerificationOrdersEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyProcessSVProxy.ApplyReadyDTO">
+            <summary>
+            核销准备数据 (该属性可为空,且无默认值)
+            应付核销处理服务.Misc.核销准备数据
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.ApplyReadyDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyProcessSVProxy.Supplier">
+            <summary>
+            供应商 (该属性可为空,且无默认值)
+            应付核销处理服务.Misc.供应商
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Supplier.SupplierMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyProcessSVProxy.Suppliersite">
+            <summary>
+            供应商位置 (该属性可为空,且无默认值)
+            应付核销处理服务.Misc.供应商位置
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Supplier.SupplierSiteMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyProcessSVProxy.RecBillHead">
+            <summary>
+            收款单ID (该属性可为空,但有默认值)
+            应付核销处理服务.Misc.收款单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.IsDecrease">
+            <summary>
+            冲减余额 (该属性可为空,但有默认值)
+            应付核销保存服务.Misc.冲减余额
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.ApplyDate">
+            <summary>
+            核销操作日期 (该属性可为空,且无默认值)
+            应付核销保存服务.Misc.核销操作日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.ApplyPeriod_SKey">
+            <summary>
+            核销期间 序列化Key属性。（传递跨组织序列列字段）
+            应付核销保存服务.Misc.核销期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.ApplyPeriod">
+            <summary>
+            核销期间 (该属性可为空,且无默认值)
+            应付核销保存服务.Misc.核销期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.ApplyBizDate">
+            <summary>
+            核销业务日期 (该属性可为空,且无默认值)
+            应付核销保存服务.Misc.核销业务日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.Sup">
+            <summary>
+            供应商 (该属性可为空,且无默认值)
+            应付核销保存服务.Misc.供应商
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Supplier.SupplierMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.ApplySrc">
+            <summary>
+            来源 (该属性可为空,但有默认值)
+            应付核销保存服务.Misc.来源
+            </summary>
+            <value>UFIDA.U9.AP.Enums.ApplySourceEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.ApplyModes">
+            <summary>
+            核销明细程度 (该属性可为空,但有默认值)
+            应付核销保存服务.Misc.核销明细程度
+            </summary>
+            <value>UFIDA.U9.CBO.Enums.SupplierVerificationModesEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.ApplyOrder">
+            <summary>
+            核销顺序 (该属性可为空,但有默认值)
+            应付核销保存服务.Misc.核销顺序
+            </summary>
+            <value>UFIDA.U9.CBO.Enums.InvoiceVerificationOrdersEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.IsDiffCurApply">
+            <summary>
+            异币种核销 (该属性可为空,但有默认值)
+            应付核销保存服务.Misc.异币种核销
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.ACMCExRateDTO">
+            <summary>
+            核销币种汇率数据 (该属性可为空,且无默认值)
+            应付核销保存服务.Misc.核销币种汇率数据
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.CurExRateDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.DiffCurApplyDTO">
+            <summary>
+            异币种核销DTO (该属性可为空,且无默认值)
+            应付核销保存服务.Misc.异币种核销DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.DiffCurApplyDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.ApplyRltDTO">
+            <summary>
+            核销结果数据 (该属性可为空,且无默认值)
+            应付核销保存服务.Misc.核销结果数据
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.SupSite">
+            <summary>
+            供应商Site (该属性可为空,且无默认值)
+            应付核销保存服务.Misc.供应商Site
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Supplier.SupplierSiteMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.PromptApplyDocType">
+            <summary>
+            即时核销单据类型 (该属性可为空,但有默认值)
+            应付核销保存服务.Misc.即时核销单据类型
+            </summary>
+            <value>UFIDA.U9.AP.Enums.PromptApplySrcDocTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.PromptApplyDocTag">
+            <summary>
+            即时核销单据标识 (该属性可为空,但有默认值)
+            应付核销保存服务.Misc.即时核销单据标识
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.DocTypeDTO">
+            <summary>
+            单据类型DTO (该属性可为空,且无默认值)
+            应付核销保存服务.Misc.单据类型DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.ARAPDocTypeForRefResultDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplySaveSVProxy.DocNO">
+            <summary>
+            单据号 (该属性可为空,且无默认值)
+            应付核销保存服务.Misc.单据号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.GetApplyInfoByRecBillSVProxy.RecBillHeadID">
+            <summary>
+            收款单ID (该属性可为空,但有默认值)
+            根据收款单获取核销单信息.Misc.收款单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.GetApplyInfoByRecBillSVProxy.SupplierID">
+            <summary>
+            供应商ID (该属性可为空,但有默认值)
+            根据收款单获取核销单信息.Misc.供应商ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.GetApplyInfoByRecBillSVProxy.SuppLierSiteID">
+            <summary>
+            供应商位置ID (该属性可为空,但有默认值)
+            根据收款单获取核销单信息.Misc.供应商位置ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APCancelApplySVProxy.APApplyHeadID">
+            <summary>
+            核销单头ID (该属性可为空,但有默认值)
+            应付取消核销服务.Misc.核销单头ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APCancelApplySVProxy.IsDelOrCancel">
+            <summary>
+            删除或作废 (该属性可为空,但有默认值)
+            应付取消核销服务.Misc.删除或作废
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyUnlockSVProxy.BillHeadID">
+            <summary>
+            单据ID (该属性可为空,但有默认值)
+            应付核销的加锁解锁服务.Misc.单据ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyUnlockSVProxy.BLock">
+            <summary>
+            是否加锁 (该属性可为空,但有默认值)
+            应付核销的加锁解锁服务.Misc.是否加锁
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyUnlockSVProxy.SrcDocType">
+            <summary>
+            核销类型 (该属性可为空,但有默认值)
+            应付核销的加锁解锁服务.Misc.核销类型
+            </summary>
+            <value>UFIDA.U9.AP.Enums.PromptApplySrcDocTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyUnlockSVProxy.Source">
+            <summary>
+            来源 (该属性可为空,但有默认值)
+            应付核销的加锁解锁服务.Misc.来源
+            </summary>
+            <value>UFIDA.U9.AP.Enums.ApplySourceEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APCancelApplyByBillIDSVProxy.BillHeadID">
+            <summary>
+            单据ID (该属性可为空,但有默认值)
+            根据单据ID取消应付即时核销服务.Misc.单据ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APCancelApplyByBillIDSVProxy.IsDeleteOrCancel">
+            <summary>
+            是否取消 (该属性可为空,但有默认值)
+            根据单据ID取消应付即时核销服务.Misc.是否取消
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APCancelApplyByBillIDSVProxy.CancelReason">
+            <summary>
+            作废原因 (该属性可为空,且无默认值)
+            根据单据ID取消应付即时核销服务.Misc.作废原因
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APCancelApplyByBillIDSVProxy.DocType">
+            <summary>
+            核销类型 (该属性可为空,但有默认值)
+            根据单据ID取消应付即时核销服务.Misc.核销类型
+            </summary>
+            <value>UFIDA.U9.AP.Enums.PromptApplySrcDocTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APCancelApplyByBillIDSVProxy.ApplySource">
+            <summary>
+            来源 (该属性可为空,但有默认值)
+            根据单据ID取消应付即时核销服务.Misc.来源
+            </summary>
+            <value>UFIDA.U9.AP.Enums.ApplySourceEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyIsDiffSVProxy.ApplyID">
+            <summary>
+            核销单ID (该属性可为空,但有默认值)
+            判断应付核销单是否异币种服务.Misc.核销单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APApplyIsDiffSVProxy.OrgID">
+            <summary>
+            组织ID (该属性可为空,但有默认值)
+            判断应付核销单是否异币种服务.Misc.组织ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APGetCRDetailDataSVProxy.ApplyMode">
+            <summary>
+            核销方式 (该属性可为空,但有默认值)
+            应付取贷方即时核销金额服务.Misc.核销方式
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.ApplyModeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APGetCRDetailDataSVProxy.SupplierKey">
+            <summary>
+            供应商ID (该属性可为空,但有默认值)
+            应付取贷方即时核销金额服务.Misc.供应商ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APGetCRDetailDataSVProxy.SupplierSiteKey">
+            <summary>
+            供应商位置ID (该属性可为空,但有默认值)
+            应付取贷方即时核销金额服务.Misc.供应商位置ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APGetCRDetailDataSVProxy.DirectHandleBillDocStatus">
+            <summary>
+            直接处理单据状态 (该属性可为空,但有默认值)
+            应付取贷方即时核销金额服务.Misc.直接处理单据状态
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.DirectHandleBillDocStatusEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APGetCRDetailDataSVProxy.ApplySource">
+            <summary>
+            核销来源 (该属性可为空,但有默认值)
+            应付取贷方即时核销金额服务.Misc.核销来源
+            </summary>
+            <value>UFIDA.U9.AP.Enums.ApplySourceEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APGetCRDetailDataSVProxy.RecBillHead">
+            <summary>
+            单据ID (该属性可为空,但有默认值)
+            应付取贷方即时核销金额服务.Misc.单据ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APGetCRDetailDataSVProxy.ReBillID">
+            <summary>
+            返回ID (该属性可为空,且无默认值)
+            应付取贷方即时核销金额服务.Misc.返回ID
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.APGetCRDetailDataSVProxy.ReFAMoney">
+            <summary>
+            返回金额 (该属性可为空,且无默认值)
+            应付取贷方即时核销金额服务.Misc.返回金额
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.GetApplyBillKeysSVProxy.SrcBillTag">
+            <summary>
+            来源标识 (该属性可为空,但有默认值)
+            查询即时核销单请求服务AP.Misc.来源标识
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.GetApplyBillKeysSVProxy.SrcDocType">
+            <summary>
+            核销类型 (该属性可为空,但有默认值)
+            查询即时核销单请求服务AP.Misc.核销类型
+            </summary>
+            <value>UFIDA.U9.AP.Enums.PromptApplySrcDocTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.GetApplyBillKeysSVProxy.Source">
+            <summary>
+            来源 (该属性可为空,但有默认值)
+            查询即时核销单请求服务AP.Misc.来源
+            </summary>
+            <value>UFIDA.U9.AP.Enums.ApplySourceEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.ProcessPayDataSVProxy.Cust">
+            <summary>
+            客户 (该属性可为空,且无默认值)
+            取客户付款单数据服务.Misc.客户
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.CustomerMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.ProcessPayDataSVProxy.CustSite">
+            <summary>
+            客户位置 (该属性可为空,且无默认值)
+            取客户付款单数据服务.Misc.客户位置
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Customer.CustomerSiteMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.ProcessPayDataSVProxy.PaySql">
+            <summary>
+            付款单条件 (该属性可为空,且无默认值)
+            取客户付款单数据服务.Misc.付款单条件
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.ProcessPayDataSVProxy.Currency">
+            <summary>
+            币种 (该属性可为空,且无默认值)
+            取客户付款单数据服务.Misc.币种
+            </summary>
+            <value>UFIDA.U9.Base.Currency.Currency</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.ProcessPayDataSVProxy.MatchObj">
+            <summary>
+            匹配条件DTO (该属性可为空,且无默认值)
+            取客户付款单数据服务.Misc.匹配条件DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.MatchObjConditionDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.ProcessPayDataSVProxy.IsForUI">
+            <summary>
+            是否UI (该属性可为空,但有默认值)
+            取客户付款单数据服务.Misc.是否UI
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.GetPayDTOByIDSVProxy.ID">
+            <summary>
+            付款单ID (该属性可为空,但有默认值)
+            根据ID得到付款单DTO服务.Misc.付款单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.PayBillApplyAtOnceSVProxy.PayBillID">
+            <summary>
+            付款单ID (该属性可为空,但有默认值)
+            应付单付款核销服务.Misc.付款单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APApply.Proxy.PayBillApplyAtOnceSVProxy.APBillID">
+            <summary>
+            应付单ID (该属性可为空,但有默认值)
+            应付单付款核销服务.Misc.应付单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PayReqFundSV.Proxy.IsPMBillPrePaySVProxy.SrcBillList">
+            <summary>
+            单据标识集合 (该属性可为空,但有默认值)
+            采购单据是否已请预付Srv.Misc.单据标识集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PayReqFundSV.Proxy.IsPMBillPrePaySVProxy.SrcBillLineList">
+            <summary>
+            单据行标识集合 (该属性可为空,且无默认值)
+            采购单据是否已请预付Srv.Misc.单据行标识集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PayReqFundSV.Proxy.GetDataFromAPRFSVProxy.ParamDto">
+            <summary>
+            预测来源参数DTO (该属性可为空,且无默认值)
+            取应付请款单预测数据服务.Misc.预测来源参数DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.CFPDTO.CFPParamDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PayReqFundSV.Proxy.ConsignPayConfirmSVProxy.ConsignPayConfirmDTOs">
+            <summary>
+            委托付款确认付款DTO集合 (该属性可为空,且无默认值)
+            委托付款确认付款服务.Misc.委托付款确认付款DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PayReqFundSV.Proxy.ConsignPayCancelConfirmSVProxy.PayReqFundUse">
+            <summary>
+            请款单用途行ID集合 (该属性可为空,且无默认值)
+            委托付款取消确认付款服务.Misc.请款单用途行ID集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PayReqFundSV.Proxy.ConsignPayRefuseSVProxy.ConsignPayRefuseDTOs">
+            <summary>
+            委托付款拒付DTO集合 (该属性可为空,且无默认值)
+            委托付款拒付服务.Misc.委托付款拒付DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PayReqFundSV.Proxy.PayReqFundReverseSVProxy.ReverseDTO">
+            <summary>
+            转回信息DTO (该属性可为空,且无默认值)
+            付款请款转回请求.Misc.转回信息DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.ReverseDTOs.ReverseInfoDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PayReqFundSV.Proxy.PayReqFundReachSVProxy.PayReqFundReachDTOList">
+            <summary>
+            付款请款到账信息DTO (该属性可为空,且无默认值)
+            付款请款到账请求.Misc.付款请款到账信息DTO
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PayReqFundSV.Proxy.NewConsignPayConfirmSVProxy.PayConfirmHeaddto">
+            <summary>
+            付款确认表头DTO (该属性可为空,且无默认值)
+            委托付款确认付款V2.1服务.Misc.付款确认表头DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.PayReqFundDTO.PayConfirmHeadDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PayReqFundSV.Proxy.NewConsignPayCancelConfirmSVProxy.CommissionPayHead">
+            <summary>
+            委托付款单头ID (该属性可为空,但有默认值)
+            委托付款取消确认付款V2.1服务.Misc.委托付款单头ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PayReqFundSV.Proxy.NewConsignPayCancelConfirmSVProxy.ConfirmPayHeads">
+            <summary>
+            确认付款单ID集合 (该属性可为空,且无默认值)
+            委托付款取消确认付款V2.1服务.Misc.确认付款单ID集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PayReqFundSV.Proxy.NewPayReqFundReachSVProxy.PayReqFundReachDTOs">
+            <summary>
+            付款请款到账信息DTO (该属性可为空,且无默认值)
+            付款请款到账请求V2.1.Misc.付款请款到账信息DTO
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PayReqFundSV.Proxy.NewConsignPayRefuseSVProxy.ConsignPayRefuseDTOs">
+            <summary>
+            委托付款拒付DTO集合 (该属性可为空,且无默认值)
+            委托付款拒付服务V2.1.Misc.委托付款拒付DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForNMSV.Proxy.APDocTypeQuerySVProxy.QryDTO">
+            <summary>
+            查询DTO (该属性可为空,且无默认值)
+            应付单据类型查询服务.Misc.查询DTO
+            </summary>
+            <value>UFIDA.U9.AP.ForNMSV.APDocTypeForNMDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForNMSV.Proxy.PayDocTypeQuerySVProxy.QryDTO">
+            <summary>
+            查询DTO (该属性可为空,且无默认值)
+            付款单单据类型查询服务.Misc.查询DTO
+            </summary>
+            <value>UFIDA.U9.AP.ForNMSV.APDocTypeForNMDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForNMSV.Proxy.PayDocQuerySVProxy.QryParam">
+            <summary>
+            查询参数 (该属性可为空,且无默认值)
+            付款单查询服务.Misc.查询参数
+            </summary>
+            <value>UFIDA.U9.AP.ForNMSV.QryPayDocParamDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForNMSV.Proxy.CreatePayBillForNMSVProxy.PayBillHead">
+            <summary>
+            付款单头 (该属性可为空,且无默认值)
+            票据产生付款单服务.Misc.付款单头
+            </summary>
+            <value>UFIDA.U9.AP.Payment.PayBillHead</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.SuppRecBillReverseSVProxy.RecBillUseDataDTOs">
+            <summary>
+            收款单用途数据DTO集合 (该属性可为空,且无默认值)
+            供应商收款单行转回服务AP.Misc.收款单用途数据DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.SuppRecBillReverseSVProxy.RevereseReason">
+            <summary>
+            转回原因 (该属性可为空,但有默认值)
+            供应商收款单行转回服务AP.Misc.转回原因
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.ReverseTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.SuppRecBillReverseSVProxy.ReverseDate">
+            <summary>
+            转回时间 (该属性可为空,且无默认值)
+            供应商收款单行转回服务AP.Misc.转回时间
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.SuppRecBillReverseSVProxy.Reverser">
+            <summary>
+            转回处理人 (该属性可为空,且无默认值)
+            供应商收款单行转回服务AP.Misc.转回处理人
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.PayBillReverseSVProxy.ReverseDTO">
+            <summary>
+            转回DTO (该属性可为空,且无默认值)
+            付款单转回服务.Misc.转回DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.ReverseDTOs.ReverseDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.ReFundRevesePayForPayBillSVProxy.ReverseInfoDTO">
+            <summary>
+            转回信息DTO (该属性可为空,且无默认值)
+            付款单退款转回付款服务.Misc.转回信息DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.ReverseDTOs.ReverseInfoDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.ReturnRevesePayForPayBillSVProxy.ReverseInfoDTO">
+            <summary>
+            转回信息DTO (该属性可为空,且无默认值)
+            付款单退票转回付款服务.Misc.转回信息DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.ReverseDTOs.ReverseInfoDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.ReFundReverseForSuppRecBillSVProxy.RecBillID">
+            <summary>
+            收款单ID (该属性可为空,但有默认值)
+            收款单退款转回供应商收款服务.Misc.收款单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.ReFundReverseForSuppRecBillSVProxy.PayBillID">
+            <summary>
+            付款单ID (该属性可为空,但有默认值)
+            收款单退款转回供应商收款服务.Misc.付款单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.ReFundReverseForSuppRecBillSVProxy.ReverseInfoDTO">
+            <summary>
+            转回信息DTO (该属性可为空,且无默认值)
+            收款单退款转回供应商收款服务.Misc.转回信息DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.ReverseDTOs.ReverseInfoDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.ReturnReverseForSuppRecBillSVProxy.RecBillID">
+            <summary>
+            收款单ID (该属性可为空,但有默认值)
+            收款单退票转回供应商收款服务.Misc.收款单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.ReturnReverseForSuppRecBillSVProxy.APBillHeads">
+            <summary>
+            应付单 (该属性可为空,且无默认值)
+            收款单退票转回供应商收款服务.Misc.应付单
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.ReturnReverseForSuppRecBillSVProxy.ReverseInfoDTO">
+            <summary>
+            转回信息DTO (该属性可为空,且无默认值)
+            收款单退票转回供应商收款服务.Misc.转回信息DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.ReverseDTOs.ReverseInfoDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.ARAfterReverseReturnSVProxy.PayBillHeadID">
+            <summary>
+            付款单ID (该属性可为空,但有默认值)
+            应收收款单退票转回回写服务.Misc.付款单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.ARAfterReverseReturnSVProxy.ReverseInfoDTO">
+            <summary>
+            转回信息DTO (该属性可为空,且无默认值)
+            应收收款单退票转回回写服务.Misc.转回信息DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.ReverseDTOs.ReverseInfoDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.ARAfterReverseReturnSVProxy.ReverseDTO">
+            <summary>
+            转回DTO (该属性可为空,且无默认值)
+            应收收款单退票转回回写服务.Misc.转回DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.ReverseDTOs.ReverseDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.SupplierRecBillReverseSVProxy.APBillIDs">
+            <summary>
+            应付单标识集合 (该属性可为空,且无默认值)
+            供应商收款单行转回服务.Misc.应付单标识集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.SupplierRecBillReverseSVProxy.UseLineDTOList">
+            <summary>
+            收款单用途数据DTO集合 (该属性可为空,且无默认值)
+            供应商收款单行转回服务.Misc.收款单用途数据DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.SupplierRecBillReverseSVProxy.ReverseReason">
+            <summary>
+            转回原因 (该属性可为空,且无默认值)
+            供应商收款单行转回服务.Misc.转回原因
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.SupplierRecBillReverseSVProxy.ReverseDate">
+            <summary>
+            转回时间 (该属性可为空,且无默认值)
+            供应商收款单行转回服务.Misc.转回时间
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.SupplierRecBillReverseSVProxy.ReverseUser">
+            <summary>
+            转回处理人 (该属性可为空,且无默认值)
+            供应商收款单行转回服务.Misc.转回处理人
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.PayAfterReverseSVProxy.PayBillHeadID">
+            <summary>
+            付款单ID (该属性可为空,但有默认值)
+            付款单无痕迹转回回写服务.Misc.付款单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.PayAfterReverseSVProxy.ReverseDTO">
+            <summary>
+            转回信息DTO (该属性可为空,且无默认值)
+            付款单无痕迹转回回写服务.Misc.转回信息DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.ReverseDTOs.ReverseDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.PayBillReverseForOthersSVProxy.IsSrcBillID">
+            <summary>
+            是否是来源单ID (该属性可为空,但有默认值)
+            其他单据调付款单转回服务.Misc.是否是来源单ID
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.PayBillReverseForOthersSVProxy.ReverseDTO">
+            <summary>
+            转回DTO (该属性可为空,且无默认值)
+            其他单据调付款单转回服务.Misc.转回DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.ReverseDTOs.ReverseDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.ReFundRevesePayForOthersSVProxy.IsSrcBillID">
+            <summary>
+            是否是来源单ID (该属性可为空,但有默认值)
+            其他单据调付款单退款转回付款服务.Misc.是否是来源单ID
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APReverseSV.Proxy.ReFundRevesePayForOthersSVProxy.ReverseInfoDTO">
+            <summary>
+            转回信息DTO (该属性可为空,且无默认值)
+            其他单据调付款单退款转回付款服务.Misc.转回信息DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.ReverseDTOs.ReverseInfoDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.APCABillQueryAPDataSVProxy.ARCaDataTag">
+            <summary>
+            应收对冲单标识 (该属性可为空,但有默认值)
+            查询对冲单应付数据服务.Misc.应收对冲单标识
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.APCABillQueryAPDataSVProxy.SrcType">
+            <summary>
+            来源 (该属性可为空,但有默认值)
+            查询对冲单应付数据服务.Misc.来源
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.CAAPBillDataPrepareSVProxy.InputFilterData">
+            <summary>
+            过滤条件DTO (该属性可为空,且无默认值)
+            取应付单列表对冲数据准备服务.Misc.过滤条件DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.CAAPFilterConditionDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.SynAPCADocTypeSVProxy.SyncDocTypeDTO">
+            <summary>
+            属性 (该属性可为空,且无默认值)
+            同步更新应付对冲单据类型服务.Misc.属性
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.ARAPDocTypeDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.SynGenAPCASVProxy.ARCAHeadDTO">
+            <summary>
+            应付对冲单DTO (该属性可为空,且无默认值)
+            同步增加应付对冲单.Misc.应付对冲单DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.ARAPCAHeadDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.ApportAPCADatasSVProxy.APBC_SKey">
+            <summary>
+            应付单币种 序列化Key属性。（传递跨组织序列列字段）
+            分摊应付单对冲数据服务.Misc.应付单币种
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.ApportAPCADatasSVProxy.APBC">
+            <summary>
+            应付单币种 (该属性可为空,且无默认值)
+            分摊应付单对冲数据服务.Misc.应付单币种
+            </summary>
+            <value>UFIDA.U9.Base.Currency.Currency</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.ApportAPCADatasSVProxy.APBCToMCXR">
+            <summary>
+            应付币种对中间币种汇率 (该属性可为空,但有默认值)
+            分摊应付单对冲数据服务.Misc.应付币种对中间币种汇率
+            </summary>
+            <value>System.Decimal</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.ApportAPCADatasSVProxy.APTags">
+            <summary>
+            应付单取数标识集合 (该属性可为空,且无默认值)
+            分摊应付单对冲数据服务.Misc.应付单取数标识集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.ApportAPCADatasSVProxy.APAppBeforeList">
+            <summary>
+            应付单分摊前数据集合 (该属性可为空,且无默认值)
+            分摊应付单对冲数据服务.Misc.应付单分摊前数据集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.ApportAPCADatasSVProxy.APProcessMode">
+            <summary>
+            应付处理方式 (该属性可为空,但有默认值)
+            分摊应付单对冲数据服务.Misc.应付处理方式
+            </summary>
+            <value>UFIDA.U9.CBO.Enums.SupplierVerificationModesEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.ApportAPCADatasSVProxy.Supp">
+            <summary>
+            供应商 (该属性可为空,且无默认值)
+            分摊应付单对冲数据服务.Misc.供应商
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Supplier.SupplierMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.ApportAPCADatasSVProxy.SuppSite">
+            <summary>
+            供应商site (该属性可为空,且无默认值)
+            分摊应付单对冲数据服务.Misc.供应商site
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Supplier.SupplierSiteMISCInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.ApportAPCADatasSVProxy.PostPeriod_SKey">
+            <summary>
+            对冲记帐期间 序列化Key属性。（传递跨组织序列列字段）
+            分摊应付单对冲数据服务.Misc.对冲记帐期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.ApportAPCADatasSVProxy.PostPeriod">
+            <summary>
+            对冲记帐期间 (该属性可为空,且无默认值)
+            分摊应付单对冲数据服务.Misc.对冲记帐期间
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SOBAccountingPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.ApportAPCADatasSVProxy.CADate">
+            <summary>
+            对冲执行日期 (该属性可为空,且无默认值)
+            分摊应付单对冲数据服务.Misc.对冲执行日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.ApportAPCADatasSVProxy.IsDiffCurCA">
+            <summary>
+            是否异币种对冲 (该属性可为空,但有默认值)
+            分摊应付单对冲数据服务.Misc.是否异币种对冲
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.ApportAPCADatasSVProxy.CADirect">
+            <summary>
+            对冲方向 (该属性可为空,但有默认值)
+            分摊应付单对冲数据服务.Misc.对冲方向
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.CADirectEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.ApportAPCADatasSVProxy.MC_SKey">
+            <summary>
+            中间币种 序列化Key属性。（传递跨组织序列列字段）
+            分摊应付单对冲数据服务.Misc.中间币种
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.ApportAPCADatasSVProxy.MC">
+            <summary>
+            中间币种 (该属性可为空,且无默认值)
+            分摊应付单对冲数据服务.Misc.中间币种
+            </summary>
+            <value>UFIDA.U9.Base.Currency.Currency</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.SynApproveAPCABillSVProxy.SrcCABillTag">
+            <summary>
+            来源对冲单标识 (该属性可为空,但有默认值)
+            同步核准应付对冲单服务.Misc.来源对冲单标识
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.SynApproveAPCABillSVProxy.ARCADatas">
+            <summary>
+            应收单金额DTO集合 (该属性可为空,且无默认值)
+            同步核准应付对冲单服务.Misc.应收单金额DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.SynApproveAPCABillSVProxy.APSysVer">
+            <summary>
+            应付单版本集合 (该属性可为空,且无默认值)
+            同步核准应付对冲单服务.Misc.应付单版本集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.SynUnApproveAPCABillSVProxy.SrcCABillTag">
+            <summary>
+            来源对冲单标识 (该属性可为空,但有默认值)
+            同步取消核准应付对冲单服务.Misc.来源对冲单标识
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.SynCancelAPCASVProxy.SrcCABillTag">
+            <summary>
+            来源对冲单标识 (该属性可为空,但有默认值)
+            同步作废应付对冲单服务.Misc.来源对冲单标识
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.SynCancelAPCASVProxy.CancelReason">
+            <summary>
+            作废原因 (该属性可为空,且无默认值)
+            同步作废应付对冲单服务.Misc.作废原因
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.SynDeleteAPCASVProxy.SrcCABillTag">
+            <summary>
+            来源对冲单标识 (该属性可为空,但有默认值)
+            同步删除应付对冲单服务.Misc.来源对冲单标识
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.SynChangeStatusOfAPCABillSVProxy.SrcCABillTag">
+            <summary>
+            来源对冲单标识 (该属性可为空,但有默认值)
+            同步改变应付对冲单状态服务.Misc.来源对冲单标识
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.SynChangeStatusOfAPCABillSVProxy.DocStatus">
+            <summary>
+            单据状态 (该属性可为空,但有默认值)
+            同步改变应付对冲单状态服务.Misc.单据状态
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.DocStateForStateMachineEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.SynGenAPCADocTypeSVProxy.SyncDocTypeDTO">
+            <summary>
+            单据类型数据 (该属性可为空,且无默认值)
+            同步增加应付对冲单据类型服务.Misc.单据类型数据
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.ARAPDocTypeDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.SynDelAPCADocTypeSVProxy.Org">
+            <summary>
+            组织 (该属性可为空,但有默认值)
+            同步删除应付对冲单据类型服务.Misc.组织
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ARAPCounterApply.Proxy.SynDelAPCADocTypeSVProxy.DocTypeCode">
+            <summary>
+            类型编码 (该属性可为空,且无默认值)
+            同步删除应付对冲单据类型服务.Misc.类型编码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBill.Proxy.GetAccruedAPFeeDataSVProxy.FeeLineID">
+            <summary>
+            费用行ID (该属性可为空,且无默认值)
+            取已立应付费用数据服务.Misc.费用行ID
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForCFPSV.Proxy.GetAPCFPDataSVProxy.CCParamDTO">
+            <summary>
+            预测来源参数DTO (该属性可为空,且无默认值)
+            取应付单预测数据服务.Misc.预测来源参数DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.CFPDTO.CFPParamDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForCFPSV.Proxy.GetAPCFPDataSVProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForCFPSV.Proxy.GetAPCFPDataSVProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            取应付单预测数据服务.Misc.组织
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForCMSV.Proxy.GetPayDocTypeInfoBaseIDSVProxy.DocTypeIDs">
+            <summary>
+            付款单据类型ID集合 (该属性可为空,且无默认值)
+            根据ID获取付款单据类型信息服务.Misc.付款单据类型ID集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForCMSV.Proxy.IsApprovedForAllPayBillSVProxy.CMCheckCondition">
+            <summary>
+            现金银行日结检查条件DTO (该属性可为空,且无默认值)
+            付款单是否全部审核服务.Misc.现金银行日结检查条件DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.CMCashCheckConditionDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForCMSV.Proxy.GetNoApprovedPayBillSVProxy.CMCheckCondition">
+            <summary>
+            现金银行日结检查条件DTO (该属性可为空,且无默认值)
+            获取未审核的付款单明细服务.Misc.现金银行日结检查条件DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.DTOs.CMCashCheckConditionDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForCMSV.Proxy.GetBankNotArrivePayBillSVProxy.FilterDTO">
+            <summary>
+            过滤条件DTO (该属性可为空,且无默认值)
+            取银行期初未达付款服务.Misc.过滤条件DTO
+            </summary>
+            <value>UFIDA.U9.CBO.FI.CMDTO.UnReachedBankDiaryFilterDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForCMSV.Proxy.GetCMCashPayBillSVProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            补产生CM现金付款单取数服务.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForCMSV.Proxy.GetCMCashPayBillSVProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            补产生CM现金付款单取数服务.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForCMSV.Proxy.GetCMCashPayBillSVProxy.StartDate">
+            <summary>
+            启用日期 (该属性可为空,且无默认值)
+            补产生CM现金付款单取数服务.Misc.启用日期
+            </summary>
+            <value>System.Time</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForCMSV.Proxy.GetCMBankPayBillSVProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            补产生CM银行付款单取数服务.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForCMSV.Proxy.GetCMBankPayBillSVProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            补产生CM银行付款单取数服务.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForCMSV.Proxy.GetCMBankPayBillSVProxy.StartDate">
+            <summary>
+            启用日期 (该属性可为空,且无默认值)
+            补产生CM银行付款单取数服务.Misc.启用日期
+            </summary>
+            <value>System.Time</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForCMSV.Proxy.GetCMBankPayBillSVProxy.BankAccount_SKey">
+            <summary>
+            账号 序列化Key属性。（传递跨组织序列列字段）
+            补产生CM银行付款单取数服务.Misc.账号
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForCMSV.Proxy.GetCMBankPayBillSVProxy.BankAccount">
+            <summary>
+            账号 (该属性可为空,且无默认值)
+            补产生CM银行付款单取数服务.Misc.账号
+            </summary>
+            <value>UFIDA.U9.CBO.FI.BankAccount.BankAccount</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForARAAI.Proxy.GetAPInfoForAAISVProxy.APBillHeadIDs">
+            <summary>
+            应付单头IDs (该属性可为空,但有默认值)
+            取应付单AAI信息服务.Misc.应付单头IDs
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForARAAI.Proxy.GetAPInfoForAAISVProxy.APBillLineIDs">
+            <summary>
+            应付单行IDs (该属性可为空,且无默认值)
+            取应付单AAI信息服务.Misc.应付单行IDs
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForARAAI.Proxy.GetAPInfoForAAISVProxy.APInstalIDs">
+            <summary>
+            应付单分期行IDs (该属性可为空,且无默认值)
+            取应付单AAI信息服务.Misc.应付单分期行IDs
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForARAAI.Proxy.GetPayInfoForAAISVProxy.PayBillHeadIDs">
+            <summary>
+            付款单头IDs (该属性可为空,但有默认值)
+            取付款单AAI信息服务.Misc.付款单头IDs
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForARAAI.Proxy.GetPayInfoForAAISVProxy.PayBillLineIDs">
+            <summary>
+            付款单行IDs (该属性可为空,且无默认值)
+            取付款单AAI信息服务.Misc.付款单行IDs
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForARAAI.Proxy.GetPayInfoForAAISVProxy.PayInstalIDs">
+            <summary>
+            付款单分期行IDs (该属性可为空,且无默认值)
+            取付款单AAI信息服务.Misc.付款单分期行IDs
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForPM.Proxy.PMQueryPrePaySVProxy.PuQueryPrePayCondtionDTOs">
+            <summary>
+            查询条件DTO集合 (该属性可为空,且无默认值)
+            采购单据查询预付款请求.Misc.查询条件DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForPM.Proxy.PMLinkageUpdatePreRecSVProxy.PMLinkageUpdatePreRecDTOs">
+            <summary>
+            联动更新DTO集合 (该属性可为空,且无默认值)
+            采购单据联动更新预付款请求.Misc.联动更新DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForPM.Proxy.QueryPrePayDetailSVProxy.PMDocType">
+            <summary>
+            预付对象类型 (该属性可为空,但有默认值)
+            预付明细查询请求.Misc.预付对象类型
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.PayItemDetailSrcDocTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForPM.Proxy.QueryPrePayDetailSVProxy.SrcBIllID">
+            <summary>
+            来源单据标识 (该属性可为空,但有默认值)
+            预付明细查询请求.Misc.来源单据标识
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForPM.Proxy.QueryPrePayDetailSVProxy.SrcLineID">
+            <summary>
+            来源数据标识 (该属性可为空,但有默认值)
+            预付明细查询请求.Misc.来源数据标识
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForPM.Proxy.QueryCanUseablePrePaySVProxy.PMDocType">
+            <summary>
+            付款来源单据类型 (该属性可为空,但有默认值)
+            可挪用预付查询服务AP.Misc.付款来源单据类型
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.PayItemDetailSrcDocTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForPM.Proxy.QueryCanUseablePrePaySVProxy.SrcBillInfos">
+            <summary>
+            来源单据信息 (该属性可为空,且无默认值)
+            可挪用预付查询服务AP.Misc.来源单据信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForPM.Proxy.QueryCanUseablePrePaySVProxy.OrgKey_SKey">
+            <summary>
+            核算组织 序列化Key属性。（传递跨组织序列列字段）
+            可挪用预付查询服务AP.Misc.核算组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForPM.Proxy.QueryCanUseablePrePaySVProxy.OrgKey">
+            <summary>
+            核算组织 (该属性可为空,且无默认值)
+            可挪用预付查询服务AP.Misc.核算组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForAAISV.Proxy.GetDocTypeInfoSVProxy.IsContainsAR">
+            <summary>
+            是否包含应收 (该属性可为空,但有默认值)
+            获取应付相关单据类型信息服务.Misc.是否包含应收
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForAAISV.Proxy.GetDocTypeInfoSVProxy.FilterInfo">
+            <summary>
+            过滤条件 (该属性可为空,且无默认值)
+            获取应付相关单据类型信息服务.Misc.过滤条件
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.CustPayBillGenerateAAIProxy.PayBillID">
+            <summary>
+            付款单ID (该属性可为空,但有默认值)
+            客户付款单生成AAI.Misc.付款单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.CustPayBillGenerateAAIProxy.RecPayBillPromptApplyIDList">
+            <summary>
+            收付单据的即时核销单集合 (该属性可为空,但有默认值)
+            客户付款单生成AAI.Misc.收付单据的即时核销单集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.CustPayBillGenerateAAIProxy.PromptApplySrcBillIDList">
+            <summary>
+            即时核销来源单据标识 (该属性可为空,且无默认值)
+            客户付款单生成AAI.Misc.即时核销来源单据标识
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.CustPayBillGenerateAAIProxy.IsExeAttemper">
+            <summary>
+            是否执行调度 (该属性可为空,但有默认值)
+            客户付款单生成AAI.Misc.是否执行调度
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APProcessBillGenerateAAIProxy.BillType">
+            <summary>
+            单据类别 (该属性可为空,但有默认值)
+            生成应付处理单AAI.Misc.单据类别
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APProcessBillGenerateAAIProxy.ProcessBillID">
+            <summary>
+            处理单ID (该属性可为空,但有默认值)
+            生成应付处理单AAI.Misc.处理单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APProcessBillGenerateAAIProxy.ProcessBillNextProcessBillIDList">
+            <summary>
+            处理单据的后续处理单集合 (该属性可为空,且无默认值)
+            生成应付处理单AAI.Misc.处理单据的后续处理单集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APProcessBillGenerateAAIProxy.ProcBillNextProcBillDTO">
+            <summary>
+            处理单据的后续处理单DTO集合 (该属性可为空,且无默认值)
+            生成应付处理单AAI.Misc.处理单据的后续处理单DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APProcessBillGenerateAAIProxy.IsExeAttemper">
+            <summary>
+            是否执行调度 (该属性可为空,但有默认值)
+            生成应付处理单AAI.Misc.是否执行调度
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APXGALBillGenerateAAIProxy.APXGALBillID">
+            <summary>
+            应付汇兑损益单ID (该属性可为空,但有默认值)
+            生成应付汇兑损益单AAI.Misc.应付汇兑损益单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APXGALBillGenerateAAIProxy.IsExeAttemper">
+            <summary>
+            是否执行调度 (该属性可为空,但有默认值)
+            生成应付汇兑损益单AAI.Misc.是否执行调度
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APBillGenerateAAIForNMProxy.IsReversedBill">
+            <summary>
+            是否转回单据 (该属性可为空,但有默认值)
+            生成应付单据AAI（For票据）.Misc.是否转回单据
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APBillGenerateAAIForNMProxy.Org">
+            <summary>
+            核算组织 (该属性可为空,但有默认值)
+            生成应付单据AAI（For票据）.Misc.核算组织
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APBillGenerateAAIForNMProxy.AAIBillDTO">
+            <summary>
+            AAI单据DTO集合 (该属性可为空,且无默认值)
+            生成应付单据AAI（For票据）.Misc.AAI单据DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APBillGenerateAAIForNMProxy.IsExeAttemper">
+            <summary>
+            是否执行调度 (该属性可为空,但有默认值)
+            生成应付单据AAI（For票据）.Misc.是否执行调度
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APBillGenerateAAIForOtherAppProxy.IsReversedBill">
+            <summary>
+            是否转回单据 (该属性可为空,但有默认值)
+            生成应付单据AAI（For其它财务应用）.Misc.是否转回单据
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APBillGenerateAAIForOtherAppProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            生成应付单据AAI（For其它财务应用）.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APBillGenerateAAIForOtherAppProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            生成应付单据AAI（For其它财务应用）.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APBillGenerateAAIForOtherAppProxy.AAIMainBillDTO">
+            <summary>
+            主单集合 (该属性可为空,且无默认值)
+            生成应付单据AAI（For其它财务应用）.Misc.主单集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APBillGenerateAAIForOtherAppProxy.IsExeAttemper">
+            <summary>
+            是否执行调度 (该属性可为空,但有默认值)
+            生成应付单据AAI（For其它财务应用）.Misc.是否执行调度
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APBillGenerateAAI2SVProxy.IsReversedBill">
+            <summary>
+            是否转回单据 (该属性可为空,但有默认值)
+            应付生成AAI服务2.Misc.是否转回单据
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APBillGenerateAAI2SVProxy.Org">
+            <summary>
+            核算组织 (该属性可为空,但有默认值)
+            应付生成AAI服务2.Misc.核算组织
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APBillGenerateAAI2SVProxy.AAIBillDTO">
+            <summary>
+            AAI单据DTO集合 (该属性可为空,且无默认值)
+            应付生成AAI服务2.Misc.AAI单据DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.APBatchAAI.Proxy.APBillGenerateAAI2SVProxy.IsExeAttemper">
+            <summary>
+            是否执行调度 (该属性可为空,但有默认值)
+            应付生成AAI服务2.Misc.是否执行调度
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForSCM.Proxy.QueryPayBillForSCMSVProxy.IDs">
+            <summary>
+            采购单据行ID (该属性可为空,且无默认值)
+            查付款单服务.Misc.采购单据行ID
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForSCM.Proxy.QueryPayBillForSCMSVProxy.SrcDocType">
+            <summary>
+            来源单据类别 (该属性可为空,但有默认值)
+            查付款单服务.Misc.来源单据类别
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.APBillSrcDocTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForSCM.Proxy.QueryAPBillForSCMSVProxy.IDS">
+            <summary>
+            来源数据标识 (该属性可为空,且无默认值)
+            查应付单服务.Misc.来源数据标识
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForSCM.Proxy.QueryAPBillForSCMSVProxy.SrcDocType">
+            <summary>
+            来源单据类别 (该属性可为空,但有默认值)
+            查应付单服务.Misc.来源单据类别
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.APBillSrcDocTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForSCM.Proxy.GetPriceInfoInAPBillSVProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            取应付单中物料的价格信息服务.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForSCM.Proxy.GetPriceInfoInAPBillSVProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            取应付单中物料的价格信息服务.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForSCM.Proxy.GetPriceInfoInAPBillSVProxy.SuppCode">
+            <summary>
+            供应商编码 (该属性可为空,且无默认值)
+            取应付单中物料的价格信息服务.Misc.供应商编码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForSCM.Proxy.GetPriceInfoInAPBillSVProxy.ItemInfo">
+            <summary>
+            料品 (该属性可为空,且无默认值)
+            取应付单中物料的价格信息服务.Misc.料品
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Item.ItemInfo</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForSCM.Proxy.GetPriceInfoInAPBillSVProxy.ItemSpec">
+            <summary>
+            料品规格 (该属性可为空,且无默认值)
+            取应付单中物料的价格信息服务.Misc.料品规格
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForSCM.Proxy.GetPriceInfoInAPBillSVProxy.Count">
+            <summary>
+            记录数 (该属性可为空,但有默认值)
+            取应付单中物料的价格信息服务.Misc.记录数
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForSCM.Proxy.GetPriceInfoInAPBillSVProxy.ItemVersion">
+            <summary>
+            物料版本 (该属性可为空,且无默认值)
+            取应付单中物料的价格信息服务.Misc.物料版本
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForTB.Proxy.QueryAPPostedBalanceSrvProxy.QueryConditionDTO">
+            <summary>
+            查询条件 (该属性可为空,且无默认值)
+            查询应付已记账余额数据服务.Misc.查询条件
+            </summary>
+            <value>UFIDA.U9.CBO.FI.TB.DTO.TBQueryBizDocConditionDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForTB.Proxy.QueryAPBillHeadSrvProxy.QueryConditionDTO">
+            <summary>
+            查询条件 (该属性可为空,且无默认值)
+            查询应付单数据服务.Misc.查询条件
+            </summary>
+            <value>UFIDA.U9.CBO.FI.TB.DTO.TBQueryBizDocConditionDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForTB.Proxy.QueryPayBillHeadSrvProxy.QueryConditionDTO">
+            <summary>
+            查询条件 (该属性可为空,且无默认值)
+            查询付款单数据服务.Misc.查询条件
+            </summary>
+            <value>UFIDA.U9.CBO.FI.TB.DTO.TBQueryBizDocConditionDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForTB.Proxy.QueryReqFundHeadSrvProxy.QueryConditionDTO">
+            <summary>
+            查询条件 (该属性可为空,且无默认值)
+            查询请款单数据服务.Misc.查询条件
+            </summary>
+            <value>UFIDA.U9.CBO.FI.TB.DTO.TBQueryBizDocConditionDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForTB.Proxy.QueryAPMatchHeadSrvProxy.QueryConditionDTO">
+            <summary>
+            查询条件 (该属性可为空,且无默认值)
+            查询匹配单数据服务.Misc.查询条件
+            </summary>
+            <value>UFIDA.U9.CBO.FI.TB.DTO.TBQueryBizDocConditionDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForMSF.Proxy.QryManageSellFeeByAPSVProxy.DocNOFrom">
+            <summary>
+            应收单据号从 (该属性可为空,且无默认值)
+            查询管销费用单AP.Misc.应收单据号从
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForMSF.Proxy.QryManageSellFeeByAPSVProxy.DocNOTo">
+            <summary>
+            应收单据号到 (该属性可为空,且无默认值)
+            查询管销费用单AP.Misc.应收单据号到
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForMSF.Proxy.QryManageSellFeeByAPSVProxy.DateFrom">
+            <summary>
+            立账日期从 (该属性可为空,且无默认值)
+            查询管销费用单AP.Misc.立账日期从
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.ForMSF.Proxy.QryManageSellFeeByAPSVProxy.DateTo">
+            <summary>
+            立账日期到 (该属性可为空,且无默认值)
+            查询管销费用单AP.Misc.立账日期到
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentForFN.Proxy.CreatePayBillForFNSVProxy.PayBillHeads">
+            <summary>
+            付款单 (该属性可为空,且无默认值)
+            资金创建付款单服务.Misc.付款单
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentForFN.Proxy.DelPayBillForFNSVProxy.SrcBillType">
+            <summary>
+            来源单据类型 (该属性可为空,但有默认值)
+            资金删除付款单服务.Misc.来源单据类型
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.PaySourceEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentForFN.Proxy.DelPayBillForFNSVProxy.SrcBillHeads">
+            <summary>
+            来源单据集合 (该属性可为空,且无默认值)
+            资金删除付款单服务.Misc.来源单据集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentForFN.Proxy.DelPayBillForFNSVProxy.SrcBillLines">
+            <summary>
+            来源单据行集合 (该属性可为空,且无默认值)
+            资金删除付款单服务.Misc.来源单据行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentForFN.Proxy.CancelPayBillForFNSVProxy.SrcBillType">
+            <summary>
+            来源单据类型 (该属性可为空,但有默认值)
+            资金作废付款单服务.Misc.来源单据类型
+            </summary>
+            <value>UFIDA.U9.CBO.FI.Enums.PaySourceEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentForFN.Proxy.CancelPayBillForFNSVProxy.SrcBillHeads">
+            <summary>
+            来源单据集合 (该属性可为空,且无默认值)
+            资金作废付款单服务.Misc.来源单据集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.AP.PaymentForFN.Proxy.CancelPayBillForFNSVProxy.SrcBillLines">
+            <summary>
+            来源单据行集合 (该属性可为空,且无默认值)
+            资金作废付款单服务.Misc.来源单据行集合
+            </summary>
+            <value></value>
+        </member>
+    </members>
+</doc>

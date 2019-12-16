@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Component id="74b12051-5ef7-4464-8f7a-51adf4c9a242" name="PLMECNQuerySV" displayName="PLMECNQuerySV" description="" help="" type="SV" assemblyName="UFIDA.U9.Safor.VW.PLMSV">
+  <Namespace id="27252983-53ed-4e74-89ac-1eb3ee1dda0b" name="UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV" displayName="UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV" description="" help="">
+    <Operation id="8ac535a9-9b59-465d-86d6-0aaaf35e0966" name="ECNWHQuery" displayName="库存可用量查询" description="" help="" mD_ParentClass_ID="" isFactEntity="False" returnTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isService="True" isDefault="False" isEntityKey="False" transactionType="2" isAuthorization="True" isISV="False">
+      <Groups>
+        <Group id="edcb6a04-b25a-4b65-9c5f-f8dca35f9896" name="Misc" displayName="Misc" description="" help="" />
+      </Groups>
+      <Attributes>
+        <Attribute id="40494290-e64f-4278-8ec6-1e76cd092d52" name="BOMItemInfo" displayName="BOM物料信息" description="" help="库存可用量查询.Misc.BOM物料信息" dataTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isKey="False" defaultValue="" length="50000" precise="5" scale="0" isNullable="True" isReadOnly="False" isHide="False" isCalculation="False" valueExpression="" maxValue="" minValue="" sequence="0" isDefaultDimensionAttribute="False" isDefaultMeasureAttribute="False" isGlobalization="False" idGenerator="" groupName="Misc" isEntityKey="False" isEntityData="True" isSystem="False" isBusinessKey="False" isSyncDictionary="False" dictionaryKey="" isExtendCode="False" isQuery="True" isForAsso="True" isModifyControl="False" isDynamic="False" isImpressible="False" isInCache="False" isKeySerializable="False" isColumnDefine="True" isFilterDefine="True" isSortDefine="True" isDefaultColumn="True" forOBAImport="False" />
+        <Attribute id="8a0985db-347c-438a-a370-59b7fb12271f" name="ContextInfo" displayName="执行上下文" description="" help="库存可用量查询.Misc.执行上下文" dataTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isKey="False" defaultValue="" length="50000" precise="5" scale="0" isNullable="True" isReadOnly="False" isHide="False" isCalculation="False" valueExpression="" maxValue="" minValue="" sequence="1" isDefaultDimensionAttribute="False" isDefaultMeasureAttribute="False" isGlobalization="False" idGenerator="" groupName="Misc" isEntityKey="False" isEntityData="True" isSystem="False" isBusinessKey="False" isSyncDictionary="False" dictionaryKey="" isExtendCode="False" isQuery="True" isForAsso="True" isModifyControl="False" isDynamic="False" isImpressible="False" isInCache="False" isKeySerializable="False" isColumnDefine="True" isFilterDefine="True" isSortDefine="True" isDefaultColumn="True" forOBAImport="False" />
+      </Attributes>
+      <Implements>
+        <Operation id="bd3ce55c-0775-4a54-af83-927d28afff79" name="Impement" displayName="实现" description="" help="" mD_ParentClass_ID="" isFactEntity="False" returnTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isService="False" isDefault="True" isEntityKey="False" transactionType="2" isAuthorization="True" isISV="False" />
+      </Implements>
+    </Operation>
+    <Operation id="2e661f30-d6e4-4a54-a072-93cbcd5b1ad2" name="ECNMOQuery" displayName="MO变更数据查询" description="" help="" mD_ParentClass_ID="" isFactEntity="False" returnTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isService="True" isDefault="False" isEntityKey="False" transactionType="2" isAuthorization="True" isISV="False">
+      <Groups>
+        <Group id="723f5d70-d702-407b-a4bc-369b7e483977" name="Misc" displayName="Misc" description="" help="" />
+      </Groups>
+      <Attributes>
+        <Attribute id="446d2ec0-2354-430e-baef-f5fdaafb9edf" name="BOMItemInfo" displayName="BOM物料信息" description="" help="MO变更数据查询.Misc.BOM物料信息" dataTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isKey="False" defaultValue="" length="50000" precise="5" scale="0" isNullable="True" isReadOnly="False" isHide="False" isCalculation="False" valueExpression="" maxValue="" minValue="" sequence="0" isDefaultDimensionAttribute="False" isDefaultMeasureAttribute="False" isGlobalization="False" idGenerator="" groupName="Misc" isEntityKey="False" isEntityData="True" isSystem="False" isBusinessKey="False" isSyncDictionary="False" dictionaryKey="" isExtendCode="False" isQuery="True" isForAsso="True" isModifyControl="False" isDynamic="False" isImpressible="False" isInCache="False" isKeySerializable="False" isColumnDefine="True" isFilterDefine="True" isSortDefine="True" isDefaultColumn="True" forOBAImport="False" />
+        <Attribute id="76cc77b5-573a-40ab-8eb9-e07e1d62ba1d" name="ContextInfo" displayName="执行上下文" description="" help="MO变更数据查询.Misc.执行上下文" dataTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isKey="False" defaultValue="" length="50000" precise="5" scale="0" isNullable="True" isReadOnly="False" isHide="False" isCalculation="False" valueExpression="" maxValue="" minValue="" sequence="1" isDefaultDimensionAttribute="False" isDefaultMeasureAttribute="False" isGlobalization="False" idGenerator="" groupName="Misc" isEntityKey="False" isEntityData="True" isSystem="False" isBusinessKey="False" isSyncDictionary="False" dictionaryKey="" isExtendCode="False" isQuery="True" isForAsso="True" isModifyControl="False" isDynamic="False" isImpressible="False" isInCache="False" isKeySerializable="False" isColumnDefine="True" isFilterDefine="True" isSortDefine="True" isDefaultColumn="True" forOBAImport="False" />
+      </Attributes>
+      <Implements>
+        <Operation id="00646ad0-07b2-45e0-afbd-7bd5f15ce49e" name="Impement" displayName="实现" description="" help="" mD_ParentClass_ID="" isFactEntity="False" returnTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isService="False" isDefault="True" isEntityKey="False" transactionType="2" isAuthorization="True" isISV="False" />
+      </Implements>
+    </Operation>
+    <Diagram id="8d9f0fe4-a23d-4f58-b62e-6fd453c7f733" name="PLMECNQuerySV" displayName="PLMECNQuerySV">
+      <Class Editable="True" ID="b0c2d1f3-9db4-44e9-9e70-90aefe61c7ec" Type="Service" ADID="8ac535a9-9b59-465d-86d6-0aaaf35e0966">
+        <Location X="86" Y="72" />
+        <Size width="120" height="58" />
+      </Class>
+      <Class Editable="True" ID="948f92c0-64f7-4c85-a649-1837edb838b9" Type="Service" ADID="2e661f30-d6e4-4a54-a072-93cbcd5b1ad2">
+        <Location X="89" Y="162" />
+        <Size width="120" height="58" />
+      </Class>
+    </Diagram>
+  </Namespace>
+</Component>

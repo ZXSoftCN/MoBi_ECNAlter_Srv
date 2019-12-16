@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project id="63dd6177-e67f-4ccb-b0cb-46c65bfe902e" name="PLMBE" displayName="PLMBE" description="" help="" type="BE" assemblyName="UFIDA.U9.Safor.VW.PLMBE" mapProject=".\..\PLMBE_DB\PLMBE_DB.ubfdbproj" resourceName="" projectVersion="V21">
+  <Imports>
+    <Import id="ab1f1223-a2d7-4699-94e1-7a514f1494e3" name="BaseBE" displayName="BaseBE" description="" help="" componentid="2402fd32-810a-4130-811d-f1e6183a5a26" path="..\..\..\..\..\..\..\..\..\yonyou\UBFV28\U9.VOB.Product.Metadata\UBF\UFIDA.U9.Base.BaseBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="be1e197e-b651-400a-9853-62a68400585f" name="CBO_PubBE" displayName="CBO_PubBE" description="" help="" componentid="fe8dc9a2-365d-41c0-8f48-c02abb016910" path="..\..\..\..\..\..\..\..\..\yonyou\UBFV28\U9.VOB.Product.Metadata\App\UFIDA.U9.CBO.PubBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="c9436b06-b463-4c2e-811f-4fbd74badbbc" name="MFGBE" displayName="MFGBE" description="" help="" componentid="1c5ab6f3-ecaf-4a36-9a4b-184a5527a650" path="..\..\..\..\..\..\..\..\..\yonyou\UBFV28\U9.VOB.Product.Metadata\App\UFIDA.U9.CBO.MFGBE.MetaData.dll" type="BE" isRuntime="True" />
+    <Import id="bb4b6476-3f17-4f79-8435-90282264f7d4" name="MOBE" displayName="MOBE" description="" help="" componentid="3f6884f2-49ff-4582-9f56-f86246020dbe" path="..\..\..\..\..\..\..\..\..\yonyou\UBFV28\U9.VOB.Product.Metadata\App\UFIDA.U9.MO.MOBE.MetaData.dll" type="BE" isRuntime="True" />
+  </Imports>
+  <SourceControl />
+  <ItemGroup>
+    <Item id="245c41d4-09b8-427a-a1a0-8e94d25f43c3" name="ECNAlterRequestBE.ubfbe" displayName="ECNAlterRequestBE.ubfbe" description="" help="" include="ECNAlterRequestBE.ubfbe" type="BE" />
+  </ItemGroup>
+</Project>

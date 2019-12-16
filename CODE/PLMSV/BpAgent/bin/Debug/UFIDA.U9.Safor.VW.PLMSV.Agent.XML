@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFIDA.U9.Safor.VW.PLMSV.Agent</name>
+    </assembly>
+    <members>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.Proxy.ECNWHQueryProxy.BOMItemInfo">
+            <summary>
+            BOM物料信息 (该属性可为空,且无默认值)
+            库存可用量查询.Misc.BOM物料信息
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.Proxy.ECNWHQueryProxy.ContextInfo">
+            <summary>
+            执行上下文 (该属性可为空,且无默认值)
+            库存可用量查询.Misc.执行上下文
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.Proxy.ECNMOQueryProxy.BOMItemInfo">
+            <summary>
+            BOM物料信息 (该属性可为空,且无默认值)
+            MO变更数据查询.Misc.BOM物料信息
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.Proxy.ECNMOQueryProxy.ContextInfo">
+            <summary>
+            执行上下文 (该属性可为空,且无默认值)
+            MO变更数据查询.Misc.执行上下文
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.Proxy.CreatePLMECNProxy.ECNAlterRequest">
+            <summary>
+            ECN变更请求 (该属性可为空,且无默认值)
+            创建ECN变更纪录.Misc.ECN变更请求
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.Proxy.CreatePLMECNProxy.ContextInfo">
+            <summary>
+            执行上下文 (该属性可为空,且无默认值)
+            创建ECN变更纪录.Misc.执行上下文
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.Proxy.QueryPLMECNProxy.ECNAlterInfo">
+            <summary>
+            ECN变更对比查询 (该属性可为空,且无默认值)
+            ECN变更纪录对比查询.Misc.ECN变更对比查询
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.Proxy.QueryPLMECNProxy.ContextInfo">
+            <summary>
+            执行上下文 (该属性可为空,且无默认值)
+            ECN变更纪录对比查询.Misc.执行上下文
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.Proxy.ModifyMOPickListProxy.PLMECNInfo">
+            <summary>
+            ECN变更信息 (该属性可为空,且无默认值)
+            修改生产备料服务.Misc.ECN变更信息
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.Proxy.ModifyMOPickListProxy.ContextInfo">
+            <summary>
+            执行上下文 (该属性可为空,且无默认值)
+            修改生产备料服务.Misc.执行上下文
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.Proxy.ModifyBOMMaterProxy.PLMECNInfo">
+            <summary>
+            ECN变更信息 (该属性可为空,且无默认值)
+            修改BOM服务.Misc.ECN变更信息
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.Proxy.ModifyBOMMaterProxy.ContextInfo">
+            <summary>
+            执行上下文 (该属性可为空,且无默认值)
+            修改BOM服务.Misc.执行上下文
+            </summary>
+            <value>System.String</value>
+        </member>
+    </members>
+</doc>

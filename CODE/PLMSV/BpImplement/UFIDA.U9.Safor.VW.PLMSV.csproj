@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProductVersion>8.0.40301</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9287D990-157F-4D55-8666-049ED3732C82}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>UFIDA.U9.Safor.VW.PLMSV</RootNamespace>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>UFIDA.U9.Safor.VW.PLMSV</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <IncrementalBuild>false</IncrementalBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <IncrementalBuild>false</IncrementalBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="PLMToU9ModifySV\PLMECNInfo.cs" />
+    <Compile Include="XMLCreateClass\ECNAlterRequest.cs" />
+    <Compile Include="XMLCreateClass\ECNBOMComponent.cs" />
+    <Compile Include="XMLCreateClass\ECNBomMasters.cs" />
+    <Compile Include="XMLCreateClass\ECNDiffRequest.cs" />
+    <Compile Include="XMLCreateClass\ECNDiffResponse.cs" />
+    <Compile Include="XMLCreateClass\ECNMOInfo.cs" />
+    <Compile Include="XMLQueryClass\BOMComponent.cs" />
+    <Compile Include="XMLQueryClass\BOMMaster.cs" />
+    <Compile Include="XMLQueryClass\ECNMOQueryRlt.cs" />
+    <Compile Include="XMLQueryClass\MOInfo.cs" />
+    <Compile Include="XMLQueryClass\WHBOMComponent.cs" />
+    <Compile Include="XMLQueryClass\ECNQuery.cs" />
+    <Compile Include="XMLQueryClass\ECNWHQueryRlt.cs" />
+    <Compile Include="XMLQueryClass\WHBOMMaster.cs" />
+    <Compile Include="XMLPubClass\XmlSerializerHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UFIDA.U9.Base.BaseBE">
+      <HintPath>..\..\..\..\..\U9V50\Portal\ApplicationServer\Libs\UFIDA.U9.Base.BaseBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.MFGBE, Version=25.5401.4705.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\U9V50\Portal\ApplicationServer\Libs\UFIDA.U9.CBO.MFGBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.PubBE, Version=25.5401.20608.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\UFIDA\U9V25\Portal\ApplicationServer\Libs\UFIDA.U9.CBO.PubBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.PubBE.Deploy">
+      <HintPath>..\..\..\..\..\U9V50\Portal\ApplicationServer\Libs\UFIDA.U9.CBO.PubBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.PubSV.Deploy, Version=25.5401.5552.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\U9V50\Portal\ApplicationServer\Libs\UFIDA.U9.CBO.PubSV.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.ISV.MFG.MFGSV.Agent">
+      <HintPath>..\..\..\..\..\U9V50\Portal\ApplicationServer\Libs\UFIDA.U9.ISV.MFG.MFGSV.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.ISV.MFG.MFGSV.Deploy">
+      <HintPath>..\..\..\..\..\U9V50\Portal\ApplicationServer\Libs\UFIDA.U9.ISV.MFG.MFGSV.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.ISV.MO.MOSV.Agent">
+      <HintPath>..\..\..\..\..\U9V50\Portal\ApplicationServer\Libs\UFIDA.U9.ISV.MO.MOSV.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.ISV.MO.MOSV.Deploy">
+      <HintPath>..\..\..\..\..\U9V50\Portal\ApplicationServer\Libs\UFIDA.U9.ISV.MO.MOSV.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.MO.MOBE">
+      <HintPath>..\..\..\..\..\U9V50\Portal\ApplicationServer\Libs\UFIDA.U9.MO.MOBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.Safor.VW.PLMBE, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\U9V50\Portal\ApplicationServer\Libs\UFIDA.U9.Safor.VW.PLMBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.Safor.VW.PLMBE.Deploy, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\U9V50\Portal\ApplicationServer\Libs\UFIDA.U9.Safor.VW.PLMBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Util.DataAccess">
+      <HintPath>..\..\..\..\..\U9V50\Portal\bin\UFSoft.UBF.Util.DataAccess.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="UFIDA.U9.Safor.VW.PLMSV.target" />
+  <PropertyGroup>
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

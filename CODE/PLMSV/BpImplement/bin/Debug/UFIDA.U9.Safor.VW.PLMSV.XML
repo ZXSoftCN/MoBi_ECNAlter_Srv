@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFIDA.U9.Safor.VW.PLMSV</name>
+    </assembly>
+    <members>
+        <member name="T:UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.ECNMOQuery">
+            <summary>
+            MO变更数据查询 business operation
+            
+            </summary>
+            <summary>
+            ECNMOQuery partial 
+            </summary>	
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.ECNMOQuery.BOMItemInfo">
+            <summary>
+            BOM物料信息	
+            MO变更数据查询.Misc.BOM物料信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.ECNMOQuery.ContextInfo">
+            <summary>
+            执行上下文	
+            MO变更数据查询.Misc.执行上下文
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.ModifyMOPickList">
+            <summary>
+            修改生产备料服务 business operation
+            
+            </summary>
+            <summary>
+            ModifyMOPickList partial 
+            </summary>	
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.ModifyMOPickList.PLMECNInfo">
+            <summary>
+            ECN变更信息	
+            修改生产备料服务.Misc.ECN变更信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.ModifyMOPickList.ContextInfo">
+            <summary>
+            执行上下文	
+            修改生产备料服务.Misc.执行上下文
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.XmlSerializerHelper.XmlDeserialize``1(System.String,System.Text.Encoding)">
+            <summary>
+            从XML字符串中反序列化对象.采用缓存提供性能，同时解决了.net2.0到4.0。
+            会因为Net XmlSerializer抛出FileNotFound的内部异常。
+            </summary>
+            <typeparam name="T">结果对象类型</typeparam>
+            <param name="xml">包含对象的XML字符串</param>
+            <param name="encoding">编码方式</param>
+            <returns>反序列化得到的对象</returns>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.ModifyBOMMater">
+            <summary>
+            修改BOM服务 business operation
+            
+            </summary>
+            <summary>
+            ModifyBOMMater partial 
+            </summary>	
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.ModifyBOMMater.PLMECNInfo">
+            <summary>
+            ECN变更信息	
+            修改BOM服务.Misc.ECN变更信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.ModifyBOMMater.ContextInfo">
+            <summary>
+            执行上下文	
+            修改BOM服务.Misc.执行上下文
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.ECNWHQuery">
+            <summary>
+            ECNWHQuery partial 
+            </summary>	
+            <summary>
+            库存可用量查询 business operation
+            
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.ECNWHQuery.BOMItemInfo">
+            <summary>
+            BOM物料信息	
+            库存可用量查询.Misc.BOM物料信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.ECNWHQuery.ContextInfo">
+            <summary>
+            执行上下文	
+            库存可用量查询.Misc.执行上下文
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.ECNWHQueryImpementStrategy">
+            <summary>
+            Impement Implement
+            
+            </summary>	
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.ModifyBOMMaterImpementStrategy">
+            <summary>
+            Impement Implement
+            
+            </summary>	
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMSV.PLMECNQuerySV.ECNMOQueryImpementStrategy">
+            <summary>
+            Impement Implement
+            
+            </summary>	
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.QueryPLMECN">
+            <summary>
+            QueryPLMECN partial 
+            </summary>	
+            <summary>
+            ECN变更纪录对比查询 business operation
+            
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.QueryPLMECN.ECNAlterInfo">
+            <summary>
+            ECN变更对比查询	
+            ECN变更纪录对比查询.Misc.ECN变更对比查询
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.QueryPLMECN.ContextInfo">
+            <summary>
+            执行上下文	
+            ECN变更纪录对比查询.Misc.执行上下文
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.QueryPLMECNImpementStrategy">
+            <summary>
+            Impement Implement
+            服务根据原保存的ECN变更单ECNInfo查询出当前MO的完工入库数量TotalRcvQty设置到PostMOTotalRcvQty，
+            将备料表的已领数量设置到PostIssuedQty。两者可用于同ECNInfo记录的原完工入库(快照)数量PreMOTotalRcvQty和原已领(快照)数量PreIssuedQty进行比较。
+            </summary>	
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.QueryPLMECNImpementStrategy.AddSplitMOInfo(UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo,UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.ECNMOInfo,UFIDA.U9.MO.MO.MO,UFIDA.U9.MO.MO.MOSplitMergeRelation)">
+            <summary>
+            添加分割后的MO返回,调整
+            </summary>
+            <param name="ecnAlterInfo">ECN设变MO记录</param>
+            <param name="moInfoPre">分割前MO返回记录</param>
+            <param name="mo">U9MO-信息</param>
+            <param name="moSplitRelation">U9MO分割记录</param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.QueryPLMECNImpementStrategy.LoopQueryMOSplit(System.Collections.Generic.List{UFIDA.U9.MO.MO.MOSplitMergeRelation},System.Int64,System.DateTime)">
+            <summary>
+            循环遍历MO多级分割的MO
+            </summary>
+            <param name="lstCache">必须前期</param>
+            <param name="moID"></param>
+            <param name="dtCurrent"></param>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.ModifyMOPickListImpementStrategy">
+            <summary>
+            Impement Implement
+            
+            </summary>	
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.ModifyMOPickListImpementStrategy.CreateBOMMasterDTO(UFIDA.U9.ISV.MFG.BOM.BOMMasterDTO4CreateSvData,UFIDA.U9.Base.Organization.Organization)">
+            <summary>
+            创建新增BOM服务的DTO
+            </summary>
+            <param name="_bom"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV.ModifyMOPickListImpementStrategy.CreateBOMComponentDTO(UFIDA.U9.ISV.MFG.BOM.BOMMasterDTO4CreateSvData,UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter)">
+            <summary>
+            新创建子件
+            </summary>
+            <param name="_dtoBom">原BOM母件DTO</param>
+            <param name="_ecnAlter">变更子件记录</param>
+            <returns></returns>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.CreatePLMECN">
+            <summary>
+            CreatePLMECN partial 
+            </summary>	
+            <summary>
+            创建ECN变更纪录 business operation
+            
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.CreatePLMECN.ECNAlterRequest">
+            <summary>
+            ECN变更请求	
+            创建ECN变更纪录.Misc.ECN变更请求
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.CreatePLMECN.ContextInfo">
+            <summary>
+            执行上下文	
+            创建ECN变更纪录.Misc.执行上下文
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMSV.PLMECNCreateSV.CreatePLMECNImpementStrategy">
+            <summary>
+            Impement Implement
+            
+            </summary>	
+        </member>
+    </members>
+</doc>

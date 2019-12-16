@@ -1,0 +1,2484 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFIDA.U9.MO.MOSV.Agent</name>
+    </assembly>
+    <members>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateMOBySOProxy.ProductRequirements">
+            <summary>
+            生产需求 (该属性可为空,且无默认值)
+            根据销售订单创建生产订单.Misc.生产需求
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateMOByPlanOrderProxy.ProductRequirements">
+            <summary>
+            生产需求 (该属性可为空,且无默认值)
+            根据计划订单或主计划创建生产订单.Misc.生产需求
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueByPORcvProxy.IssueTXNDTO">
+            <summary>
+            领料单DTO (该属性可为空,且无默认值)
+            采购直接发料服务.Misc.领料单DTO
+            </summary>
+            <value>UFIDA.U9.MO.Issue.IssueDoc</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueByPORcvProxy.TransType">
+            <summary>
+            异动类别 (该属性可为空,但有默认值)
+            采购直接发料服务.Misc.异动类别
+            </summary>
+            <value>UFIDA.U9.MO.Enums.IssueDocTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueByPORcvProxy.BusinessType">
+            <summary>
+            业务类型 (该属性可为空,但有默认值)
+            采购直接发料服务.Misc.业务类型
+            </summary>
+            <value>UFIDA.U9.Base.Doc.BusinessTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueByPORcvProxy.RcvDocType">
+            <summary>
+            收货单单据类型 (该属性可为空,且无默认值)
+            采购直接发料服务.Misc.收货单单据类型
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreatePLSByPlanOrderProxy.ProductRequirements">
+            <summary>
+            生产需求 (该属性可为空,且无默认值)
+            根据计划订单创建生产线日计划.Misc.生产需求
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreatePLSBySOProxy.ProductRequirements">
+            <summary>
+            生产需求 (该属性可为空,且无默认值)
+            根据销售订单创建生产线日计划.Misc.生产需求
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CompleteNotifyQCResultProxy.CompleteQCResult">
+            <summary>
+            完工质检结果 (该属性可为空,且无默认值)
+            完工质检结果通知.Misc.完工质检结果
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.OpNotifyQCResultProxy.CompleteQCResult">
+            <summary>
+            工序质检结果DTO (该属性可为空,且无默认值)
+            工序质检结果通知.Misc.工序质检结果DTO
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateMOByPSProxy.ProductRequirements">
+            <summary>
+            生产需求 (该属性可为空,且无默认值)
+            根据生产计划创建生产订单.Misc.生产需求
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ChangeMOProxy.MOList">
+            <summary>
+            生产订单集合 (该属性可为空,且无默认值)
+            生产订单变更.Misc.生产订单集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateCollaborativeMOProxy.MO">
+            <summary>
+            MO (该属性可为空,且无默认值)
+            创建协同生产订单.Misc.MO
+            </summary>
+            <value>UFIDA.U9.MO.MO.MO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CollaborativeMOUpdateParentMOProxy.MO">
+            <summary>
+            子单 (该属性可为空,且无默认值)
+            协同生产订单更新母单.Misc.子单
+            </summary>
+            <value>UFIDA.U9.MO.MO.MO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CollaborativeMOUpdateParentMOProxy.ParentMOID">
+            <summary>
+            母单 (该属性可为空,但有默认值)
+            协同生产订单更新母单.Misc.母单
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.MORcvProxy.MORcvDTOs">
+            <summary>
+            工序委外收货DTO集合 (该属性可为空,且无默认值)
+            收货至工序.Misc.工序委外收货DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QuerySNMOPickListsProxy.MO">
+            <summary>
+            MO (该属性可为空,且无默认值)
+            查询序列号管理备料.Misc.MO
+            </summary>
+            <value>System.EntityKey</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetDocMonthAccountStateProxy.Org_SKey">
+            <summary>
+            关帐组织 序列化Key属性。（传递跨组织序列列字段）
+            单据业务月关帐状态.Misc.关帐组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetDocMonthAccountStateProxy.Org">
+            <summary>
+            关帐组织 (该属性可为空,且无默认值)
+            单据业务月关帐状态.Misc.关帐组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetDocMonthAccountStateProxy.Period_SKey">
+            <summary>
+            关帐期间 序列化Key属性。（传递跨组织序列列字段）
+            单据业务月关帐状态.Misc.关帐期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetDocMonthAccountStateProxy.Period">
+            <summary>
+            关帐期间 (该属性可为空,且无默认值)
+            单据业务月关帐状态.Misc.关帐期间
+            </summary>
+            <value>UFIDA.U9.Base.Account.AccountPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CheckECNItemDetailInUseProxy.IsECOBOM">
+            <summary>
+            变更BOM (该属性可为空,但有默认值)
+            检查工程变更单行的料品是否已发生业务.Misc.变更BOM
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CheckECNItemDetailInUseProxy.IsECORouting">
+            <summary>
+            变更工艺 (该属性可为空,但有默认值)
+            检查工程变更单行的料品是否已发生业务.Misc.变更工艺
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CheckECNItemDetailInUseProxy.ItemMaster_SKey">
+            <summary>
+            物料 序列化Key属性。（传递跨组织序列列字段）
+            检查工程变更单行的料品是否已发生业务.Misc.物料
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CheckECNItemDetailInUseProxy.ItemMaster">
+            <summary>
+            物料 (该属性可为空,且无默认值)
+            检查工程变更单行的料品是否已发生业务.Misc.物料
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Item.ItemMaster</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CheckECNItemDetailInUseProxy.ECNDocNo">
+            <summary>
+            工程变更单号 (该属性可为空,且无默认值)
+            检查工程变更单行的料品是否已发生业务.Misc.工程变更单号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CheckECNItemDetailInUseProxy.ItemFormAttribute">
+            <summary>
+            料品形态属性 (该属性可为空,但有默认值)
+            检查工程变更单行的料品是否已发生业务.Misc.料品形态属性
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Item.ItemTypeAttributeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.PullQCDTOFromCompRPTProxy.Condition">
+            <summary>
+            完工报告生单条件 (该属性可为空,且无默认值)
+            完工报告拉式产生质检DTO.Misc.完工报告生单条件
+            </summary>
+            <value>UFIDA.U9.CBO.QC.DTOs.QCDocInitConForCompDocDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.PullQCDTOFromMOTranProxy.Condition">
+            <summary>
+            工序转移单生单条件 (该属性可为空,且无默认值)
+            工序转移单拉式产生质检DTO.Misc.工序转移单生单条件
+            </summary>
+            <value>UFIDA.U9.CBO.QC.DTOs.QCDocInitConForOperConDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CompQCOpenNotifyProxy.CompQCOpens">
+            <summary>
+            完工质检开立DTOs (该属性可为空,且无默认值)
+            完工质检开立通知.Misc.完工质检开立DTOs
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.OpeQCOpenNotifyProxy.OpeQCOpens">
+            <summary>
+            工序质检开立DTOs (该属性可为空,且无默认值)
+            工序质检开立通知.Misc.工序质检开立DTOs
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.OpeQCCancelNotifyProxy.OpeQCCancels">
+            <summary>
+            工序质检取消DTOs (该属性可为空,且无默认值)
+            工序质检取消通知.Misc.工序质检取消DTOs
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CompQCCancelNotifyProxy.CompQtys">
+            <summary>
+            完工质检取消DTOs (该属性可为空,且无默认值)
+            完工质检取消通知.Misc.完工质检取消DTOs
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.BatchFindMOsForPPByDateRangeProxy.StartDate">
+            <summary>
+            属性 (该属性可为空,且无默认值)
+            根据日期范围批量取需回写生产计划的生产订单.Misc.属性
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.BatchFindMOsForPPByDateRangeProxy.EndDate">
+            <summary>
+            结束时间 (该属性可为空,且无默认值)
+            根据日期范围批量取需回写生产计划的生产订单.Misc.结束时间
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdateCounteractInfoFromPPProxy.MOs_SKey">
+            <summary>
+            生产订单集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdateCounteractInfoFromPPProxy.MOs">
+            <summary>
+            生产订单集合 (该属性可为空,且无默认值)
+            更新生产计划销抵订单信息.Misc.生产订单集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCCompleteRptProxy.OrgKey_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            查询待质检完工报告.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCCompleteRptProxy.OrgKey">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            查询待质检完工报告.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCCompleteRptProxy.FromItemCode">
+            <summary>
+            从物料编码 (该属性可为空,且无默认值)
+            查询待质检完工报告.Misc.从物料编码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCCompleteRptProxy.ToItemCode">
+            <summary>
+            到物料编码 (该属性可为空,且无默认值)
+            查询待质检完工报告.Misc.到物料编码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCCompleteRptProxy.FromDocNo">
+            <summary>
+            从单据号 (该属性可为空,且无默认值)
+            查询待质检完工报告.Misc.从单据号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCCompleteRptProxy.ToDocNo">
+            <summary>
+            到单据号 (该属性可为空,且无默认值)
+            查询待质检完工报告.Misc.到单据号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCOpeTransProxy.OrgKey_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            查询待质检工序转移单.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCOpeTransProxy.OrgKey">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            查询待质检工序转移单.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCOpeTransProxy.FromItemCode">
+            <summary>
+            从物料编码 (该属性可为空,且无默认值)
+            查询待质检工序转移单.Misc.从物料编码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCOpeTransProxy.ToItemCode">
+            <summary>
+            到物料编码 (该属性可为空,且无默认值)
+            查询待质检工序转移单.Misc.到物料编码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCOpeTransProxy.FromDocNo">
+            <summary>
+            从单据号 (该属性可为空,且无默认值)
+            查询待质检工序转移单.Misc.从单据号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCOpeTransProxy.ToDocNo">
+            <summary>
+            到单据号 (该属性可为空,且无默认值)
+            查询待质检工序转移单.Misc.到单据号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCOpeTransProxy.Department_SKey">
+            <summary>
+            部门 序列化Key属性。（传递跨组织序列列字段）
+            查询待质检工序转移单.Misc.部门
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCOpeTransProxy.Department">
+            <summary>
+            部门 (该属性可为空,且无默认值)
+            查询待质检工序转移单.Misc.部门
+            </summary>
+            <value>UFIDA.U9.CBO.HR.Department.Department</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCOpeTransProxy.Project_SKey">
+            <summary>
+            项目 序列化Key属性。（传递跨组织序列列字段）
+            查询待质检工序转移单.Misc.项目
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCOpeTransProxy.Project">
+            <summary>
+            项目 (该属性可为空,且无默认值)
+            查询待质检工序转移单.Misc.项目
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.ProjectTask.Project</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCOpeTransProxy.OpDesc">
+            <summary>
+            工序描述 (该属性可为空,且无默认值)
+            查询待质检工序转移单.Misc.工序描述
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCOpeTransProxy.WorkCenter_SKey">
+            <summary>
+            工作中心 序列化Key属性。（传递跨组织序列列字段）
+            查询待质检工序转移单.Misc.工作中心
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCOpeTransProxy.WorkCenter">
+            <summary>
+            工作中心 (该属性可为空,且无默认值)
+            查询待质检工序转移单.Misc.工作中心
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.WorkCenter.WorkCenter</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeBOMProxy.MOKeys_SKey">
+            <summary>
+            生产订单key集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeBOMProxy.MOKeys">
+            <summary>
+            生产订单key集合 (该属性可为空,且无默认值)
+            现场变更生产订单BOM.Misc.生产订单key集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeBOMProxy.PLSKeys_SKey">
+            <summary>
+            生产线日计划key集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeBOMProxy.PLSKeys">
+            <summary>
+            生产线日计划key集合 (该属性可为空,且无默认值)
+            现场变更生产订单BOM.Misc.生产线日计划key集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeBOMProxy.BOMKey_SKey">
+            <summary>
+            BOM母项key 序列化Key属性。（传递跨组织序列列字段）
+            现场变更生产订单BOM.Misc.BOM母项key
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeBOMProxy.BOMKey">
+            <summary>
+            BOM母项key (该属性可为空,且无默认值)
+            现场变更生产订单BOM.Misc.BOM母项key
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.BOM.BOMMaster</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeBOMProxy.NewBOMKey_SKey">
+            <summary>
+            新BOM母项key 序列化Key属性。（传递跨组织序列列字段）
+            现场变更生产订单BOM.Misc.新BOM母项key
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeBOMProxy.NewBOMKey">
+            <summary>
+            新BOM母项key (该属性可为空,且无默认值)
+            现场变更生产订单BOM.Misc.新BOM母项key
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.BOM.BOMMaster</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeRoutingProxy.MOKeys_SKey">
+            <summary>
+            生产订单key集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeRoutingProxy.MOKeys">
+            <summary>
+            生产订单key集合 (该属性可为空,且无默认值)
+            现场变更生产订单工艺.Misc.生产订单key集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeRoutingProxy.PLSKeys_SKey">
+            <summary>
+            生产线日计划key集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeRoutingProxy.PLSKeys">
+            <summary>
+            生产线日计划key集合 (该属性可为空,且无默认值)
+            现场变更生产订单工艺.Misc.生产线日计划key集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeRoutingProxy.RoutingKey_SKey">
+            <summary>
+            工艺路线key 序列化Key属性。（传递跨组织序列列字段）
+            现场变更生产订单工艺.Misc.工艺路线key
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeRoutingProxy.RoutingKey">
+            <summary>
+            工艺路线key (该属性可为空,且无默认值)
+            现场变更生产订单工艺.Misc.工艺路线key
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.Routing.Routing</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeRoutingProxy.NewRoutingKey_SKey">
+            <summary>
+            工艺路线key 序列化Key属性。（传递跨组织序列列字段）
+            现场变更生产订单工艺.Misc.工艺路线key
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RunningChangeRoutingProxy.NewRoutingKey">
+            <summary>
+            工艺路线key (该属性可为空,且无默认值)
+            现场变更生产订单工艺.Misc.工艺路线key
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.Routing.Routing</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryRunningChangeOrderByBOMProxy.BOMMasterKey_SKey">
+            <summary>
+            变更BOMKey 序列化Key属性。（传递跨组织序列列字段）
+            取变更BOM订单.Misc.变更BOMKey
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryRunningChangeOrderByBOMProxy.BOMMasterKey">
+            <summary>
+            变更BOMKey (该属性可为空,且无默认值)
+            取变更BOM订单.Misc.变更BOMKey
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.BOM.BOMMaster</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryRunningChangeOrderByBOMProxy.IsDiscreteMO">
+            <summary>
+            是否离散订单 (该属性可为空,但有默认值)
+            取变更BOM订单.Misc.是否离散订单
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryRunningChangeOrderByBOMProxy.EffectiveDate">
+            <summary>
+            生效期 (该属性可为空,且无默认值)
+            取变更BOM订单.Misc.生效期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryRunningChangeOrderByRoutingProxy.RoutingKey_SKey">
+            <summary>
+            工艺Key 序列化Key属性。（传递跨组织序列列字段）
+            取变更工艺订单.Misc.工艺Key
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryRunningChangeOrderByRoutingProxy.RoutingKey">
+            <summary>
+            工艺Key (该属性可为空,且无默认值)
+            取变更工艺订单.Misc.工艺Key
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.Routing.Routing</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryRunningChangeOrderByRoutingProxy.IsDiscreteMO">
+            <summary>
+            是否离散订单 (该属性可为空,但有默认值)
+            取变更工艺订单.Misc.是否离散订单
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryRunningChangeOrderByRoutingProxy.EffectiveDate">
+            <summary>
+            生效期 (该属性可为空,且无默认值)
+            取变更工艺订单.Misc.生效期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.AutoRunningChangeBOMProxy.BOMKey_SKey">
+            <summary>
+            BOM母项key 序列化Key属性。（传递跨组织序列列字段）
+            自动现场变更生产订单BOM.Misc.BOM母项key
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.AutoRunningChangeBOMProxy.BOMKey">
+            <summary>
+            BOM母项key (该属性可为空,且无默认值)
+            自动现场变更生产订单BOM.Misc.BOM母项key
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.BOM.BOMMaster</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.AutoRunningChangeBOMProxy.NewBOMKey_SKey">
+            <summary>
+            新BOM母项key 序列化Key属性。（传递跨组织序列列字段）
+            自动现场变更生产订单BOM.Misc.新BOM母项key
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.AutoRunningChangeBOMProxy.NewBOMKey">
+            <summary>
+            新BOM母项key (该属性可为空,且无默认值)
+            自动现场变更生产订单BOM.Misc.新BOM母项key
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.BOM.BOMMaster</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.AutoRunningChangeRoutingProxy.RoutingKey_SKey">
+            <summary>
+            工艺路线key 序列化Key属性。（传递跨组织序列列字段）
+            自动现场变更生产订单工艺.Misc.工艺路线key
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.AutoRunningChangeRoutingProxy.RoutingKey">
+            <summary>
+            工艺路线key (该属性可为空,且无默认值)
+            自动现场变更生产订单工艺.Misc.工艺路线key
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.Routing.Routing</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.AutoRunningChangeRoutingProxy.NewRoutingKey_SKey">
+            <summary>
+            工艺路线key 序列化Key属性。（传递跨组织序列列字段）
+            自动现场变更生产订单工艺.Misc.工艺路线key
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.AutoRunningChangeRoutingProxy.NewRoutingKey">
+            <summary>
+            工艺路线key (该属性可为空,且无默认值)
+            自动现场变更生产订单工艺.Misc.工艺路线key
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.Routing.Routing</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.BatchCancelMOProxy.MOKeyList_SKey">
+            <summary>
+            生产订单Key列表 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.BatchCancelMOProxy.MOKeyList">
+            <summary>
+            生产订单Key列表 (该属性可为空,且无默认值)
+            批量取消生产订单.Misc.生产订单Key列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.FindReleasedMOForPPProxy.SourceDocs">
+            <summary>
+            来源生产计划 (该属性可为空,且无默认值)
+            取下达生产订单.Misc.来源生产计划
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ReceiveActualWorkingHoursOfMOProxy.DateRangeList">
+            <summary>
+            日期范围列表 (该属性可为空,且无默认值)
+            取订单实际工时.Misc.日期范围列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ReceiveActualWorkingHoursOfMOProxy.IsIncludeResourceDetail">
+            <summary>
+            是否包含明细 (该属性可为空,但有默认值)
+            取订单实际工时.Misc.是否包含明细
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ReceiveActualOutputQtyOfMOProxy.DateRangeList">
+            <summary>
+            日期范围列表 (该属性可为空,且无默认值)
+            取订单实际产量.Misc.日期范围列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ReceiveActualOutputQtyOfMOProxy.CalcObj">
+            <summary>
+            成本核算对象 (该属性可为空,但有默认值)
+            取订单实际产量.Misc.成本核算对象
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ReceiveWIPOutputQtyOfMOProxy.DateRangeList">
+            <summary>
+            日期范围列表 (该属性可为空,且无默认值)
+            取在制数量.Misc.日期范围列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ReceiveWIPOutputQtyOfMOProxy.CalcObj">
+            <summary>
+            成本核算对象 (该属性可为空,但有默认值)
+            取在制数量.Misc.成本核算对象
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueTXNQryForInnerBalanceSVProxy.SrcDocOrg_SKey">
+            <summary>
+            来源单据组织 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueTXNQryForInnerBalanceSVProxy.SrcDocOrg">
+            <summary>
+            来源单据组织 (该属性可为空,且无默认值)
+            跨组织领料查询服务.Misc.来源单据组织
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueTXNQryForInnerBalanceSVProxy.BalanceOrg_SKey">
+            <summary>
+            内部结算清单组织 序列化Key属性。（传递跨组织序列列字段）
+            跨组织领料查询服务.Misc.内部结算清单组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueTXNQryForInnerBalanceSVProxy.BalanceOrg">
+            <summary>
+            内部结算清单组织 (该属性可为空,且无默认值)
+            跨组织领料查询服务.Misc.内部结算清单组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueTXNQryForInnerBalanceSVProxy.FromOrgList_SKey">
+            <summary>
+            来源组织List 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueTXNQryForInnerBalanceSVProxy.FromOrgList">
+            <summary>
+            来源组织List (该属性可为空,且无默认值)
+            跨组织领料查询服务.Misc.来源组织List
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueTXNQryForInnerBalanceSVProxy.ToOrgList_SKey">
+            <summary>
+            目的组织List 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueTXNQryForInnerBalanceSVProxy.ToOrgList">
+            <summary>
+            目的组织List (该属性可为空,且无默认值)
+            跨组织领料查询服务.Misc.目的组织List
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueTXNQryForInnerBalanceSVProxy.ItemClass_SKey">
+            <summary>
+            料品分类 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueTXNQryForInnerBalanceSVProxy.ItemClass">
+            <summary>
+            料品分类 (该属性可为空,且无默认值)
+            跨组织领料查询服务.Misc.料品分类
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueTXNQryForInnerBalanceSVProxy.Item_SKey">
+            <summary>
+            料品 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueTXNQryForInnerBalanceSVProxy.Item">
+            <summary>
+            料品 (该属性可为空,且无默认值)
+            跨组织领料查询服务.Misc.料品
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueTXNQryForInnerBalanceSVProxy.BusinessDate">
+            <summary>
+            业务日期范围 (该属性可为空,且无默认值)
+            跨组织领料查询服务.Misc.业务日期范围
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.DTOs.DateRange</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueTXNQryForInnerBalanceSVProxy.DocLineS_SKey">
+            <summary>
+            领料单行集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueTXNQryForInnerBalanceSVProxy.DocLineS">
+            <summary>
+            领料单行集合 (该属性可为空,且无默认值)
+            跨组织领料查询服务.Misc.领料单行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResourceRptQryForInnerBalanceSVProxy.SrcDocOrg_SKey">
+            <summary>
+            来源单据组织 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResourceRptQryForInnerBalanceSVProxy.SrcDocOrg">
+            <summary>
+            来源单据组织 (该属性可为空,且无默认值)
+            资源耗用报告查询服务.Misc.来源单据组织
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResourceRptQryForInnerBalanceSVProxy.BalanceOrg_SKey">
+            <summary>
+            内部结算清单组织 序列化Key属性。（传递跨组织序列列字段）
+            资源耗用报告查询服务.Misc.内部结算清单组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResourceRptQryForInnerBalanceSVProxy.BalanceOrg">
+            <summary>
+            内部结算清单组织 (该属性可为空,且无默认值)
+            资源耗用报告查询服务.Misc.内部结算清单组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResourceRptQryForInnerBalanceSVProxy.FromOrgList_SKey">
+            <summary>
+            来源组织List 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResourceRptQryForInnerBalanceSVProxy.FromOrgList">
+            <summary>
+            来源组织List (该属性可为空,且无默认值)
+            资源耗用报告查询服务.Misc.来源组织List
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResourceRptQryForInnerBalanceSVProxy.ToOrgList_SKey">
+            <summary>
+            目的组织List 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResourceRptQryForInnerBalanceSVProxy.ToOrgList">
+            <summary>
+            目的组织List (该属性可为空,且无默认值)
+            资源耗用报告查询服务.Misc.目的组织List
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResourceRptQryForInnerBalanceSVProxy.ItemClass_SKey">
+            <summary>
+            料品分类 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResourceRptQryForInnerBalanceSVProxy.ItemClass">
+            <summary>
+            料品分类 (该属性可为空,且无默认值)
+            资源耗用报告查询服务.Misc.料品分类
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResourceRptQryForInnerBalanceSVProxy.Item_SKey">
+            <summary>
+            料品 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResourceRptQryForInnerBalanceSVProxy.Item">
+            <summary>
+            料品 (该属性可为空,且无默认值)
+            资源耗用报告查询服务.Misc.料品
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResourceRptQryForInnerBalanceSVProxy.BusinessDate">
+            <summary>
+            业务日期范围 (该属性可为空,且无默认值)
+            资源耗用报告查询服务.Misc.业务日期范围
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.DTOs.DateRange</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResourceRptQryForInnerBalanceSVProxy.DocLineS_SKey">
+            <summary>
+            资源耗用行集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResourceRptQryForInnerBalanceSVProxy.DocLineS">
+            <summary>
+            资源耗用行集合 (该属性可为空,且无默认值)
+            资源耗用报告查询服务.Misc.资源耗用行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetDocDayAccountStateProxy.Org_SKey">
+            <summary>
+            关帐组织 序列化Key属性。（传递跨组织序列列字段）
+            单据业务日关帐状态.Misc.关帐组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetDocDayAccountStateProxy.Org">
+            <summary>
+            关帐组织 (该属性可为空,且无默认值)
+            单据业务日关帐状态.Misc.关帐组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetDocDayAccountStateProxy.WhList_SKey">
+            <summary>
+            存储地点集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetDocDayAccountStateProxy.WhList">
+            <summary>
+            存储地点集合 (该属性可为空,且无默认值)
+            单据业务日关帐状态.Misc.存储地点集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetDocDayAccountStateProxy.CloseDate">
+            <summary>
+            关帐日期 (该属性可为空,且无默认值)
+            单据业务日关帐状态.Misc.关帐日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetMOReserveByScopeProxy.ReserveDetails">
+            <summary>
+            供应范围集合 (该属性可为空,且无默认值)
+            获取生产订单预留信息-范围.Misc.供应范围集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.MOReserveDetailDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetMOReserveByDocProxy.DocClews">
+            <summary>
+            供应范围集合 (该属性可为空,且无默认值)
+            获取生产订单预留信息-单据.Misc.供应范围集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.MODocClewDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdateMOReserveProxy.ReportReserveQtys">
+            <summary>
+            单据预留信息回写集合 (该属性可为空,且无默认值)
+            更新生产订单预留信息.Misc.单据预留信息回写集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.MOReportReserveQtyDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetMOPickReserveByScopeProxy.ReserveDetails">
+            <summary>
+            需求范围集合 (该属性可为空,且无默认值)
+            获取生产订单备料预留信息-范围.Misc.需求范围集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.MOReserveDetailDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetMOPickReserveByDocProxy.DocClews">
+            <summary>
+            需求范围集合 (该属性可为空,且无默认值)
+            获取生产订单备料预留信息-单据.Misc.需求范围集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.MODocClewDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdateMOPickReserveProxy.ReportReserveQtys">
+            <summary>
+            单据预留信息回写集合 (该属性可为空,且无默认值)
+            更新生产订单备料预留信息.Misc.单据预留信息回写集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.MOReportReserveQtyDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetPLSReserveByScopeProxy.ReserveDetails">
+            <summary>
+            供应范围集合 (该属性可为空,且无默认值)
+            获取生产线日计划预留信息-范围.Misc.供应范围集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.MOReserveDetailDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetPLSReserveByDocProxy.DocClews">
+            <summary>
+            供应范围集合 (该属性可为空,且无默认值)
+            获取生产线日计划预留信息-单据.Misc.供应范围集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.MODocClewDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdatePLSReserveProxy.ReportReserveQtys">
+            <summary>
+            单据预留信息回写集合 (该属性可为空,且无默认值)
+            更新生产线日计划预留信息.Misc.单据预留信息回写集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.MOReportReserveQtyDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetPLSPickReserveByScopeProxy.ReserveDetails">
+            <summary>
+            需求范围集合 (该属性可为空,且无默认值)
+            获取生产线日计划备料预留信息-范围.Misc.需求范围集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.MOReserveDetailDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetPLSPickReserveByDocProxy.DocClews">
+            <summary>
+            需求范围集合 (该属性可为空,且无默认值)
+            获取生产线日计划备料预留信息-单据.Misc.需求范围集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.MODocClewDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdatePLSPickReserveProxy.ReportReserveQtys">
+            <summary>
+            单据预留信息回写集合 (该属性可为空,且无默认值)
+            更新生产线日计划备料预留信息.Misc.单据预留信息回写集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.MOReportReserveQtyDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetMODemandBatchProxy.QueryArray">
+            <summary>
+            查询集合 (该属性可为空,且无默认值)
+            批量获取生产订单备料需求.Misc.查询集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.ATPQryInfoDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetMOSupplyBatchProxy.QueryArray">
+            <summary>
+            查询集合 (该属性可为空,且无默认值)
+            批量获取生产订单供应.Misc.查询集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.ATPQryInfoDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetProductLineDemandBatchProxy.QueryArray">
+            <summary>
+            查询集合 (该属性可为空,且无默认值)
+            批量获取生产线需求.Misc.查询集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.ATPQryInfoDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetProductLineSupplyBatchProxy.QueryArray">
+            <summary>
+            查询集合 (该属性可为空,且无默认值)
+            批量获取生产线供应.Misc.查询集合
+            </summary>
+            <value>UFIDA.U9.MO.MO.ATPQryInfoDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IssueGenerateBalanceSrvProxy.IssueDocLineToInnerBalanceDTO">
+            <summary>
+            属性 (该属性可为空,且无默认值)
+            跨组织领料单批量生成结算单服务.Misc.属性
+            </summary>
+            <value>UFIDA.U9.MO.DTOs.IssueInToInnerBalanceDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ChangeMOsByMRPProxy.MRPReshcedules">
+            <summary>
+            MRP重排信息 (该属性可为空,且无默认值)
+            MRP修改订单.Misc.MRP重排信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ResouseRptCreateInnerBalanceSVProxy.ResRptLineToInnerBalanceDTO">
+            <summary>
+            资源报告行到内部结算单DTO (该属性可为空,且无默认值)
+            资源耗用报告创建内部交易结算单.Misc.资源报告行到内部结算单DTO
+            </summary>
+            <value>UFIDA.U9.MO.DTOs.ResRptLineToInnerBalanceDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdateResUsageRptIsSettledSvProxy.ResRptDetailList">
+            <summary>
+            资源报告明细 (该属性可为空,且无默认值)
+            更新资源耗用报告结算信息服务.Misc.资源报告明细
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdateResUsageRptIsSettledSvProxy.IsSettled">
+            <summary>
+            结算标记 (该属性可为空,但有默认值)
+            更新资源耗用报告结算信息服务.Misc.结算标记
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdateIssueTXNIsSettledProxy.IssueTXNDetailList_SKey">
+            <summary>
+            领料单明细 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdateIssueTXNIsSettledProxy.IssueTXNDetailList">
+            <summary>
+            领料单明细 (该属性可为空,且无默认值)
+            更新生产领料单结算信息服务.Misc.领料单明细
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdateIssueTXNIsSettledProxy.IsSettled">
+            <summary>
+            结算标记 (该属性可为空,但有默认值)
+            更新生产领料单结算信息服务.Misc.结算标记
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CollaborativeMOUpdateChildMOProxy.MO">
+            <summary>
+            生产订单 (该属性可为空,且无默认值)
+            协同生产订单更新子单.Misc.生产订单
+            </summary>
+            <value>UFIDA.U9.MO.MO.MO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CollaborativeMOUpdateChildMOProxy.ChildMOID">
+            <summary>
+            子单ID (该属性可为空,但有默认值)
+            协同生产订单更新子单.Misc.子单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CollaborativeMODeleteChildMOProxy.ChildMOID">
+            <summary>
+            子单ID (该属性可为空,但有默认值)
+            协同生产订单删除子单.Misc.子单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryUnCloseDocProxy.Org_SKey">
+            <summary>
+            关帐组织 序列化Key属性。（传递跨组织序列列字段）
+            未核准单据查询供库存月末关帐时使用.Misc.关帐组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryUnCloseDocProxy.Org">
+            <summary>
+            关帐组织 (该属性可为空,且无默认值)
+            未核准单据查询供库存月末关帐时使用.Misc.关帐组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryUnCloseDocProxy.SOB_SKey">
+            <summary>
+            关帐SOB 序列化Key属性。（传递跨组织序列列字段）
+            未核准单据查询供库存月末关帐时使用.Misc.关帐SOB
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryUnCloseDocProxy.SOB">
+            <summary>
+            关帐SOB (该属性可为空,且无默认值)
+            未核准单据查询供库存月末关帐时使用.Misc.关帐SOB
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryUnCloseDocProxy.Period_SKey">
+            <summary>
+            关帐期间 序列化Key属性。（传递跨组织序列列字段）
+            未核准单据查询供库存月末关帐时使用.Misc.关帐期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryUnCloseDocProxy.Period">
+            <summary>
+            关帐期间 (该属性可为空,且无默认值)
+            未核准单据查询供库存月末关帐时使用.Misc.关帐期间
+            </summary>
+            <value>UFIDA.U9.Base.Account.AccountPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryUnCloseDocProxy.Whs_SKey">
+            <summary>
+            存储地点集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryUnCloseDocProxy.Whs">
+            <summary>
+            存储地点集合 (该属性可为空,且无默认值)
+            未核准单据查询供库存月末关帐时使用.Misc.存储地点集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryUnCloseDocProxy.DocDate">
+            <summary>
+            单据日期 (该属性可为空,且无默认值)
+            未核准单据查询供库存月末关帐时使用.Misc.单据日期
+            </summary>
+            <value>System.Date</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IsTransferCollaborativeMOProxy.MO_SKey">
+            <summary>
+            来源MO 序列化Key属性。（传递跨组织序列列字段）
+            协同子厂是否能做转移.Misc.来源MO
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IsTransferCollaborativeMOProxy.MO">
+            <summary>
+            来源MO (该属性可为空,且无默认值)
+            协同子厂是否能做转移.Misc.来源MO
+            </summary>
+            <value>UFIDA.U9.MO.MO.MO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IsTransferCollaborativeMOProxy.FromOp">
+            <summary>
+            来源工序 (该属性可为空,且无默认值)
+            协同子厂是否能做转移.Misc.来源工序
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.IsTransferCollaborativeMOProxy.ToOp">
+            <summary>
+            目地工序 (该属性可为空,且无默认值)
+            协同子厂是否能做转移.Misc.目地工序
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryChildMOFromDatabaseProxy.ParentMOID">
+            <summary>
+            母单ID (该属性可为空,但有默认值)
+            从数据库查询MO子单服务.Misc.母单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.BatchCreateMOByPlanOrderProxy.ProductRequirements">
+            <summary>
+            生产需求 (该属性可为空,且无默认值)
+            根据计划订单或主计划批量创建生产订单.Misc.生产需求
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.BatchCreateMOByPlanOrderProxy.ItemQtyInfoForPlanOrder">
+            <summary>
+            属性 (该属性可为空,且无默认值)
+            根据计划订单或主计划批量创建生产订单.Misc.属性
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.BatchCreateMOByPlanOrderProxy.MrpPickOptimInfo4Docs">
+            <summary>
+            单据备料MRP优化信息 (该属性可为空,且无默认值)
+            根据计划订单或主计划批量创建生产订单.Misc.单据备料MRP优化信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.BatchCreatePLSByPlanOrderProxy.ProductRequirements">
+            <summary>
+            生产需求 (该属性可为空,且无默认值)
+            根据计划订单批量创建生产线日计划.Misc.生产需求
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.BatchCreatePLSByPlanOrderProxy.ItemQtyInfoForPlanOrder">
+            <summary>
+            属性 (该属性可为空,且无默认值)
+            根据计划订单批量创建生产线日计划.Misc.属性
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.BatchCreatePLSByPlanOrderProxy.MrpPickOptimInfo4Docs">
+            <summary>
+            单据备料MRP优化信息 (该属性可为空,且无默认值)
+            根据计划订单批量创建生产线日计划.Misc.单据备料MRP优化信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.BatchCreatePLSByPlanOrderProxy.Periods">
+            <summary>
+            MRP生产期间 (该属性可为空,且无默认值)
+            根据计划订单批量创建生产线日计划.Misc.MRP生产期间
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.MOTransferSrvProxy.MOTransferDTOs">
+            <summary>
+            MO调料DTO集 (该属性可为空,且无默认值)
+            生产订单调料回调服务.Misc.MO调料DTO集
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetMOTypeNameProxy.MOTypeCode">
+            <summary>
+            MO单据类型编码 (该属性可为空,且无默认值)
+            获取MO单据类型名称.Misc.MO单据类型编码
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.MO_GetPrimaryEntityProxy.AAIEntityTransDTO">
+            <summary>
+            回写凭证信息DTO (该属性可为空,且无默认值)
+            凭证联查服务.Misc.回写凭证信息DTO
+            </summary>
+            <value>UFIDA.U9.AAI.TransEntry.AAVoucherInfoDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.MOGetPrimaryEntitySrvProxy.InputAAIEntityTransDTO">
+            <summary>
+            凭证联查原始单据DTO (该属性可为空,且无默认值)
+            生产订单凭证联查原始单据服务.Misc.凭证联查原始单据DTO
+            </summary>
+            <value>UFIDA.U9.AAI.TransEntry.AAIEntityTransDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetSubcontractResRateProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            取工序委外资源费率服务.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetSubcontractResRateProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            取工序委外资源费率服务.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetSubcontractResRateProxy.CostType_SKey">
+            <summary>
+            成本类型 序列化Key属性。（传递跨组织序列列字段）
+            取工序委外资源费率服务.Misc.成本类型
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetSubcontractResRateProxy.CostType">
+            <summary>
+            成本类型 (该属性可为空,且无默认值)
+            取工序委外资源费率服务.Misc.成本类型
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.CO.CostType</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetSubcontractResRateProxy.SOB_SKey">
+            <summary>
+            账簿 序列化Key属性。（传递跨组织序列列字段）
+            取工序委外资源费率服务.Misc.账簿
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetSubcontractResRateProxy.SOB">
+            <summary>
+            账簿 (该属性可为空,且无默认值)
+            取工序委外资源费率服务.Misc.账簿
+            </summary>
+            <value>UFIDA.U9.Base.SOB.SetofBooks</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetSubcontractResRateProxy.ItemMaster_SKey">
+            <summary>
+            物料信息 序列化Key属性。（传递跨组织序列列字段）
+            取工序委外资源费率服务.Misc.物料信息
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetSubcontractResRateProxy.ItemMaster">
+            <summary>
+            物料信息 (该属性可为空,且无默认值)
+            取工序委外资源费率服务.Misc.物料信息
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Item.ItemMaster</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetSubcontractResRateProxy.MOID">
+            <summary>
+            MO 或 PLS (该属性可为空,但有默认值)
+            取工序委外资源费率服务.Misc.MO 或 PLS
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetSubcontractResRateProxy.OpTransID">
+            <summary>
+            工序转移单 (该属性可为空,但有默认值)
+            取工序委外资源费率服务.Misc.工序转移单
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetSubcontractResRateProxy.OpNum">
+            <summary>
+            工序号 (该属性可为空,且无默认值)
+            取工序委外资源费率服务.Misc.工序号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateMOSVProxy.Modata">
+            <summary>
+            生产订单DTO (该属性可为空,且无默认值)
+            创建生产订单主服务.Misc.生产订单DTO
+            </summary>
+            <value>UFIDA.U9.MO.MO.MO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateMOSVProxy.SnList">
+            <summary>
+            要分割的序列号 (该属性可为空,且无默认值)
+            创建生产订单主服务.Misc.要分割的序列号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateMOSVProxy.MOType">
+            <summary>
+            MO类型 (该属性可为空,但有默认值)
+            创建生产订单主服务.Misc.MO类型
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateMOSVProxy.SourceDocType">
+            <summary>
+            来源单据类型 (该属性可为空,且无默认值)
+            创建生产订单主服务.Misc.来源单据类型
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateMOSVProxy.SourceOrg_SKey">
+            <summary>
+            来源组织 序列化Key属性。（传递跨组织序列列字段）
+            创建生产订单主服务.Misc.来源组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateMOSVProxy.SourceOrg">
+            <summary>
+            来源组织 (该属性可为空,且无默认值)
+            创建生产订单主服务.Misc.来源组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryMOInfo4SOProxy.Org">
+            <summary>
+            组织 (该属性可为空,但有默认值)
+            根据SO查MO/生产线日计划信息.Misc.组织
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryMOInfo4SOProxy.ShipLineIDs">
+            <summary>
+            销售订单计划行集合 (该属性可为空,且无默认值)
+            根据SO查MO/生产线日计划信息.Misc.销售订单计划行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryMOOpeInfo4SOProxy.MOKey">
+            <summary>
+            生产订单key (该属性可为空,但有默认值)
+            根据SO查MO/生产线日计划工序信息.Misc.生产订单key
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryMOOpeInfo4SOProxy.PLSKey">
+            <summary>
+            生产线日计划key (该属性可为空,但有默认值)
+            根据SO查MO/生产线日计划工序信息.Misc.生产线日计划key
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreatePLSSVProxy.Modata">
+            <summary>
+            生产订单DTO (该属性可为空,且无默认值)
+            创建生产线日计划.Misc.生产订单DTO
+            </summary>
+            <value>UFIDA.U9.MO.REP.PLS</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetMOPLSInfoByItemVersionSVProxy.ItemVersionInfoList">
+            <summary>
+            料品信息集合 (该属性可为空,但有默认值)
+            根据料品及版本获取MO及PLS信息.Misc.料品信息集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ModifySemiMOAssemblySrvProxy.SemiAssemblyConcernedDataDTO">
+            <summary>
+            在制品装配相关数据DTO (该属性可为空,且无默认值)
+            修改在制品装配关系服务.Misc.在制品装配相关数据DTO
+            </summary>
+            <value>UFIDA.U9.MO.MO.SemiAssemblyConcernedDataDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.MOSemiAssemblyQuerySrvProxy.MOKey">
+            <summary>
+            MOKey (该属性可为空,但有默认值)
+            在制品装配关系查询服务.Misc.MOKey
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.MOSemiAssemblyQuerySrvProxy.RepeatedPlanKey">
+            <summary>
+            重复计划Key (该属性可为空,但有默认值)
+            在制品装配关系查询服务.Misc.重复计划Key
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.MOSemiAssemblyQuerySrvProxy.OPNo">
+            <summary>
+            工序号 (该属性可为空,且无默认值)
+            在制品装配关系查询服务.Misc.工序号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetMOQtyInfoBySOSVProxy.ShipLineIDs">
+            <summary>
+            销售订单计划行集合 (该属性可为空,且无默认值)
+            取SO已转MO的数量.Misc.销售订单计划行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CompleteRptQryForInnerBalanceSVProxy.SrcDocOrg_SKey">
+            <summary>
+            来源单据组织 序列化Key属性。（传递跨组织序列列字段）
+            跨组织入库产生内部交易结算单查询服务.Misc.来源单据组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CompleteRptQryForInnerBalanceSVProxy.SrcDocOrg">
+            <summary>
+            来源单据组织 (该属性可为空,且无默认值)
+            跨组织入库产生内部交易结算单查询服务.Misc.来源单据组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CompleteRptQryForInnerBalanceSVProxy.BalanceOrg_SKey">
+            <summary>
+            内部结算清单组织 序列化Key属性。（传递跨组织序列列字段）
+            跨组织入库产生内部交易结算单查询服务.Misc.内部结算清单组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CompleteRptQryForInnerBalanceSVProxy.BalanceOrg">
+            <summary>
+            内部结算清单组织 (该属性可为空,且无默认值)
+            跨组织入库产生内部交易结算单查询服务.Misc.内部结算清单组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CompleteRptQryForInnerBalanceSVProxy.ItemClass_SKey">
+            <summary>
+            料品分类 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CompleteRptQryForInnerBalanceSVProxy.ItemClass">
+            <summary>
+            料品分类 (该属性可为空,且无默认值)
+            跨组织入库产生内部交易结算单查询服务.Misc.料品分类
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CompleteRptQryForInnerBalanceSVProxy.Item_SKey">
+            <summary>
+            料品 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CompleteRptQryForInnerBalanceSVProxy.Item">
+            <summary>
+            料品 (该属性可为空,且无默认值)
+            跨组织入库产生内部交易结算单查询服务.Misc.料品
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CompleteRptQryForInnerBalanceSVProxy.BusinessDate">
+            <summary>
+            业务日期范围 (该属性可为空,且无默认值)
+            跨组织入库产生内部交易结算单查询服务.Misc.业务日期范围
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.DTOs.DateRange</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CompleteRptQryForInnerBalanceSVProxy.CompleteRptLInes_SKey">
+            <summary>
+            完工报告行集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CompleteRptQryForInnerBalanceSVProxy.CompleteRptLInes">
+            <summary>
+            完工报告行集合 (该属性可为空,且无默认值)
+            跨组织入库产生内部交易结算单查询服务.Misc.完工报告行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CompleteRptGenerateBalanceSrvProxy.CompleteRptToInnerBalanceDTO">
+            <summary>
+            属性 (该属性可为空,且无默认值)
+            跨组织入库批量生成结算单服务.Misc.属性
+            </summary>
+            <value>UFIDA.U9.MO.DTOs.CompleteRptToInnerBalanceDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdateCompleteRptIsSettledProxy.IsSettled">
+            <summary>
+            结算标记 (该属性可为空,但有默认值)
+            更新完工报告结算信息服务.Misc.结算标记
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdateCompleteRptIsSettledProxy.CompleteRptRcvLines_SKey">
+            <summary>
+            完工入库行集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdateCompleteRptIsSettledProxy.CompleteRptRcvLines">
+            <summary>
+            完工入库行集合 (该属性可为空,且无默认值)
+            更新完工报告结算信息服务.Misc.完工入库行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QCUnApprovedCompleteRptProxy.CompleteRptList_SKey">
+            <summary>
+            完工报告 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QCUnApprovedCompleteRptProxy.CompleteRptList">
+            <summary>
+            完工报告 (该属性可为空,且无默认值)
+            质检单弃审完工报告.Misc.完工报告
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QCUnApprovedOpTransferDocProxy.OpTransferDocList_SKey">
+            <summary>
+            工序转移单 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QCUnApprovedOpTransferDocProxy.OpTransferDocList">
+            <summary>
+            工序转移单 (该属性可为空,且无默认值)
+            质检单弃审工序转移单.Misc.工序转移单
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetRunningChangedMOListProxy.IsBatchChange">
+            <summary>
+            是否批量变更 (该属性可为空,但有默认值)
+            获取现场变更影响的所有MO.Misc.是否批量变更
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetRunningChangedMOListProxy.ECNDoc">
+            <summary>
+            工程变更单 (该属性可为空,但有默认值)
+            获取现场变更影响的所有MO.Misc.工程变更单
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetRunningChangedMOListProxy.ECNDocNo">
+            <summary>
+            工程变更单单号 (该属性可为空,且无默认值)
+            获取现场变更影响的所有MO.Misc.工程变更单单号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetRunningChangedMOListProxy.ECNItemDetail">
+            <summary>
+            工程变更单物料行 (该属性可为空,但有默认值)
+            获取现场变更影响的所有MO.Misc.工程变更单物料行
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.SyncMOSeiralNoSrvProxy.MOKey_SKey">
+            <summary>
+            生产订单 序列化Key属性。（传递跨组织序列列字段）
+            同步维护订单在制品序列号表的服务.Misc.生产订单
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.SyncMOSeiralNoSrvProxy.MOKey">
+            <summary>
+            生产订单 (该属性可为空,且无默认值)
+            同步维护订单在制品序列号表的服务.Misc.生产订单
+            </summary>
+            <value>UFIDA.U9.MO.MO.MO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.SyncMOSeiralNoSrvProxy.SeiralNoDTOList">
+            <summary>
+            序列号DTOList (该属性可为空,且无默认值)
+            同步维护订单在制品序列号表的服务.Misc.序列号DTOList
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetREPMaxDateByItemProductLinkSVProxy.ItemProductLineLinkList_SKey">
+            <summary>
+            物料生产线集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetREPMaxDateByItemProductLinkSVProxy.ItemProductLineLinkList">
+            <summary>
+            物料生产线集合 (该属性可为空,且无默认值)
+            通过物料生产线取得重复计划最大生产日期.Misc.物料生产线集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.TransDocUpdatePullListSrvProxy.ListPullListSupply">
+            <summary>
+            供应明细及调拨数量 (该属性可为空,且无默认值)
+            调拨单回写PullList.Misc.供应明细及调拨数量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.TransDocUpdatePullListSrvProxy.TransferType">
+            <summary>
+            调拨单类型 (该属性可为空,但有默认值)
+            调拨单回写PullList.Misc.调拨单类型
+            </summary>
+            <value>UFIDA.U9.MO.Enums.TransferTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.TransDocUpdatePullListSrvProxy.OperateTransfer">
+            <summary>
+            调拨单操作时机 (该属性可为空,但有默认值)
+            调拨单回写PullList.Misc.调拨单操作时机
+            </summary>
+            <value>UFIDA.U9.MO.Enums.OperateTransferEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetPickInfoForPOSVProxy.PickInfoForPOList">
+            <summary>
+            PO备料相关信息 (该属性可为空,且无默认值)
+            获取PO相关备料服务.Misc.PO备料相关信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ValidateOnCalendarChangeSVProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            生产线工作日历变更校验.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ValidateOnCalendarChangeSVProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            生产线工作日历变更校验.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ValidateOnCalendarChangeSVProxy.ProductionLine_SKey">
+            <summary>
+            生产线[如果是工作日历本身变化引发，此字段不传] 序列化Key属性。（传递跨组织序列列字段）
+            生产线工作日历变更校验.Misc.生产线[如果是工作日历本身变化引发，此字段不传]
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ValidateOnCalendarChangeSVProxy.ProductionLine">
+            <summary>
+            生产线[如果是工作日历本身变化引发，此字段不传] (该属性可为空,且无默认值)
+            生产线工作日历变更校验.Misc.生产线[如果是工作日历本身变化引发，此字段不传]
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.ProductionLine.ProductionLine</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ValidateOnCalendarChangeSVProxy.WorkCalendar_SKey">
+            <summary>
+            工作日历[变化后的日历] 序列化Key属性。（传递跨组织序列列字段）
+            生产线工作日历变更校验.Misc.工作日历[变化后的日历]
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ValidateOnCalendarChangeSVProxy.WorkCalendar">
+            <summary>
+            工作日历[变化后的日历] (该属性可为空,且无默认值)
+            生产线工作日历变更校验.Misc.工作日历[变化后的日历]
+            </summary>
+            <value>UFIDA.U9.Base.WorkCalendar.WorkCalendar</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetWIPQtyByQtyProxy.QryWIPQtyDTOlist">
+            <summary>
+            查询在制数量 (该属性可为空,且无默认值)
+            根据完工数量计算备料的消耗数量服务.Misc.查询在制数量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetWIPQtyByDateProxy.Org_SKey">
+            <summary>
+            组织 序列化Key属性。（传递跨组织序列列字段）
+            根据订单日期计算备料在制数量服务.Misc.组织
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetWIPQtyByDateProxy.Org">
+            <summary>
+            组织 (该属性可为空,且无默认值)
+            根据订单日期计算备料在制数量服务.Misc.组织
+            </summary>
+            <value>UFIDA.U9.Base.Organization.Organization</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetWIPQtyByDateProxy.BussinessDate">
+            <summary>
+            业务日期 (该属性可为空,且无默认值)
+            根据订单日期计算备料在制数量服务.Misc.业务日期
+            </summary>
+            <value>System.DateTime</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.InformMOByWBSHoldOrReleaseSVProxy.MOID">
+            <summary>
+            生产订单ID (该属性可为空,但有默认值)
+            WBS任务挂起或解除通知MO服务.Misc.生产订单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.InformMOByWBSHoldOrReleaseSVProxy.WBSOutLineID">
+            <summary>
+            任务产出行ID (该属性可为空,但有默认值)
+            WBS任务挂起或解除通知MO服务.Misc.任务产出行ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.InformMOByWBSHoldOrReleaseSVProxy.IsHoldWBS">
+            <summary>
+            是否挂起WBS，T为挂起，F为解除 (该属性可为空,但有默认值)
+            WBS任务挂起或解除通知MO服务.Misc.是否挂起WBS，T为挂起，F为解除
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.InformMOByWBSHoldOrReleaseSVProxy.HoldReason_SKey">
+            <summary>
+            挂起原因 序列化Key属性。（传递跨组织序列列字段）
+            WBS任务挂起或解除通知MO服务.Misc.挂起原因
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.InformMOByWBSHoldOrReleaseSVProxy.HoldReason">
+            <summary>
+            挂起原因 (该属性可为空,且无默认值)
+            WBS任务挂起或解除通知MO服务.Misc.挂起原因
+            </summary>
+            <value>UFIDA.U9.Base.HoldRelease.HoldReason</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.InformMOByWBSHoldOrReleaseSVProxy.ReleaseReason_SKey">
+            <summary>
+            解除原因 序列化Key属性。（传递跨组织序列列字段）
+            WBS任务挂起或解除通知MO服务.Misc.解除原因
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.InformMOByWBSHoldOrReleaseSVProxy.ReleaseReason">
+            <summary>
+            解除原因 (该属性可为空,且无默认值)
+            WBS任务挂起或解除通知MO服务.Misc.解除原因
+            </summary>
+            <value>UFIDA.U9.Base.HoldRelease.ReleaseReason</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.InformMOByWBSCancelSVProxy.MOID">
+            <summary>
+            生产订单ID (该属性可为空,但有默认值)
+            WBS删除作废时通知MO服务.Misc.生产订单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.InformMOByWBSCancelSVProxy.WBSOutLineID">
+            <summary>
+            任务产出行ID (该属性可为空,但有默认值)
+            WBS删除作废时通知MO服务.Misc.任务产出行ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QryMOForSOProxy.IDs">
+            <summary>
+            SourceIDs (该属性可为空,且无默认值)
+            查生产订单服务.Misc.SourceIDs
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryNeedQCDispatchOrderSrvProxy.Query4QCDTO">
+            <summary>
+            查询条件 (该属性可为空,且无默认值)
+            查询可进行质检的派工单服务.Misc.查询条件
+            </summary>
+            <value>UFIDA.U9.CBO.QC.DTOs.Query4QCDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetDispatchCompleteDocInfoSrvProxy.Condition">
+            <summary>
+            条件 (该属性可为空,且无默认值)
+            获取申报单信息服务.Misc.条件
+            </summary>
+            <value>UFIDA.U9.CBO.QC.DTOs.QCDocInitConForDispatchOrderDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QCOpenNotifyDispatchCompleteOrderSrvProxy.DispatchCompleteOrderLines">
+            <summary>
+            申报单行集合 (该属性可为空,且无默认值)
+            质检开立回写申报单服务.Misc.申报单行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QCCancelNotifyDispatchOrderSrvProxy.DispatchCompleteOrderLines">
+            <summary>
+            申报单行集合 (该属性可为空,且无默认值)
+            质检取消更新申报单服务.Misc.申报单行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QCApproveNotifyDispatchOrderProxy.QCResults">
+            <summary>
+            质检结果 (该属性可为空,且无默认值)
+            质检审核更新申报单服务.Misc.质检结果
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QCApproveNotifyDispatchOrderProxy.DisCOLineOpQCResultDTOs">
+            <summary>
+            申报单行质检结果DTO集合 (该属性可为空,且无默认值)
+            质检审核更新申报单服务.Misc.申报单行质检结果DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QCUnApprovedNotifyDispatchOrderSrvProxy.DispatchCompleteOrderLines_SKey">
+            <summary>
+            派工单行集合 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QCUnApprovedNotifyDispatchOrderSrvProxy.DispatchCompleteOrderLines">
+            <summary>
+            派工单行集合 (该属性可为空,且无默认值)
+            质检弃审更新申报单服务.Misc.派工单行集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryRecedeCollectServiceProxy.BatchReturnQureyDTO">
+            <summary>
+            入口参数 (该属性可为空,且无默认值)
+            查询退料服务汇总.Misc.入口参数
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.DTOs.BatchReturnQureyDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryRecedeListServiceProxy.BatchRtnDocQryDetailParamDTO">
+            <summary>
+            入口明细数据 (该属性可为空,且无默认值)
+            查询退料明细.Misc.入口明细数据
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.DTOs.BatchRtnDocQryDetailParamDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateOpTransDocByBarCodeProxy.OpTransDocBarCodeDTO">
+            <summary>
+            工序转移单条形码DTO (该属性可为空,且无默认值)
+            条形码自动产生工序转移单.Misc.工序转移单条形码DTO
+            </summary>
+            <value>UFIDA.U9.MO.MO.OpTransDocBarCodeDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateIssueDocByBarCodeProxy.MODocNo">
+            <summary>
+            生产制令号 (该属性可为空,且无默认值)
+            根据条形码自动产生领料单.Misc.生产制令号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateIssueDocByBarCodeProxy.Operations">
+            <summary>
+            工序号集合 (该属性可为空,且无默认值)
+            根据条形码自动产生领料单.Misc.工序号集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateIssueDocByBarCodeProxy.Qtys">
+            <summary>
+            数量集合 (该属性可为空,且无默认值)
+            根据条形码自动产生领料单.Misc.数量集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateIssueDocByBarCodeProxy.Items">
+            <summary>
+            料号集合 (该属性可为空,且无默认值)
+            根据条形码自动产生领料单.Misc.料号集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateIssueDocByBarCodeProxy.UOMs">
+            <summary>
+            计量单位集合 (该属性可为空,且无默认值)
+            根据条形码自动产生领料单.Misc.计量单位集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateIssueDocByBarCodeProxy.Sytemdate">
+            <summary>
+            系统日期 (该属性可为空,且无默认值)
+            根据条形码自动产生领料单.Misc.系统日期
+            </summary>
+            <value>System.DateTime</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.TransQtyByBarCodeProxy.SrcModocno">
+            <summary>
+            来源生产订单号 (该属性可为空,且无默认值)
+            条形码挪料.Misc.来源生产订单号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.TransQtyByBarCodeProxy.SrcOp">
+            <summary>
+            来源工序号 (该属性可为空,但有默认值)
+            条形码挪料.Misc.来源工序号
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.TransQtyByBarCodeProxy.SrcItem">
+            <summary>
+            来源料号 (该属性可为空,且无默认值)
+            条形码挪料.Misc.来源料号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.TransQtyByBarCodeProxy.DesMoDocno">
+            <summary>
+            目的生产订单号 (该属性可为空,且无默认值)
+            条形码挪料.Misc.目的生产订单号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.TransQtyByBarCodeProxy.DesOp">
+            <summary>
+            目的工序号 (该属性可为空,但有默认值)
+            条形码挪料.Misc.目的工序号
+            </summary>
+            <value>System.Int32</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.TransQtyByBarCodeProxy.DesItem">
+            <summary>
+            目的料号 (该属性可为空,且无默认值)
+            条形码挪料.Misc.目的料号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.TransQtyByBarCodeProxy.TransQty">
+            <summary>
+            挪料数量 (该属性可为空,但有默认值)
+            条形码挪料.Misc.挪料数量
+            </summary>
+            <value>System.Decimal</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.TransQtyByBarCodeProxy.Uom">
+            <summary>
+            挪料单位Code (该属性可为空,且无默认值)
+            条形码挪料.Misc.挪料单位Code
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RcvGetSFCSnSrvProxy.MO_SKey">
+            <summary>
+            生产订单 序列化Key属性。（传递跨组织序列列字段）
+            工序委外RCV收货获取来源序列号服务.Misc.生产订单
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RcvGetSFCSnSrvProxy.MO">
+            <summary>
+            生产订单 (该属性可为空,且无默认值)
+            工序委外RCV收货获取来源序列号服务.Misc.生产订单
+            </summary>
+            <value>UFIDA.U9.MO.MO.MO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RcvGetSFCSnSrvProxy.MOOperation_SKey">
+            <summary>
+            生产订单工序 序列化Key属性。（传递跨组织序列列字段）
+            工序委外RCV收货获取来源序列号服务.Misc.生产订单工序
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RcvGetSFCSnSrvProxy.MOOperation">
+            <summary>
+            生产订单工序 (该属性可为空,且无默认值)
+            工序委外RCV收货获取来源序列号服务.Misc.生产订单工序
+            </summary>
+            <value>UFIDA.U9.MO.MO.MOOperation</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RcvGetSFCSnSrvProxy.ParaDTO">
+            <summary>
+            参数DTO (该属性可为空,且无默认值)
+            工序委外RCV收货获取来源序列号服务.Misc.参数DTO
+            </summary>
+            <value>UFIDA.U9.MO.MO.RcvGetSFCSnParaDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CarryFowardMOPeriodBeginQtyProxy.AccountPeriod_SKey">
+            <summary>
+            会计期间 序列化Key属性。（传递跨组织序列列字段）
+            结转订单期间期初数量.Misc.会计期间
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CarryFowardMOPeriodBeginQtyProxy.AccountPeriod">
+            <summary>
+            会计期间 (该属性可为空,且无默认值)
+            结转订单期间期初数量.Misc.会计期间
+            </summary>
+            <value>UFIDA.U9.Base.Account.AccountPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CarryFowardMOPeriodBeginQtyProxy.IsIncrease">
+            <summary>
+            是否月结 (该属性可为空,但有默认值)
+            结转订单期间期初数量.Misc.是否月结
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CalcMOOpPeriodWorkHoursProxy.AccountPeriod">
+            <summary>
+            会计期间 (该属性可为空,且无默认值)
+            计算订单期间工序工时.Misc.会计期间
+            </summary>
+            <value>UFIDA.U9.Base.Account.AccountPeriod</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CalcMOOpPeriodWorkHoursProxy.MOList_SKey">
+            <summary>
+            生产订单 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CalcMOOpPeriodWorkHoursProxy.MOList">
+            <summary>
+            生产订单 (该属性可为空,且无默认值)
+            计算订单期间工序工时.Misc.生产订单
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CalcMOOpPeriodWorkHoursProxy.PLSList_SKey">
+            <summary>
+            生产线日计划 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CalcMOOpPeriodWorkHoursProxy.PLSList">
+            <summary>
+            生产线日计划 (该属性可为空,且无默认值)
+            计算订单期间工序工时.Misc.生产线日计划
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CalcMOOpPeriodWorkHoursSPVersionProxy.AccountPeriods_SKey">
+            <summary>
+            会计期间 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CalcMOOpPeriodWorkHoursSPVersionProxy.AccountPeriods">
+            <summary>
+            会计期间 (该属性可为空,且无默认值)
+            计算订单期间工序工时版本.Misc.会计期间
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetCompleteRptItemQtyProxy.VMIConsumeConditionDTO">
+            <summary>
+            查询条件 (该属性可为空,且无默认值)
+            查找完工报告料品.Misc.查询条件
+            </summary>
+            <value>UFIDA.U9.MO.MO.VMIConsumeConditionDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ModifyPickByMrpResultSrvProxy.MRPOptimPickDTOs">
+            <summary>
+            MRP已优化后的备料 (该属性可为空,且无默认值)
+            根据MRP优化结果修改单据备料.Misc.MRP已优化后的备料
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetSupplierFromMOpicksForSubcontractProxy.MOID">
+            <summary>
+            生产订单ID (该属性可为空,但有默认值)
+            查工序委外关联子件厂牌服务.Misc.生产订单ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetSupplierFromMOpicksForSubcontractProxy.ItemMasterID">
+            <summary>
+            关联子件料品ID (该属性可为空,且无默认值)
+            查工序委外关联子件厂牌服务.Misc.关联子件料品ID
+            </summary>
+            <value>UFIDA.U9.CBO.SCM.Item.ItemMaster</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetSupplierFromMOpicksForSubcontractProxy.OperationNum">
+            <summary>
+            工序号 (该属性可为空,且无默认值)
+            查工序委外关联子件厂牌服务.Misc.工序号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpDateOpSnByQCResultSrvProxy.OperSnParaDTOList">
+            <summary>
+            工序序列号参数 (该属性可为空,且无默认值)
+            质检结果更新工序序列号档服务.Misc.工序序列号参数
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.ModifyIssue4ExternalProxy.IssueModifyDTOs">
+            <summary>
+            属性 (该属性可为空,且无默认值)
+            修改领料单集合.Misc.属性
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdateIssue4ExternalProxy.UpdateIssueDTOs">
+            <summary>
+            属性 (该属性可为空,且无默认值)
+            更新领料单服务.Misc.属性
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.LotMaster4OBASrvProxy.OBAString">
+            <summary>
+            来自OBA的字符串 (该属性可为空,且无默认值)
+            取批号主档服务4OBA.Misc.来自OBA的字符串
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetForbidDelOperationSnsSrvProxy.MO">
+            <summary>
+            MO (该属性可为空,但有默认值)
+            从车间状态表中获取不能删除的序列号集合服务.Misc.MO
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetForbidDelOperationSnsSrvProxy.MOOperation">
+            <summary>
+            工序 (该属性可为空,但有默认值)
+            从车间状态表中获取不能删除的序列号集合服务.Misc.工序
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetForbidDelOperationSnsSrvProxy.SnMasters">
+            <summary>
+            序列号ID集合 (该属性可为空,且无默认值)
+            从车间状态表中获取不能删除的序列号集合服务.Misc.序列号ID集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.SnMaster4OBASrvProxy.OBAString">
+            <summary>
+            来自OBA的字符串 (该属性可为空,且无默认值)
+            取序列号主档服务4OBA.Misc.来自OBA的字符串
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.MaintainSemiMOAssemblySrvProxy.SemiMOAssemblyConcernedDataDTOs">
+            <summary>
+            在制品装配关系相关数据DTO集合 (该属性可为空,且无默认值)
+            维护在制品装配关系服务.Misc.在制品装配关系相关数据DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryMOSemiAssemblySrvProxy.MO_SKey">
+            <summary>
+            生产订单 序列化Key属性。（传递跨组织序列列字段）
+            生产订单在制品装配关系查询服务.Misc.生产订单
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryMOSemiAssemblySrvProxy.MO">
+            <summary>
+            生产订单 (该属性可为空,且无默认值)
+            生产订单在制品装配关系查询服务.Misc.生产订单
+            </summary>
+            <value>UFIDA.U9.MO.MO.MO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryMOSemiAssemblySrvProxy.OpNum">
+            <summary>
+            工序号 (该属性可为空,且无默认值)
+            生产订单在制品装配关系查询服务.Misc.工序号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryMOPickListInfoSVProxy.MOKey_SKey">
+            <summary>
+            生产订单 序列化Key属性。（传递跨组织序列列字段）
+            查询订单备料信息服务.Misc.生产订单
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.QueryMOPickListInfoSVProxy.MOKey">
+            <summary>
+            生产订单 (该属性可为空,且无默认值)
+            查询订单备料信息服务.Misc.生产订单
+            </summary>
+            <value>UFIDA.U9.MO.MO.MO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.RcvSubcontractCostSVProxy.MORcvDTOs">
+            <summary>
+            工序委外收货DTO集合 (该属性可为空,且无默认值)
+            收货到工序委外成本更新服务.Misc.工序委外收货DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.WBSGetMOOperationSVProxy.MO_SKey">
+            <summary>
+            生产订单 序列化Key属性。（传递跨组织序列列字段）
+            项目制造获取工序进度信息.Misc.生产订单
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.WBSGetMOOperationSVProxy.MO">
+            <summary>
+            生产订单 (该属性可为空,且无默认值)
+            项目制造获取工序进度信息.Misc.生产订单
+            </summary>
+            <value>UFIDA.U9.MO.MO.MO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateIssueByAssemblePlsSrvProxy.PickDemandList">
+            <summary>
+            备料需求集合 (该属性可为空,且无默认值)
+            装配上线计划生成领料单服务.Misc.备料需求集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateIssueByAssemblePlsSrvProxy.IsOpen">
+            <summary>
+            是否生成开立领料单 (该属性可为空,但有默认值)
+            装配上线计划生成领料单服务.Misc.是否生成开立领料单
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.FindSceneChangeTypeObjectIDProxy.SceneChangeType">
+            <summary>
+            现场变更类型 (该属性可为空,但有默认值)
+            获取新增版本现场变更对象.Misc.现场变更类型
+            </summary>
+            <value>UFIDA.U9.CBO.MFG.Enums.SceneChangeTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.FindSceneChangeTypeObjectIDProxy.SelectID">
+            <summary>
+            变更对象ID (该属性可为空,但有默认值)
+            获取新增版本现场变更对象.Misc.变更对象ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.PullQCDTOFromMOTranFor29Proxy.Condition">
+            <summary>
+            工序转移单生单条件 (该属性可为空,且无默认值)
+            工序转移单拉式产生质检DTOFor29.Misc.工序转移单生单条件
+            </summary>
+            <value>UFIDA.U9.CBO.QC.DTOs.QCDocInitConForOperConDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetDispatchCompleteDocInfoSrvFor29Proxy.Condition">
+            <summary>
+            条件 (该属性可为空,且无默认值)
+            获取申报单信息服务For29.Misc.条件
+            </summary>
+            <value>UFIDA.U9.CBO.QC.DTOs.QCDocInitConForDispatchOrderDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.Service1Proxy.Condition">
+            <summary>
+            条件 (该属性可为空,且无默认值)
+            获取申报单信息服务For29.Misc.条件
+            </summary>
+            <value>UFIDA.U9.CBO.QC.DTOs.QCDocInitConForDispatchOrderDTO</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.BatchCreateMOsSVProxy.ProductRequirements">
+            <summary>
+            生产需求 (该属性可为空,且无默认值)
+            批量生单.Misc.生产需求
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.BatchCreateMOsSVProxy.SourceEntity">
+            <summary>
+            来源实体 (该属性可为空,且无默认值)
+            批量生单.Misc.来源实体
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateDPCODocForQCSplitLineSrvProxy.DispatchCODocline_SKey">
+            <summary>
+            申报单行 序列化Key属性。（传递跨组织序列列字段）
+            为质检拆行创建派工申报单服务.Misc.申报单行
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateDPCODocForQCSplitLineSrvProxy.DispatchCODocline">
+            <summary>
+            申报单行 (该属性可为空,且无默认值)
+            为质检拆行创建派工申报单服务.Misc.申报单行
+            </summary>
+            <value>UFIDA.U9.MO.SFC.DispatchCompleteOrder.DispatchCompleteOrderDocLine</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateDPCODocForQCSplitLineSrvProxy.Qty">
+            <summary>
+            拆行数量 (该属性可为空,但有默认值)
+            为质检拆行创建派工申报单服务.Misc.拆行数量
+            </summary>
+            <value>System.Decimal</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.CreateDPCODocForQCSplitLineSrvProxy.SnList">
+            <summary>
+            拆行序列号 (该属性可为空,且无默认值)
+            为质检拆行创建派工申报单服务.Misc.拆行序列号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.SFC.Proxy.CreateOpTransDocSvProxy.OpTransDocDTOs">
+            <summary>
+            工序转移单业务数据集合 (该属性可为空,且无默认值)
+            创建工序转移单服务.Misc.工序转移单业务数据集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdateCompRptCheckSrvProxy.CompRptCheckDTOs">
+            <summary>
+            完工报告质检数量修改DTO集合 (该属性可为空,且无默认值)
+            更新质检数量服务.Misc.完工报告质检数量修改DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.UpdateCompRptRcvSrvProxy.CompRptRcvDTOs">
+            <summary>
+            完工报告入库数量修改DTO集合 (该属性可为空,且无默认值)
+            更新入库数量服务.Misc.完工报告入库数量修改DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.KanBanFindPLSByComRptIDSrvProxy.ComRptID">
+            <summary>
+            完工报告ID (该属性可为空,但有默认值)
+            看板根据完工报告查找日计划服务.Misc.完工报告ID
+            </summary>
+            <value>System.Int64</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.ASCreateTransferAndComplateSvProxy.AssemblySeqs">
+            <summary>
+            装配上线计划更新列表 (该属性可为空,且无默认值)
+            装配上线计划驱动生成工序转移和完工报告服务.Misc.装配上线计划更新列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.BatchCreatePlsSvProxy.PLSLists">
+            <summary>
+            生产线日计划列表 (该属性可为空,且无默认值)
+            批量创建生产线日计划服务.Misc.生产线日计划列表
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.CompleteRptApproveInWhSvProxy.KanbanCards">
+            <summary>
+            看板卡Key (该属性可为空,且无默认值)
+            完工报告审核入库服务.Misc.看板卡Key
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.CompleteRptApproveInWhSvProxy.IsInWh">
+            <summary>
+            是否入库 (该属性可为空,但有默认值)
+            完工报告审核入库服务.Misc.是否入库
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.UpdateAssemblySeqSvProxy.AssemblySeqUpdates">
+            <summary>
+            装配上线计划更新集合 (该属性可为空,且无默认值)
+            更新装配上线计划服务.Misc.装配上线计划更新集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.UpdateAssemblySeqSvProxy.IsBack">
+            <summary>
+            向前还是向后更新 (该属性可为空,但有默认值)
+            更新装配上线计划服务.Misc.向前还是向后更新
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.AsCreateISSueDocSvProxy.IsApproved">
+            <summary>
+            是否自动审核 (该属性可为空,但有默认值)
+            装配上线计划料品创建领料单服务.Misc.是否自动审核
+            </summary>
+            <value>System.Boolean</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.AsCreateISSueDocSvProxy.PLSAsIssueList_SKey">
+            <summary>
+            领料队列 序列化Key属性集合。（传递跨组织序列列字段）
+             平台使用.开发人员不可使用该属性赋值.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.AsCreateISSueDocSvProxy.PLSAsIssueList">
+            <summary>
+            领料队列 (该属性可为空,且无默认值)
+            装配上线计划料品创建领料单服务.Misc.领料队列
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.GetPLSBySourceDocSvProxy.SourceDocKey">
+            <summary>
+            来源单据Key (该属性可为空,且无默认值)
+            根据来源信息取得日计划服务.Misc.来源单据Key
+            </summary>
+            <value>System.EntityKey</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.DeletePLSBySourceDocSvProxy.SourceDocKeyList">
+            <summary>
+            来源单据 (该属性可为空,且无默认值)
+            根据来源单据删除日计划服务.Misc.来源单据
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.ModifyPLSBySourceDocSvProxy.SourceDocKeyList">
+            <summary>
+            来源单据 (该属性可为空,且无默认值)
+            根据来源信息更新PLS服务.Misc.来源单据
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.ExchangePLSSourceSvProxy.FromKanBan">
+            <summary>
+            看板1 (该属性可为空,且无默认值)
+            交换PLS来源信息服务.Misc.看板1
+            </summary>
+            <value>System.EntityKey</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.ExchangePLSSourceSvProxy.FromPLS">
+            <summary>
+            生产线日计划1 (该属性可为空,且无默认值)
+            交换PLS来源信息服务.Misc.生产线日计划1
+            </summary>
+            <value>System.EntityKey</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.ExchangePLSSourceSvProxy.ToKanBan">
+            <summary>
+            看板2 (该属性可为空,且无默认值)
+            交换PLS来源信息服务.Misc.看板2
+            </summary>
+            <value>System.EntityKey</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.ExchangePLSSourceSvProxy.ToPLS">
+            <summary>
+            生产线日计划2 (该属性可为空,且无默认值)
+            交换PLS来源信息服务.Misc.生产线日计划2
+            </summary>
+            <value>System.EntityKey</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.ExchangePLSSourceSvProxy.FromKanBanDocNo">
+            <summary>
+            看板1单号 (该属性可为空,且无默认值)
+            交换PLS来源信息服务.Misc.看板1单号
+            </summary>
+            <value>System.String</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.BatchCreatePLSExScheduleProxy.PLSList">
+            <summary>
+            生产线日计划集合 (该属性可为空,且无默认值)
+            批量创建PLS服务(不排产).Misc.生产线日计划集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.PLSSv.Proxy.DeletePLSSrcSvProxy.SourceDocList">
+            <summary>
+            来源单据 (该属性可为空,且无默认值)
+            删除PLS来源线索.Misc.来源单据
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.CheckDifferent.Proxy.WriteCheckDifferDocByMiscRcvShipSrvProxy.OperateType">
+            <summary>
+            杂收、杂发单的操作类型 (该属性可为空,但有默认值)
+            库存杂收（发）单回写盘点差异单服务.Misc.杂收、杂发单的操作类型
+            </summary>
+            <value>UFIDA.U9.MO.CheckDifferent.OperateTypeEnum</value>
+        </member>
+        <member name="P:UFIDA.U9.MO.CheckDifferent.Proxy.WriteCheckDifferDocByMiscRcvShipSrvProxy.CheckMiscRelationDtoList">
+            <summary>
+            杂收/发回写盘点差异倒冲DTO集合 (该属性可为空,且无默认值)
+            库存杂收（发）单回写盘点差异单服务.Misc.杂收/发回写盘点差异倒冲DTO集合
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.MO.MO.Proxy.GetOperationSvProxy.QueryParamsDTO">
+            <summary>
+            查询条件 (该属性可为空,且无默认值)
+            获得工序服务.Misc.查询条件
+            </summary>
+            <value>UFIDA.U9.MO.MO.QueryParamsDTO</value>
+        </member>
+    </members>
+</doc>

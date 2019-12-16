@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceGroup>
+  <ServiceGroupInfo id="a1b8abdf-5bf2-4543-aad4-0f35ec1b292b" name="PLM_Porject" displayName="PLM_Porject" description="" help="" fullPath="D:\yonyou\U9Project\GDLJProject\Model\PLM_Porject\PLM_Porject.sg" applicationID="" />
+  <AssemblyGroup>
+    <Assembly ID="00d34d5f-e596-4b2c-a49d-038d47dfb57e" name="UFIDA.U9.Safor.VW.PLMSV" type="SV" path="" />
+    <Assembly ID="63dd6177-e67f-4ccb-b0cb-46c65bfe902e" name="UFIDA.U9.Safor.VW.PLMBE" type="BE" path="" />
+  </AssemblyGroup>
+</ServiceGroup>

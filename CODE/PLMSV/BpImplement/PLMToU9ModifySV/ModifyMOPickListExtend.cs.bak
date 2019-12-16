@@ -1,0 +1,513 @@
+﻿namespace UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    using CBO.Pub.Controller;
+    using UFSoft.UBF.AopFrame;
+    using UFSoft.UBF.Util.Context;
+    using UFSoft.UBF.PL;
+    using PLMECNQuerySV;
+    using UFSoft.UBF.Transactions;
+
+    /// <summary>
+    /// ModifyMOPickList partial 
+    /// </summary>	
+    public partial class ModifyMOPickList
+    {
+        internal BaseStrategy Select()
+        {
+            return new ModifyMOPickListImpementStrategy();
+        }
+    }
+
+    #region  implement strategy
+    /// <summary>
+    /// Impement Implement
+    /// 
+    /// </summary>	
+    internal partial class ModifyMOPickListImpementStrategy : BaseStrategy
+    {
+        public ModifyMOPickListImpementStrategy() { }
+
+        public override object Do(object obj)
+        {
+            ModifyMOPickList bpObj = (ModifyMOPickList)obj;
+
+            StringBuilder strbResult = new StringBuilder();
+
+            if (string.IsNullOrEmpty(bpObj.PLMECNInfo))
+            {
+                //logger.Error(string.Format("创建料品失败：传入参数BOMItemInfo为空。"));
+                strbResult.AppendFormat(string.Format("<ResultInfo Error={0} />", "传输ECN信息失败：传入参数PLMECNInfo为空。"));
+                return strbResult.ToString();
+            }
+
+            PLMECNInfo plmEcnInfo = new PLMECNInfo();
+            try
+            {
+                plmEcnInfo = XmlSerializerHelper.XmlDeserialize<PLMECNInfo>(bpObj.PLMECNInfo, Encoding.Unicode);
+                //cxtInfo = XmlSerializerHelper.XmlDeserialize<ContextInfo>(bpObj.ContextInfo, Encoding.Unicode);
+            }
+            catch (Exception ex)
+            {
+                //logger.Error(string.Format("反序列化ItemInfo失败：{0}", bpObj.ItemInfo));
+                strbResult.AppendFormat(string.Format("<ResultInfo Error={0} />", string.Format("反序列化PLMECNInfo失败：{0}", bpObj.PLMECNInfo)));
+                return strbResult.ToString();
+            }
+
+
+            string ECNDocNo = plmEcnInfo.ECNDocNo;
+
+            PLMBE.ECNAlterRequestBE.ECNInfo ecnInfo = PLMBE.ECNAlterRequestBE.ECNInfo.Finder.Find("ECNDocNo=@ECNDocNo", new OqlParam[1] { new OqlParam(ECNDocNo) });
+
+
+            strbResult.Append("<ResultInfo>");
+            string BomVerNo = string.Empty;
+            if (ecnInfo != null)
+            {
+                using (UBFTransactionScope scope = new UBFTransactionScope(TransactionOption.Required))
+                {
+                    try
+                    {
+                        #region 通过查询接口获取到所有需要修改的MOPickList
+                        List<ISV.MO.MOKeyDTOData> mokeylist = new List<ISV.MO.MOKeyDTOData>();
+                        foreach (PLMBE.ECNAlterRequestBE.ECNAlter ecnAlter in ecnInfo.ECNAlter)
+                        {
+
+                            foreach (PLMBE.ECNAlterRequestBE.ECNAlterMOInfo ecnMoInfo in ecnAlter.ECNAlterMOInfo)
+                            {
+
+                                ISV.MO.MOKeyDTOData _mokey = mokeylist.Find(delegate (ISV.MO.MOKeyDTOData _dto) { return (_dto.DocNo == ecnMoInfo.MONo); });
+                                if (_mokey == null && ecnMoInfo.IsAlter.ToUpper() == "Y")
+                                {
+                                    ISV.MO.MOKeyDTOData mokey = new ISV.MO.MOKeyDTOData();
+                                    mokey.DocNo = ecnMoInfo.MONo;
+                                    mokeylist.Add(mokey);
+                                }
+                            }
+                        }
+                        UFIDA.U9.ISV.MO.Proxy.QueryMO4ExternalProxy qryMo = new ISV.MO.Proxy.QueryMO4ExternalProxy();
+                        qryMo.MOKeyDTOs = mokeylist;
+                        List<ISV.MO.MODTOData> modtolist = qryMo.Do();
+                        #endregion
+
+                        #region 修改MOPickList信息（如果未领料则删除直接用替换后物料生成，如果领用完，则不处理，部分领用取未领用数量生成）
+                        List<ISV.MO.MOModifyDTOData> mfymodtolist = new List<ISV.MO.MOModifyDTOData>();
+                        foreach (ISV.MO.MODTOData modto in modtolist)
+                        {
+                            ISV.MO.MOModifyDTOData mfymodto = new ISV.MO.MOModifyDTOData();
+
+                            mfymodto.MODTO = modto;
+                            mfymodto.MOKeyDTO = new ISV.MO.MOKeyDTOData();
+                            mfymodto.MOKeyDTO.DocNo = modto.DocNo;
+
+                            List<UFIDA.U9.ISV.MO.MOPickListDTOData> pickDTOList = new List<UFIDA.U9.ISV.MO.MOPickListDTOData>();
+                            pickDTOList.AddRange(modto.MOPickListDTOs);
+
+
+
+                            foreach (PLMBE.ECNAlterRequestBE.ECNAlter ecnAlter in ecnInfo.ECNAlter)
+                            {
+                                decimal ActualReqQty = decimal.Zero;
+
+                                MO.MO.MO mo = MO.MO.MO.Finder.Find("DocNo=@DocNo", new OqlParam[1] { new OqlParam(modto.DocNo) });
+
+                                ISV.MO.MOPickListDTOData _pickDTO = pickDTOList.Find(delegate (ISV.MO.MOPickListDTOData _dto) { return (_dto.ItemMaster.Code == ecnAlter.PreItemCode); });
+
+                                MO.MO.MOPickList mopick = MO.MO.MOPickList.Finder.Find("MO.DocNo=@DocNo and  ItemMaster.Code =@ItemMaster ", new OqlParam[2] { new OqlParam(modto.DocNo), new OqlParam(ecnAlter.PreItemCode) });
+
+
+                                switch (ecnAlter.ECNAction.ToLower())
+                                {
+                                    case "add": //新增
+                                        if (ecnAlter.PostParentQty != 0)
+                                            ActualReqQty = (mo.ProductQty - mo.TotalCompleteQty) * (1 + ecnAlter.PostScrap) * ecnAlter.PostUsageQty / ecnAlter.PostParentQty;
+                                        else
+                                            ActualReqQty = (mo.ProductQty - mo.TotalCompleteQty) * (1 + ecnAlter.PostScrap) * ecnAlter.PostUsageQty;
+
+                                        CreatePickList(pickDTOList, ecnAlter, ecnAlter.PostItemCode, ActualReqQty);
+                                        break;
+                                    case "del": //删除
+
+                                        if (_pickDTO != null && _pickDTO.ActualReqQty > _pickDTO.IssuedQty)
+                                        {
+                                            if (_pickDTO.IssuedQty == 0)
+                                            {
+                                                _pickDTO.CUD = 8;  //如果未领料，直接删除该备料行
+                                            }
+                                            else
+                                            {
+                                                _pickDTO.CUD = 4;   //如果已领料，就修改需求数量
+                                                _pickDTO.ActualReqQty = _pickDTO.IssuedQty;
+                                            }
+                                        }
+                                        break;
+                                    case "qtyAdd": //增加
+                                    case "qtyReduce": //减少
+                                        if (ecnAlter.PostItemCode == ecnAlter.PreItemCode)
+                                        {
+                                            if (ecnAlter.PostParentQty != 0)
+                                                ActualReqQty = mo.ProductQty * (1 + ecnAlter.PostScrap) * ecnAlter.PostUsageQty / ecnAlter.PostParentQty;
+                                            else
+                                                ActualReqQty = mo.ProductQty * (1 + ecnAlter.PostScrap) * ecnAlter.PostUsageQty;
+
+                                            //变更后的实际需求量小于已领数量，则保持实际需求量等于已领数量
+                                            if (ActualReqQty < mopick.IssuedQty)
+                                            {
+                                                _pickDTO.CUD = 4;   //如果已领料，就修改需求数量
+                                                _pickDTO.ActualReqQty = _pickDTO.IssuedQty;
+                                            }
+                                            else
+                                            {
+                                                _pickDTO.CUD = 4;
+                                                _pickDTO.ActualReqQty = ActualReqQty;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            if (_pickDTO != null && _pickDTO.ActualReqQty > _pickDTO.IssuedQty)
+                                            {
+                                                if (_pickDTO.IssuedQty == 0)
+                                                {
+                                                    _pickDTO.CUD = 8;
+                                                }
+                                                else
+                                                {
+                                                    _pickDTO.CUD = 4;
+                                                    _pickDTO.ActualReqQty = _pickDTO.IssuedQty;
+                                                }
+                                                //创建新替换的子件
+                                                #region 原代码
+                                                //decimal IssMOQty = decimal.Zero;
+                                                //if (ecnAlter.PreUsageQty != 0)
+                                                //    IssMOQty = _pickDTO.ActualReqQty - _pickDTO.IssuedQty / ecnAlter.PreUsageQty;
+                                                //else
+                                                //    IssMOQty = _pickDTO.ActualReqQty - _pickDTO.IssuedQty;
+
+
+                                                //if (ecnAlter.PostParentQty != 0)
+                                                //{
+                                                //    ActualReqQty = IssMOQty * (1 + ecnAlter.PostScrap) * ecnAlter.PostUsageQty / ecnAlter.PostParentQty;
+                                                //    ActualReqQty = decimal.Floor(ActualReqQty / ecnAlter.PostUsageQty) * ecnAlter.PostUsageQty;
+                                                //}
+                                                //else
+                                                //    ActualReqQty = IssMOQty * (1 + ecnAlter.PostScrap) * ecnAlter.PostUsageQty;
+                                                #endregion
+
+                                                #region 新代码
+                                                decimal preCompletedQty = decimal.Zero;//由已领数量推算出的可完成母件数量
+                                                decimal prePerUsageQty = decimal.Zero;//前子件单个用量
+                                                if (ecnAlter.PreParentQty != 0)
+                                                {
+                                                    prePerUsageQty = ecnAlter.PreUsageQty / ecnAlter.PreParentQty;
+                                                }
+                                                else
+                                                {
+                                                    prePerUsageQty = ecnAlter.PreUsageQty;
+                                                }
+                                                preCompletedQty = decimal.Floor(_pickDTO.IssuedQty / (prePerUsageQty * (1 + ecnAlter.PreScrap)));//已领数量除以单个母件用量取整
+
+                                                decimal unCompleteQty = mo.ProductQty - preCompletedQty;//未完成数量
+                                                decimal postPerUsageQty = decimal.Zero;//替换子件单个用量
+                                                if (ecnAlter.PostParentQty != 0)
+                                                {
+                                                    postPerUsageQty = ecnAlter.PostUsageQty / ecnAlter.PostParentQty;
+                                                }
+                                                else
+                                                {
+                                                    postPerUsageQty = ecnAlter.PostUsageQty;
+                                                }
+
+                                                //替换子件可领用数量：未完成数量*单个替换子件用量。
+                                                ActualReqQty = decimal.Ceiling(unCompleteQty * (postPerUsageQty * (1 + ecnAlter.PostScrap)));
+                                                #endregion
+
+                                                CreatePickList(pickDTOList, ecnAlter, ecnAlter.PostItemCode, ActualReqQty);
+                                            }
+                                        }
+
+                                        break;
+                                }
+
+
+                            }
+
+                            modto.MOPickListDTOs = pickDTOList;
+
+                            mfymodtolist.Add(mfymodto);
+
+
+                            try
+                            {
+                                UFIDA.U9.ISV.MO.Proxy.ModifyMO4ExternalProxy mfymo = new ISV.MO.Proxy.ModifyMO4ExternalProxy();
+                                mfymo.MOModifyDTOs = mfymodtolist;
+                                mfymo.Do();
+
+                                strbResult.Append(string.Format("<Message Success={0} />", "备料表更新成功"));
+
+                            catch (Exception e)
+                            {
+                                strbResult.Append(string.Format("<Message Error={0} />", e.Message));
+                                return strbResult.ToString();
+                            }
+
+
+                        }
+                        #endregion
+
+                            }
+
+                        if (plmEcnInfo.ActionType != "1")
+                        {
+                            #region 创建新BOM版本
+                            ISV.MFG.BOM.QueryDelParamsDTOData qryBomDto = new ISV.MFG.BOM.QueryDelParamsDTOData();
+                            qryBomDto.BOMVersionCode = ecnInfo.ECNAlter[0].BOMVersionCode;
+                            qryBomDto.BOMType = ecnInfo.ECNAlter[0].BOMType == "0" ? 0 : 1;
+                            qryBomDto.ItemMaster = new CommonArchiveDataDTOData();
+                            
+                            qryBomDto.Org = new CommonArchiveDataDTOData();
+                            qryBomDto.Org.Code = "04";//非深圳组织移除。只生成到深圳组织，再由下发功能自动更新到其它组织。
+
+
+                            ISV.MFG.BOM.Proxy.QueryBOMSvProxy qryBom = new ISV.MFG.BOM.Proxy.QueryBOMSvProxy();
+                            qryBom.QryParams = new List<ISV.MFG.BOM.QueryDelParamsDTOData>();
+                            qryBom.QryParams.Add(qryBomDto);
+                            List<ISV.MFG.BOM.BOMMasterDTO4CreateSvData> BomDtolist = qryBom.Do();
+
+                            List<ISV.MFG.BOM.BOMMasterDTO4CreateSvData> craeteBomDtolist = new List<ISV.MFG.BOM.BOMMasterDTO4CreateSvData>();
+
+                            foreach (ISV.MFG.BOM.BOMMasterDTO4CreateSvData bomDto in BomDtolist)
+                            {
+                                //if (bomDto.Org.Code != "04")
+                                //{
+                                //    continue;
+                                //}
+                                string x = bomDto.BOMVersionCode;
+
+                                string a = "";
+
+                                string b = "";
+
+                                //对V3.0 会生成V.31异常数据 =>V.31
+                                //for (int i = 0; i < x.Length; i++)
+                                //{
+
+                                //    try
+                                //    {
+
+                                //        b += Convert.ToInt32(x.Substring(i, 1));
+
+                                //    }
+
+                                //    catch
+                                //    {
+
+                                //        a += x.Substring(i, 1);
+
+                                //    }
+
+                                //}
+                                a = x.Substring(0, 1);//直接
+                                b = x.Substring(1);
+
+                                string r = a + (Convert.ToDecimal(b) + 1);
+                                BomVerNo = r;
+                                bomDto.BOMVersionCode = r;
+                                bomDto.EffectiveDate = DateTime.Now;
+                                bomDto.DisableDate = DateTime.MaxValue;
+
+                                List<ISV.MFG.BOM.BOMComponentDTO4CreateSvData> bomCompDtoList = new List<ISV.MFG.BOM.BOMComponentDTO4CreateSvData>();
+                                bomCompDtoList.AddRange(bomDto.BOMComponents);
+
+                                foreach (PLMBE.ECNAlterRequestBE.ECNAlter ecnAlter in ecnInfo.ECNAlter)
+                                {
+
+                                    ISV.MFG.BOM.BOMComponentDTO4CreateSvData bomCompDto = new ISV.MFG.BOM.BOMComponentDTO4CreateSvData();
+
+                                    bomCompDto.ItemMaster = new CommonArchiveDataDTOData();
+                                    bomCompDto.ItemMaster.Code = ecnAlter.PostItemCode;
+                                    bomCompDto.ComponentType = 0;
+                                    bomCompDto.OperationNum = "10";
+                                    bomCompDto.UsageQtyType = 1;
+                                    bomCompDto.UsageQty = ecnAlter.PostUsageQty;
+                                    bomCompDto.ParentQty = ecnAlter.PostParentQty;
+                                    bomCompDto.ScrapType = 0;
+                                    bomCompDto.IssueStyle = 0;
+                                    bomCompDto.SupplyStyle = 0;
+                                    bomCompDto.TimeUOM = new CommonArchiveDataDTOData();
+                                    bomCompDto.TimeUOM.Code = "DAY";
+                                    bomCompDto.SubstituteStyle = 0;
+                                    // bomCompDto.issueOrg = new UFIDAU9CBOPubControllerCommonArchiveDataDTOData();
+                                    // bomCompDto.issueOrg.m_iD = 1001007094250320;
+                                    bomCompDto.LeadTimeOffSet = 0;
+                                    //bomCompDto.CostElement = new CommonArchiveDataDTOData();
+                                    //bomCompDto.CostElement.Code = "No1";
+                                    bomCompDto.SubcontractItemSrc = -1;
+                                    bomCompDto.ConsignProcessItemSrc = 2;
+                                    bomCompDto.IsCharge = true;
+                                    bomCompDto.CostPercent = 0;
+                                    bomCompDto.IsEffective = true;
+
+
+                                    ISV.MFG.BOM.BOMComponentDTO4CreateSvData _bomCompDto = bomCompDtoList.Find(delegate (ISV.MFG.BOM.BOMComponentDTO4CreateSvData _dto) { return (_dto.ItemMaster.Code == ecnAlter.PreItemCode); });
+
+                                    switch (ecnAlter.ECNAction.ToLower())
+                                    {
+                                        case "add": //新增
+                                            bomCompDtoList.Add(bomCompDto);
+                                            break;
+                                        case "del": //删除
+
+
+                                            bomCompDtoList.Remove(_bomCompDto);
+                                            break;
+                                        case "qtyAdd": //增加
+                                        case "qtyReduce": //减少
+                                            if (ecnAlter.PostItemCode == ecnAlter.PreItemCode)
+                                            {
+                                                _bomCompDto.UsageQty = ecnAlter.PostUsageQty;
+                                                _bomCompDto.ParentQty = ecnAlter.PostParentQty;
+                                            }
+                                            else
+                                            {
+                                                bomCompDtoList.Remove(_bomCompDto);
+                                                bomCompDtoList.Add(bomCompDto);
+                                            }
+                                            break;
+
+                                    }
+                                }
+
+                                bomDto.BOMComponents = bomCompDtoList;
+                                craeteBomDtolist.Add(bomDto);
+                            }
+
+
+                            ISV.MFG.BOM.Proxy.CreateBOMSvProxy creacteBom = new ISV.MFG.BOM.Proxy.CreateBOMSvProxy();
+                            creacteBom.BOMMasterDTOList = craeteBomDtolist;
+                            creacteBom.Do();
+
+                            strbResult.Append(string.Format("<Message Success={0} BOMVersionCode={1}/>", "BOM新版本创建成功", "BomVerNo"));
+
+                            #endregion
+
+                        }
+                        #region  测试更新备料表
+                        //List<ISV.MO.MOKeyDTOData> mokeylist = new List<ISV.MO.MOKeyDTOData>();
+
+                        //ISV.MO.MOKeyDTOData mokey = new ISV.MO.MOKeyDTOData();
+                        //mokey.DocNo = bpObj.PLMECNInfo;
+                        //mokeylist.Add(mokey);
+
+                        //#region 先查询MO信息
+                        //UFIDA.U9.ISV.MO.Proxy.QueryMO4ExternalProxy qryMo = new ISV.MO.Proxy.QueryMO4ExternalProxy();
+                        //qryMo.MOKeyDTOs = mokeylist;
+                        //List<ISV.MO.MODTOData> modtolist = qryMo.Do();
+                        //#endregion
+
+
+                        //List<ISV.MO.MOModifyDTOData> mfymodtolist = new List<ISV.MO.MOModifyDTOData>();
+
+                        //ISV.MO.MOModifyDTOData mfymodto = new ISV.MO.MOModifyDTOData();
+
+                        //mfymodto.MODTO = modtolist[0];
+                        //mfymodto.MOKeyDTO = mokey;
+
+
+                        //List<UFIDA.U9.ISV.MO.MOPickListDTOData> pickDTOList = new List<UFIDA.U9.ISV.MO.MOPickListDTOData>();
+                        //pickDTOList.AddRange(modtolist[0].MOPickListDTOs);
+
+                        //UFIDA.U9.ISV.MO.MOPickListDTOData pickDTO = new ISV.MO.MOPickListDTOData();
+                        //pickDTOList.Add(pickDTO);
+
+
+
+
+                        //ISV.MO.MOPickListDTOData _pickDTO = pickDTOList.Find(delegate (ISV.MO.MOPickListDTOData _dto) { return (_dto.ItemMaster.Code == "005.01.0.0033"); });
+
+                        //if (_pickDTO != null && _pickDTO.ActualReqQty > _pickDTO.IssuedQty)
+                        //{
+                        //    if (_pickDTO.IssuedQty == 0)
+                        //    {
+                        //        _pickDTO.CUD = 8;
+                        //    }
+                        //    else
+                        //    {
+                        //        _pickDTO.CUD = 4;
+                        //        _pickDTO.ActualReqQty = _pickDTO.IssuedQty;
+                        //    }
+
+                        //}
+
+
+                        //modtolist[0].MOPickListDTOs = pickDTOList;
+
+
+                        //pickDTO.CUD = 2;
+                        //pickDTO.OperationNum = "10";
+                        //pickDTO.ItemMaster = new CommonArchiveDataDTOData();
+                        //pickDTO.ItemMaster.Code = "005.01.0.0026";
+                        //pickDTO.ActualReqQty = 1.0001m;
+                        //pickDTO.FromElement = -1;
+                        //pickDTO.FromGrade = -1;
+                        //pickDTO.ToElement = -1;
+                        //pickDTO.ToGrade = -1;
+                        //pickDTO.TransferStyle = -1;
+
+
+                        //mfymodtolist.Add(mfymodto);
+
+
+                        //UFIDA.U9.ISV.MO.Proxy.ModifyMO4ExternalProxy mfymo = new ISV.MO.Proxy.ModifyMO4ExternalProxy();
+                        //mfymo.MOModifyDTOs = mfymodtolist;
+                        //mfymo.Do();
+                        #endregion
+                    }
+                    catch(Exception e)
+                    {
+                        strbResult.AppendFormat(string.Format("<ResultInfo Error={0} />", e.Message));
+                        scope.Rollback();
+                    }
+
+                }
+
+            }
+            else
+            {
+                strbResult.AppendFormat(string.Format("<ResultInfo Error={0} />", string.Format("ECNDocNo={0}未找到U9记录", ECNDocNo)));
+                return strbResult.ToString();
+            }
+
+            strbResult.Append("</ResultInfo>");
+            return strbResult.ToString();
+        }
+
+        public void CreatePickList(List<UFIDA.U9.ISV.MO.MOPickListDTOData> pickDTOList, PLMBE.ECNAlterRequestBE.ECNAlter ecnAlter, string ItemCode, decimal ActualReqQty)
+        {
+
+            UFIDA.U9.ISV.MO.MOPickListDTOData pickDTO = new ISV.MO.MOPickListDTOData();
+            pickDTOList.Add(pickDTO);
+
+            pickDTO.CUD = 2;
+            pickDTO.OperationNum = "10";
+            pickDTO.ItemMaster = new CommonArchiveDataDTOData();
+            pickDTO.ItemMaster.Code = ecnAlter.PostItemCode;
+
+            pickDTO.ActualReqQty = ActualReqQty;
+
+            pickDTO.FromElement = -1;
+            pickDTO.FromGrade = -1;
+            pickDTO.ToElement = -1;
+            pickDTO.ToGrade = -1;
+            pickDTO.TransferStyle = -1;
+
+        }
+
+
+    }
+
+    #endregion
+
+
+}

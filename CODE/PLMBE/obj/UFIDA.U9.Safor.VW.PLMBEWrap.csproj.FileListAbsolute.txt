@@ -1,0 +1,14 @@
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\PLMBE\bin\Debug\UFIDA.U9.Safor.VW.PLMBE.Metadata.dll
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\PLMBE\bin\Debug\UFIDA.U9.Safor.VW.PLMBE.Metadata.pdb
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\PLMBE\bin\Debug\UFSoft.UBF.MD.Design.dll
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\PLMBE\bin\Debug\UFSoft.UBF.Sys.Resources.Runtime.dll
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\PLMBE\bin\Debug\UFSoft.UBF.Sys.Resources.dll
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\PLMBE\bin\Debug\UFSoft.UBF.Business.MetaDataWrap.dll
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\PLMBE\bin\Debug\UFSoft.UBF.MD.Runtime.dll
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\PLMBE\bin\Debug\UFSoft.UBF.Util.DBHelper.dll
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\PLMBE\bin\Debug\UFSoft.UBF.MD.Model.dll
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\PLMBE\obj\Debug\ResolveAssemblyReference.cache
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\PLMBE\obj\Debug\ResourcePackage.PLMBE.ubfmlproj
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\PLMBE\obj\Debug\ResourcePackage.ECNAlterRequestBE.ubfbe
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\PLMBE\obj\Debug\UFIDA.U9.Safor.VW.PLMBE.Metadata.dll
+E:\MyProject\摩比\二期(ECN对接项目)\项目管理\Dev\CODE\PLMBE\obj\Debug\UFIDA.U9.Safor.VW.PLMBE.Metadata.pdb

@@ -1,0 +1,9 @@
+<Solution>
+  <SourceControl>
+  </SourceControl>
+  <ItemGroup>
+    <Item id="b6f5baf6-bc81-4d1c-af4b-1ca476d7bd36" include="PLMSV\PLMSV.ubfserproj" />
+    <Item id="2a01c941-2ce3-48ed-9654-e092c178428f" include="PLMBE\PLMBE.ubfmlproj" />
+  </ItemGroup>
+  <ServiceGroupInfo id="a1b8abdf-5bf2-4543-aad4-0f35ec1b292b" name="PLM_Porject" displayName="PLM_Porject" description="" help="" fullPath="D:\yonyou\U9Project\GDLJProject\Model\PLM_Porject\PLM_Porject.sg" applicationID="" />
+</Solution>

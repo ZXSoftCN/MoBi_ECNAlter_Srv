@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project id="00d34d5f-e596-4b2c-a49d-038d47dfb57e" name="PLMSV" displayName="PLMSV" description="" help="" type="SV" assemblyName="UFIDA.U9.Safor.VW.PLMSV" mapProject="" resourceName="" projectVersion="Normal">
+  <Imports>
+    <Import id="5534df93-3f4b-4890-9b22-39d62962df75" name="MFGSV" displayName="MFGSV" description="" help="" componentid="768bdbaf-34f3-4837-80fa-9a99eaa4e088" path="..\..\..\..\..\UBFV50\U9.VOB.Product.Metadata\App\UFIDA.U9.ISV.MFG.MFGSV.MetaData.dll" type="SV" isRuntime="True" />
+  </Imports>
+  <SourceControl />
+  <ItemGroup>
+    <Item id="e6515b43-025b-4ff7-9df2-e0c5631adfca" name="PLMECNQuerySV.ubfsvr" displayName="PLMECNQuerySV.ubfsvr" description="" help="" include="PLMECNQuerySV.ubfsvr" type="BE" />
+    <Item id="236e734e-199b-4adf-9824-5de81db60a42" name="PLMECNCreateSV.ubfsvr" displayName="PLMECNCreateSV.ubfsvr" description="" help="" include="PLMECNCreateSV.ubfsvr" type="BE" />
+    <Item id="a6d660b3-a22e-4243-8e18-c24fc7ac8d62" name="PLMToU9ModifySV.ubfsvr" displayName="PLMToU9ModifySV.ubfsvr" description="" help="" include="PLMToU9ModifySV.ubfsvr" type="BE" />
+  </ItemGroup>
+</Project>

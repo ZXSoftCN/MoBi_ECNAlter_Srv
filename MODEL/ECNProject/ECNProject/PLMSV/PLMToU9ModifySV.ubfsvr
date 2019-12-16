@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Component id="af1f3966-342d-4c7e-9589-bfc07b94b0dd" name="PLMToU9ModifySV" displayName="PLMToU9ModifySV" description="" help="" type="SV" assemblyName="UFIDA.U9.Safor.VW.PLMSV">
+  <Namespace id="27e85d3d-d1db-4cf2-8845-14a8a7081a4c" name="UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV" displayName="UFIDA.U9.Safor.VW.PLMSV.PLMToU9ModifySV" description="" help="">
+    <Operation id="87f9b544-d0d1-45cd-9b05-13f430970c1c" name="ModifyMOPickList" displayName="修改生产备料服务" description="" help="" mD_ParentClass_ID="" isFactEntity="False" returnTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isService="True" isDefault="False" isEntityKey="False" transactionType="0" isAuthorization="True" isISV="False">
+      <Groups>
+        <Group id="eca0cef7-e994-41ba-83b0-66626418212e" name="Misc" displayName="Misc" description="" help="" />
+      </Groups>
+      <Attributes>
+        <Attribute id="47dff9bc-c29a-4e9c-9a01-3702a1b95f4c" name="PLMECNInfo" displayName="ECN变更信息" description="" help="修改生产备料服务.Misc.ECN变更信息" dataTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isKey="False" defaultValue="" length="50000" precise="5" scale="0" isNullable="True" isReadOnly="False" isHide="False" isCalculation="False" valueExpression="" maxValue="" minValue="" sequence="0" isDefaultDimensionAttribute="False" isDefaultMeasureAttribute="False" isGlobalization="False" idGenerator="" groupName="Misc" isEntityKey="False" isEntityData="True" isSystem="False" isBusinessKey="False" isSyncDictionary="False" dictionaryKey="" isExtendCode="False" isQuery="True" isForAsso="True" isModifyControl="False" isDynamic="False" isImpressible="False" isInCache="False" isKeySerializable="False" isColumnDefine="True" isFilterDefine="True" isSortDefine="True" isDefaultColumn="True" forOBAImport="False" />
+        <Attribute id="43a677e7-5f1a-4741-bf6b-377a2ceae60e" name="ContextInfo" displayName="执行上下文" description="" help="修改生产备料服务.Misc.执行上下文" dataTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isKey="False" defaultValue="" length="50000" precise="5" scale="0" isNullable="True" isReadOnly="False" isHide="False" isCalculation="False" valueExpression="" maxValue="" minValue="" sequence="1" isDefaultDimensionAttribute="False" isDefaultMeasureAttribute="False" isGlobalization="False" idGenerator="" groupName="Misc" isEntityKey="False" isEntityData="True" isSystem="False" isBusinessKey="False" isSyncDictionary="False" dictionaryKey="" isExtendCode="False" isQuery="True" isForAsso="True" isModifyControl="False" isDynamic="False" isImpressible="False" isInCache="False" isKeySerializable="False" isColumnDefine="True" isFilterDefine="True" isSortDefine="True" isDefaultColumn="True" forOBAImport="False" />
+      </Attributes>
+      <Implements>
+        <Operation id="32a331b1-8ee1-48a7-b210-40768338144a" name="Impement" displayName="实现" description="" help="" mD_ParentClass_ID="" isFactEntity="False" returnTypeID="378d45b4-375d-4b5d-8748-abc9575c26b3" isService="False" isDefault="True" isEntityKey="False" transactionType="2" isAuthorization="True" isISV="False" />
+      </Implements>
+    </Operation>
+    <Operation id="1bba12b4-272e-4a97-a77d-f3e85468add9" name="ModifyBOMMater" displayName="修改BOM服务" description="" help="" mD_ParentClass_ID="" isFactEntity="False" returnTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isService="True" isDefault="False" isEntityKey="False" transactionType="0" isAuthorization="True" isISV="False">
+      <Groups>
+        <Group id="a0a09f66-e57b-41dc-8d72-61c98125b027" name="Misc" displayName="Misc" description="" help="" />
+      </Groups>
+      <Attributes>
+        <Attribute id="8d9cc3c9-754f-4c77-a882-7b7b8bb1243e" name="PLMECNInfo" displayName="ECN变更信息" description="" help="修改BOM服务.Misc.ECN变更信息" dataTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isKey="False" defaultValue="" length="50000" precise="5" scale="0" isNullable="True" isReadOnly="False" isHide="False" isCalculation="False" valueExpression="" maxValue="" minValue="" sequence="0" isDefaultDimensionAttribute="False" isDefaultMeasureAttribute="False" isGlobalization="False" idGenerator="" groupName="Misc" isEntityKey="False" isEntityData="True" isSystem="False" isBusinessKey="False" isSyncDictionary="False" dictionaryKey="" isExtendCode="False" isQuery="True" isForAsso="True" isModifyControl="False" isDynamic="False" isImpressible="False" isInCache="False" isKeySerializable="False" isColumnDefine="True" isFilterDefine="True" isSortDefine="True" isDefaultColumn="True" forOBAImport="False" />
+        <Attribute id="c153459d-6f0a-4ff6-984a-1888577d684f" name="ContextInfo" displayName="执行上下文" description="" help="修改BOM服务.Misc.执行上下文" dataTypeID="3d174255-fd12-47f7-8844-3b5e4fae9e8c" isKey="False" defaultValue="" length="50000" precise="5" scale="0" isNullable="True" isReadOnly="False" isHide="False" isCalculation="False" valueExpression="" maxValue="" minValue="" sequence="1" isDefaultDimensionAttribute="False" isDefaultMeasureAttribute="False" isGlobalization="False" idGenerator="" groupName="Misc" isEntityKey="False" isEntityData="True" isSystem="False" isBusinessKey="False" isSyncDictionary="False" dictionaryKey="" isExtendCode="False" isQuery="True" isForAsso="True" isModifyControl="False" isDynamic="False" isImpressible="False" isInCache="False" isKeySerializable="False" isColumnDefine="True" isFilterDefine="True" isSortDefine="True" isDefaultColumn="True" forOBAImport="False" />
+      </Attributes>
+      <Implements>
+        <Operation id="648b4f1a-83a9-4ec1-9ba7-4f00461b9a0f" name="Impement" displayName="实现" description="" help="" mD_ParentClass_ID="" isFactEntity="False" returnTypeID="378d45b4-375d-4b5d-8748-abc9575c26b3" isService="False" isDefault="True" isEntityKey="False" transactionType="2" isAuthorization="True" isISV="False" />
+      </Implements>
+    </Operation>
+    <Diagram id="1cd001b7-3c4e-4f8c-8f1f-0394c2705129" name="PLMToU9ModifySV" displayName="PLMToU9ModifySV">
+      <Class Editable="True" ID="57778afc-8a34-4df4-b490-d8f13d698e8c" Type="Service" ADID="87f9b544-d0d1-45cd-9b05-13f430970c1c">
+        <Location X="109" Y="53" />
+        <Size width="120" height="58" />
+      </Class>
+      <Class Editable="True" ID="68f4180c-f374-4bd3-9b51-d264d9228ebe" Type="Service" ADID="1bba12b4-272e-4a97-a77d-f3e85468add9">
+        <Location X="281" Y="54" />
+        <Size width="120" height="58" />
+      </Class>
+    </Diagram>
+  </Namespace>
+</Component>

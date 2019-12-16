@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project id="63dd6177-e67f-4ccb-b0cb-46c65bfe902e" name="PLMBE" displayName="PLMBE" description="" help="" type="BE" assemblyName="UFIDA.U9.Safor.VW.PLMBE" mapProject=".\..\PLMBE_DB\PLMBE_DB.ubfdbproj" resourceName="" projectVersion="Normal">
+  <SourceControl />
+  <ItemGroup>
+    <Item id="245c41d4-09b8-427a-a1a0-8e94d25f43c3" name="ECNAlterRequestBE.ubfbe" displayName="ECNAlterRequestBE.ubfbe" description="" help="" include="ECNAlterRequestBE.ubfbe" type="BE" />
+  </ItemGroup>
+</Project>

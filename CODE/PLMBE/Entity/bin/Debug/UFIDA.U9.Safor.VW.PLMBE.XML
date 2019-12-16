@@ -1,0 +1,1884 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFIDA.U9.Safor.VW.PLMBE</name>
+    </assembly>
+    <members>
+        <member name="T:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter">
+            <summary>
+            实体: ECN变更记录
+            
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.OnSetDefaultValue">
+            <summary>
+            设置默认值
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.OnInserting">
+            <summary>
+            before Insert
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.OnInserted">
+            <summary>
+            after Insert
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.OnUpdating">
+            <summary>
+            before Update
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.OnUpdated">
+            <summary>
+            after Update
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.OnDeleting">
+            <summary>
+            before Delete
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.OnDeleted">
+            <summary>
+            after Delete
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.OnValidate">
+            <summary>
+            on Validate
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Create(UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo)">
+            <summary>
+            Create Instance With Parent 
+            </summary>
+            <returns>Instance</returns>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            use for Serialization
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.CreateDefault(UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo)">
+            <summary>
+            Create Instance With Parent 
+            </summary>
+            <returns>Instance</returns>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.FromEntityData(UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterData)">
+            <summary>
+            Copy Entity From EntityData
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.ToEntityData">
+            <summary>
+            Create EntityData From Entity
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.ToEntityData(UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterData,System.Collections.IDictionary)">
+            <summary>
+            Create EntityData From Entity - used by ubf 
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Key">
+            <summary>
+            Strong Class EntityKey Property
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Finder">
+            <summary>
+            Finder
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.OriginalData">
+            <summary>
+            当前实体对象的旧数据对象(为上次更新后的数据)
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.ID">
+            <summary>
+            ID (该属性不可为空,且无默认值)
+            ECN变更记录.Key.ID
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.CreatedOn">
+            <summary>
+            创建时间 (该属性可为空,且无默认值)
+            ECN变更记录.Sys.创建时间
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.CreatedBy">
+            <summary>
+            创建人 (该属性可为空,且无默认值)
+            ECN变更记录.Sys.创建人
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.ModifiedOn">
+            <summary>
+            修改时间 (该属性可为空,且无默认值)
+            ECN变更记录.Sys.修改时间
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.ModifiedBy">
+            <summary>
+            修改人 (该属性可为空,且无默认值)
+            ECN变更记录.Sys.修改人
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.SysVersion">
+            <summary>
+            事务版本 (该属性可为空,但有默认值)
+            ECN变更记录.Sys.事务版本
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.ECNDocNo">
+            <summary>
+            ECN单号 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.ECN单号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.ItemMasterCode">
+            <summary>
+            物料编码 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.物料编码
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.BOMVersionCode">
+            <summary>
+            BOM版本号 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.BOM版本号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.BOMType">
+            <summary>
+            BOM种类 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.BOM种类
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.PreItemCode">
+            <summary>
+            替换前子件物料编码 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.替换前子件物料编码
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.PreItemVersionCode">
+            <summary>
+            替换前物料版本号 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.替换前物料版本号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.PreIssueUomCode">
+            <summary>
+            替换前单位 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.替换前单位
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.PreUsageQty">
+            <summary>
+            替换前用量 (该属性可为空,但有默认值)
+            ECN变更记录.Misc.替换前用量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.PreScrap">
+            <summary>
+            替换前损耗率 (该属性可为空,但有默认值)
+            ECN变更记录.Misc.替换前损耗率
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.PreParentQty">
+            <summary>
+            替换前母件底数 (该属性可为空,但有默认值)
+            ECN变更记录.Misc.替换前母件底数
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.ECNAction">
+            <summary>
+            ECN事件 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.ECN事件
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.PostItemCode">
+            <summary>
+            替换后子件物料编码 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.替换后子件物料编码
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.PostItemVersionCode">
+            <summary>
+            替换后物料版本号 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.替换后物料版本号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.PostIssueUomCode">
+            <summary>
+            替换后单位 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.替换后单位
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.PostUsageQty">
+            <summary>
+            替换后用量 (该属性可为空,但有默认值)
+            ECN变更记录.Misc.替换后用量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.PostScrap">
+            <summary>
+            替换后损耗率 (该属性可为空,但有默认值)
+            ECN变更记录.Misc.替换后损耗率
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.PostParentQty">
+            <summary>
+            替换后母件底数 (该属性可为空,但有默认值)
+            ECN变更记录.Misc.替换后母件底数
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.ECNInfo">
+            <summary>
+            ECN信息 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.ECN信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.ECNInfoKey">
+            <summary>
+            ECN信息 的Key (该属性可为空,且无默认值)
+            ECN变更记录.Misc.ECN信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.ECNAlterMOInfo">
+            <summary>
+            ECN变更生产记录 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.ECN变更生产记录
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_EntityName">
+            <summary>
+            Entity的显示名称资源-请使用EntityRes.GetResource(EntityRes.BE_FullName)的方式取 Entity的显示名称资源.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_EntityNameS">
+            <summary>
+            Entity的显示名称资源-请使用EntityRes.GetResource(EntityRes.BE_FullName)的方式取 Entity的显示名称资源.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_ID">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ID")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_CreatedOn">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("CreatedOn")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_CreatedBy">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("CreatedBy")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_ModifiedOn">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ModifiedOn")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_ModifiedBy">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ModifiedBy")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_SysVersion">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("SysVersion")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_ECNDocNo">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ECNDocNo")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_ECNAlterMOInfo">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ECNAlterMOInfo")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_ItemMasterCode">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ItemMasterCode")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_BOMVersionCode">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("BOMVersionCode")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_BOMType">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("BOMType")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_PreItemCode">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PreItemCode")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_PreItemVersionCode">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PreItemVersionCode")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_PreIssueUomCode">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PreIssueUomCode")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_PreUsageQty">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PreUsageQty")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_PreScrap">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PreScrap")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_PreParentQty">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PreParentQty")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_ECNAction">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ECNAction")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_PostItemCode">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PostItemCode")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_PostItemVersionCode">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PostItemVersionCode")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_PostIssueUomCode">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PostIssueUomCode")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_PostUsageQty">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PostUsageQty")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_PostScrap">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PostScrap")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_PostParentQty">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PostParentQty")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.Res_ECNInfo">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ECNInfo")的方式取资源
+            </summary>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityKey">
+            <summary>
+            Strong Class ECNAlter EntityKey 
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityKey.GetEntity">
+            <summary>
+            得到当前Key所对应的Entity．(Session级有缓存,性能不用考虑．)
+            </summary>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityFinder">
+            <summary>
+            Strong Class EntityFinder
+            </summary>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityList">
+            <summary>
+            EntityList
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityList.#ctor">
+            <summary>
+            EntityList 无参的构造方法,用于其它特殊情况
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityList.#ctor(System.Collections.IList)">
+            <summary>
+            EntityList Constructor With Collection .主要用于查询返回实体集时使用.
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityList.#ctor(System.String,UFSoft.UBF.Business.BusinessEntity,System.String,System.Collections.IList)">
+            <summary>
+             EntityList Constructor , used by  peresidence
+            </summary>
+            <param name="childAttrName">this EntityList's child Attribute Name</param>
+            <param name="parentEntity">this EntityList's Parent Entity </param>
+            <param name="parentAttrName">Parent Entity's Attribute Name with this EntityList's </param>
+            <param name="list">list </param>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.ID">
+            <summary>
+             OrginalData属性。只可读。
+            ID (该属性不可为空,且无默认值)
+            ECN变更记录.Key.ID
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.CreatedOn">
+            <summary>
+             OrginalData属性。只可读。
+            创建时间 (该属性可为空,且无默认值)
+            ECN变更记录.Sys.创建时间
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.CreatedBy">
+            <summary>
+             OrginalData属性。只可读。
+            创建人 (该属性可为空,且无默认值)
+            ECN变更记录.Sys.创建人
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.ModifiedOn">
+            <summary>
+             OrginalData属性。只可读。
+            修改时间 (该属性可为空,且无默认值)
+            ECN变更记录.Sys.修改时间
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.ModifiedBy">
+            <summary>
+             OrginalData属性。只可读。
+            修改人 (该属性可为空,且无默认值)
+            ECN变更记录.Sys.修改人
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.SysVersion">
+            <summary>
+             OrginalData属性。只可读。
+            事务版本 (该属性可为空,但有默认值)
+            ECN变更记录.Sys.事务版本
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.ECNDocNo">
+            <summary>
+             OrginalData属性。只可读。
+            ECN单号 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.ECN单号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.ItemMasterCode">
+            <summary>
+             OrginalData属性。只可读。
+            物料编码 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.物料编码
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.BOMVersionCode">
+            <summary>
+             OrginalData属性。只可读。
+            BOM版本号 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.BOM版本号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.BOMType">
+            <summary>
+             OrginalData属性。只可读。
+            BOM种类 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.BOM种类
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.PreItemCode">
+            <summary>
+             OrginalData属性。只可读。
+            替换前子件物料编码 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.替换前子件物料编码
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.PreItemVersionCode">
+            <summary>
+             OrginalData属性。只可读。
+            替换前物料版本号 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.替换前物料版本号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.PreIssueUomCode">
+            <summary>
+             OrginalData属性。只可读。
+            替换前单位 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.替换前单位
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.PreUsageQty">
+            <summary>
+             OrginalData属性。只可读。
+            替换前用量 (该属性可为空,但有默认值)
+            ECN变更记录.Misc.替换前用量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.PreScrap">
+            <summary>
+             OrginalData属性。只可读。
+            替换前损耗率 (该属性可为空,但有默认值)
+            ECN变更记录.Misc.替换前损耗率
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.PreParentQty">
+            <summary>
+             OrginalData属性。只可读。
+            替换前母件底数 (该属性可为空,但有默认值)
+            ECN变更记录.Misc.替换前母件底数
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.ECNAction">
+            <summary>
+             OrginalData属性。只可读。
+            ECN事件 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.ECN事件
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.PostItemCode">
+            <summary>
+             OrginalData属性。只可读。
+            替换后子件物料编码 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.替换后子件物料编码
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.PostItemVersionCode">
+            <summary>
+             OrginalData属性。只可读。
+            替换后物料版本号 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.替换后物料版本号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.PostIssueUomCode">
+            <summary>
+             OrginalData属性。只可读。
+            替换后单位 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.替换后单位
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.PostUsageQty">
+            <summary>
+             OrginalData属性。只可读。
+            替换后用量 (该属性可为空,但有默认值)
+            ECN变更记录.Misc.替换后用量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.PostScrap">
+            <summary>
+             OrginalData属性。只可读。
+            替换后损耗率 (该属性可为空,但有默认值)
+            ECN变更记录.Misc.替换后损耗率
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.PostParentQty">
+            <summary>
+             OrginalData属性。只可读。
+            替换后母件底数 (该属性可为空,但有默认值)
+            ECN变更记录.Misc.替换后母件底数
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.ECNInfo">
+            <summary>
+             OrginalData属性。只可读。
+            ECN信息 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.ECN信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.ECNInfoKey">
+            <summary>
+            EntityKey 属性
+            ECN信息 的Key (该属性可为空,且无默认值)
+            ECN变更记录.Misc.ECN信息
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityOriginal.ECNAlterMOInfo">
+            <summary>
+            ECN变更生产记录 (该属性可为空,且无默认值)
+            ECN变更记录.Misc.ECN变更生产记录
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.GetResource(System.String)">
+            <summary>
+            获取显示名称资源方法
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.BE_Name">
+            <summary>
+            EntityName的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.BE_FullName">
+            <summary>
+            Entity　的全名. 
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.ID">
+            <summary>
+            属性: ID 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.CreatedOn">
+            <summary>
+            属性: 创建时间 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.CreatedBy">
+            <summary>
+            属性: 创建人 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.ModifiedOn">
+            <summary>
+            属性: 修改时间 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.ModifiedBy">
+            <summary>
+            属性: 修改人 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.SysVersion">
+            <summary>
+            属性: 事务版本 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.ECNDocNo">
+            <summary>
+            属性: ECN单号 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.ECNAlterMOInfo">
+            <summary>
+            属性: ECN变更生产记录 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.ItemMasterCode">
+            <summary>
+            属性: 物料编码 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.BOMVersionCode">
+            <summary>
+            属性: BOM版本号 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.BOMType">
+            <summary>
+            属性: BOM种类 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.PreItemCode">
+            <summary>
+            属性: 替换前子件物料编码 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.PreItemVersionCode">
+            <summary>
+            属性: 替换前物料版本号 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.PreIssueUomCode">
+            <summary>
+            属性: 替换前单位 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.PreUsageQty">
+            <summary>
+            属性: 替换前用量 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.PreScrap">
+            <summary>
+            属性: 替换前损耗率 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.PreParentQty">
+            <summary>
+            属性: 替换前母件底数 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.ECNAction">
+            <summary>
+            属性: ECN事件 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.PostItemCode">
+            <summary>
+            属性: 替换后子件物料编码 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.PostItemVersionCode">
+            <summary>
+            属性: 替换后物料版本号 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.PostIssueUomCode">
+            <summary>
+            属性: 替换后单位 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.PostUsageQty">
+            <summary>
+            属性: 替换后用量 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.PostScrap">
+            <summary>
+            属性: 替换后损耗率 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.PostParentQty">
+            <summary>
+            属性: 替换后母件底数 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter.EntityRes.ECNInfo">
+            <summary>
+            属性: ECN信息 的名称
+            </summary>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo">
+            <summary>
+            实体: ECN变更生产记录
+            
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.OnSetDefaultValue">
+            <summary>
+            设置默认值
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.OnInserting">
+            <summary>
+            before Insert
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.OnInserted">
+            <summary>
+            after Insert
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.OnUpdating">
+            <summary>
+            before Update
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.OnUpdated">
+            <summary>
+            after Update
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.OnDeleting">
+            <summary>
+            before Delete
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.OnDeleted">
+            <summary>
+            after Delete
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.OnValidate">
+            <summary>
+            on Validate
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Create(UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter)">
+            <summary>
+            Create Instance With Parent 
+            </summary>
+            <returns>Instance</returns>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            use for Serialization
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.CreateDefault(UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlter)">
+            <summary>
+            Create Instance With Parent 
+            </summary>
+            <returns>Instance</returns>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.FromEntityData(UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfoData)">
+            <summary>
+            Copy Entity From EntityData
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.ToEntityData">
+            <summary>
+            Create EntityData From Entity
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.ToEntityData(UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfoData,System.Collections.IDictionary)">
+            <summary>
+            Create EntityData From Entity - used by ubf 
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Key">
+            <summary>
+            Strong Class EntityKey Property
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Finder">
+            <summary>
+            Finder
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.OriginalData">
+            <summary>
+            当前实体对象的旧数据对象(为上次更新后的数据)
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.ID">
+            <summary>
+            ID (该属性不可为空,且无默认值)
+            ECN变更生产记录.Key.ID
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.CreatedOn">
+            <summary>
+            创建时间 (该属性可为空,且无默认值)
+            ECN变更生产记录.Sys.创建时间
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.CreatedBy">
+            <summary>
+            创建人 (该属性可为空,且无默认值)
+            ECN变更生产记录.Sys.创建人
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.ModifiedOn">
+            <summary>
+            修改时间 (该属性可为空,且无默认值)
+            ECN变更生产记录.Sys.修改时间
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.ModifiedBy">
+            <summary>
+            修改人 (该属性可为空,且无默认值)
+            ECN变更生产记录.Sys.修改人
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.SysVersion">
+            <summary>
+            事务版本 (该属性可为空,但有默认值)
+            ECN变更生产记录.Sys.事务版本
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.ECNAlter">
+            <summary>
+            ECN变更记录 (该属性可为空,且无默认值)
+            ECN变更生产记录.Misc.ECN变更记录
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.ECNAlterKey">
+            <summary>
+            ECN变更记录 的Key (该属性可为空,且无默认值)
+            ECN变更生产记录.Misc.ECN变更记录
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.IsAlter">
+            <summary>
+            是否修改 (该属性可为空,且无默认值)
+            ECN变更生产记录.Misc.是否修改
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.OrgCode">
+            <summary>
+            组织编号 (该属性可为空,且无默认值)
+            ECN变更生产记录.Misc.组织编号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.MONo">
+            <summary>
+            MO单号 (该属性可为空,且无默认值)
+            ECN变更生产记录.Misc.MO单号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.MOQty">
+            <summary>
+            MO订单数量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.MO订单数量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.PrePerUsageQty">
+            <summary>
+            替换前单个子件用量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.替换前单个子件用量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.PreUsageQty">
+            <summary>
+            替换前子件总需求量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.替换前子件总需求量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.DiffPerUsageQty">
+            <summary>
+            单个变化差量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.单个变化差量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.DiffUsageQty">
+            <summary>
+            变化总差量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.变化总差量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.PostPerUsageQty">
+            <summary>
+            替换后单个子件用量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.替换后单个子件用量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.PostUsageQty">
+            <summary>
+            替换后子件总需求量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.替换后子件总需求量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.MOTotalRcvQty">
+            <summary>
+            MO累计入库数量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.MO累计入库数量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.IssuedQty">
+            <summary>
+            已发放数量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.已发放数量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.PickListDocLineNo">
+            <summary>
+            备料表行号 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.备料表行号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.IsFromPhantomExpanding">
+            <summary>
+            是否虚拟件扩展出来 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.是否虚拟件扩展出来
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_EntityName">
+            <summary>
+            Entity的显示名称资源-请使用EntityRes.GetResource(EntityRes.BE_FullName)的方式取 Entity的显示名称资源.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_EntityNameS">
+            <summary>
+            Entity的显示名称资源-请使用EntityRes.GetResource(EntityRes.BE_FullName)的方式取 Entity的显示名称资源.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_ID">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ID")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_CreatedOn">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("CreatedOn")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_CreatedBy">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("CreatedBy")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_ModifiedOn">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ModifiedOn")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_ModifiedBy">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ModifiedBy")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_SysVersion">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("SysVersion")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_ECNAlter">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ECNAlter")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_IsAlter">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("IsAlter")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_OrgCode">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("OrgCode")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_MONo">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("MONo")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_MOQty">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("MOQty")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_PrePerUsageQty">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PrePerUsageQty")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_PreUsageQty">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PreUsageQty")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_DiffPerUsageQty">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("DiffPerUsageQty")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_DiffUsageQty">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("DiffUsageQty")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_PostPerUsageQty">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PostPerUsageQty")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_PostUsageQty">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PostUsageQty")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_MOTotalRcvQty">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("MOTotalRcvQty")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_IssuedQty">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("IssuedQty")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_PickListDocLineNo">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("PickListDocLineNo")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.Res_IsFromPhantomExpanding">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("IsFromPhantomExpanding")的方式取资源
+            </summary>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityKey">
+            <summary>
+            Strong Class ECNAlterMOInfo EntityKey 
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityKey.GetEntity">
+            <summary>
+            得到当前Key所对应的Entity．(Session级有缓存,性能不用考虑．)
+            </summary>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityFinder">
+            <summary>
+            Strong Class EntityFinder
+            </summary>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityList">
+            <summary>
+            EntityList
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityList.#ctor">
+            <summary>
+            EntityList 无参的构造方法,用于其它特殊情况
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityList.#ctor(System.Collections.IList)">
+            <summary>
+            EntityList Constructor With Collection .主要用于查询返回实体集时使用.
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityList.#ctor(System.String,UFSoft.UBF.Business.BusinessEntity,System.String,System.Collections.IList)">
+            <summary>
+             EntityList Constructor , used by  peresidence
+            </summary>
+            <param name="childAttrName">this EntityList's child Attribute Name</param>
+            <param name="parentEntity">this EntityList's Parent Entity </param>
+            <param name="parentAttrName">Parent Entity's Attribute Name with this EntityList's </param>
+            <param name="list">list </param>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.ID">
+            <summary>
+             OrginalData属性。只可读。
+            ID (该属性不可为空,且无默认值)
+            ECN变更生产记录.Key.ID
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.CreatedOn">
+            <summary>
+             OrginalData属性。只可读。
+            创建时间 (该属性可为空,且无默认值)
+            ECN变更生产记录.Sys.创建时间
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.CreatedBy">
+            <summary>
+             OrginalData属性。只可读。
+            创建人 (该属性可为空,且无默认值)
+            ECN变更生产记录.Sys.创建人
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.ModifiedOn">
+            <summary>
+             OrginalData属性。只可读。
+            修改时间 (该属性可为空,且无默认值)
+            ECN变更生产记录.Sys.修改时间
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.ModifiedBy">
+            <summary>
+             OrginalData属性。只可读。
+            修改人 (该属性可为空,且无默认值)
+            ECN变更生产记录.Sys.修改人
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.SysVersion">
+            <summary>
+             OrginalData属性。只可读。
+            事务版本 (该属性可为空,但有默认值)
+            ECN变更生产记录.Sys.事务版本
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.ECNAlter">
+            <summary>
+             OrginalData属性。只可读。
+            ECN变更记录 (该属性可为空,且无默认值)
+            ECN变更生产记录.Misc.ECN变更记录
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.ECNAlterKey">
+            <summary>
+            EntityKey 属性
+            ECN变更记录 的Key (该属性可为空,且无默认值)
+            ECN变更生产记录.Misc.ECN变更记录
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.IsAlter">
+            <summary>
+             OrginalData属性。只可读。
+            是否修改 (该属性可为空,且无默认值)
+            ECN变更生产记录.Misc.是否修改
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.OrgCode">
+            <summary>
+             OrginalData属性。只可读。
+            组织编号 (该属性可为空,且无默认值)
+            ECN变更生产记录.Misc.组织编号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.MONo">
+            <summary>
+             OrginalData属性。只可读。
+            MO单号 (该属性可为空,且无默认值)
+            ECN变更生产记录.Misc.MO单号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.MOQty">
+            <summary>
+             OrginalData属性。只可读。
+            MO订单数量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.MO订单数量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.PrePerUsageQty">
+            <summary>
+             OrginalData属性。只可读。
+            替换前单个子件用量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.替换前单个子件用量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.PreUsageQty">
+            <summary>
+             OrginalData属性。只可读。
+            替换前子件总需求量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.替换前子件总需求量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.DiffPerUsageQty">
+            <summary>
+             OrginalData属性。只可读。
+            单个变化差量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.单个变化差量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.DiffUsageQty">
+            <summary>
+             OrginalData属性。只可读。
+            变化总差量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.变化总差量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.PostPerUsageQty">
+            <summary>
+             OrginalData属性。只可读。
+            替换后单个子件用量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.替换后单个子件用量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.PostUsageQty">
+            <summary>
+             OrginalData属性。只可读。
+            替换后子件总需求量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.替换后子件总需求量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.MOTotalRcvQty">
+            <summary>
+             OrginalData属性。只可读。
+            MO累计入库数量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.MO累计入库数量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.IssuedQty">
+            <summary>
+             OrginalData属性。只可读。
+            已发放数量 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.已发放数量
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.PickListDocLineNo">
+            <summary>
+             OrginalData属性。只可读。
+            备料表行号 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.备料表行号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityOriginal.IsFromPhantomExpanding">
+            <summary>
+             OrginalData属性。只可读。
+            是否虚拟件扩展出来 (该属性可为空,但有默认值)
+            ECN变更生产记录.Misc.是否虚拟件扩展出来
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.GetResource(System.String)">
+            <summary>
+            获取显示名称资源方法
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.BE_Name">
+            <summary>
+            EntityName的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.BE_FullName">
+            <summary>
+            Entity　的全名. 
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.ID">
+            <summary>
+            属性: ID 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.CreatedOn">
+            <summary>
+            属性: 创建时间 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.CreatedBy">
+            <summary>
+            属性: 创建人 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.ModifiedOn">
+            <summary>
+            属性: 修改时间 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.ModifiedBy">
+            <summary>
+            属性: 修改人 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.SysVersion">
+            <summary>
+            属性: 事务版本 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.ECNAlter">
+            <summary>
+            属性: ECN变更记录 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.IsAlter">
+            <summary>
+            属性: 是否修改 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.OrgCode">
+            <summary>
+            属性: 组织编号 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.MONo">
+            <summary>
+            属性: MO单号 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.MOQty">
+            <summary>
+            属性: MO订单数量 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.PrePerUsageQty">
+            <summary>
+            属性: 替换前单个子件用量 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.PreUsageQty">
+            <summary>
+            属性: 替换前子件总需求量 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.DiffPerUsageQty">
+            <summary>
+            属性: 单个变化差量 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.DiffUsageQty">
+            <summary>
+            属性: 变化总差量 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.PostPerUsageQty">
+            <summary>
+            属性: 替换后单个子件用量 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.PostUsageQty">
+            <summary>
+            属性: 替换后子件总需求量 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.MOTotalRcvQty">
+            <summary>
+            属性: MO累计入库数量 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.IssuedQty">
+            <summary>
+            属性: 已发放数量 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.PickListDocLineNo">
+            <summary>
+            属性: 备料表行号 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNAlterMOInfo.EntityRes.IsFromPhantomExpanding">
+            <summary>
+            属性: 是否虚拟件扩展出来 的名称
+            </summary>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo">
+            <summary>
+            实体: ECN信息
+            
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.OnSetDefaultValue">
+            <summary>
+            设置默认值
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.OnInserting">
+            <summary>
+            before Insert
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.OnInserted">
+            <summary>
+            after Insert
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.OnUpdating">
+            <summary>
+            before Update
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.OnUpdated">
+            <summary>
+            after Update
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.OnDeleting">
+            <summary>
+            before Delete
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.OnDeleted">
+            <summary>
+            after Delete
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.OnValidate">
+            <summary>
+            on Validate
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.CreateDefaultComponent_Extend">
+            <summary>
+            Create DefaultComponent
+            </summary>
+            <returns>DefaultComponent Instance</returns>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.Create">
+            <summary>
+            Create Instance
+            </summary>
+            <returns>Instance</returns>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            use for Serialization
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.CreateDefault">
+            <summary>
+            Create Instance
+            </summary>
+            <returns>Default Instance</returns>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.CreateDefaultComponent">
+            <summary>
+            Create DefaultComponent
+            </summary>
+            <returns>DefaultComponent Instance</returns>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.FromEntityData(UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfoData)">
+            <summary>
+            Copy Entity From EntityData
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.ToEntityData">
+            <summary>
+            Create EntityData From Entity
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.ToEntityData(UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfoData,System.Collections.IDictionary)">
+            <summary>
+            Create EntityData From Entity - used by ubf 
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.Key">
+            <summary>
+            Strong Class EntityKey Property
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.Finder">
+            <summary>
+            Finder
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.OriginalData">
+            <summary>
+            当前实体对象的旧数据对象(为上次更新后的数据)
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.ID">
+            <summary>
+            ID (该属性不可为空,且无默认值)
+            ECN信息.Key.ID
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.CreatedOn">
+            <summary>
+            创建时间 (该属性可为空,且无默认值)
+            ECN信息.Sys.创建时间
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.CreatedBy">
+            <summary>
+            创建人 (该属性可为空,且无默认值)
+            ECN信息.Sys.创建人
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.ModifiedOn">
+            <summary>
+            修改时间 (该属性可为空,且无默认值)
+            ECN信息.Sys.修改时间
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.ModifiedBy">
+            <summary>
+            修改人 (该属性可为空,且无默认值)
+            ECN信息.Sys.修改人
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.SysVersion">
+            <summary>
+            事务版本 (该属性可为空,但有默认值)
+            ECN信息.Sys.事务版本
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.ECNDocNo">
+            <summary>
+            ECN单号 (该属性可为空,且无默认值)
+            ECN信息.Misc.ECN单号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.ECNAlter">
+            <summary>
+            ECN变更记录 (该属性可为空,且无默认值)
+            ECN信息.Misc.ECN变更记录
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.Res_EntityName">
+            <summary>
+            Entity的显示名称资源-请使用EntityRes.GetResource(EntityRes.BE_FullName)的方式取 Entity的显示名称资源.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.Res_EntityNameS">
+            <summary>
+            Entity的显示名称资源-请使用EntityRes.GetResource(EntityRes.BE_FullName)的方式取 Entity的显示名称资源.
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.Res_ID">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ID")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.Res_CreatedOn">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("CreatedOn")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.Res_CreatedBy">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("CreatedBy")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.Res_ModifiedOn">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ModifiedOn")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.Res_ModifiedBy">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ModifiedBy")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.Res_SysVersion">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("SysVersion")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.Res_ECNDocNo">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ECNDocNo")的方式取资源
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.Res_ECNAlter">
+            <summary>
+            这种已经被取消，请使用这块代码的人自己调整程序，改为引用EntityRes.GetResource("ECNAlter")的方式取资源
+            </summary>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityKey">
+            <summary>
+            Strong Class ECNInfo EntityKey 
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityKey.GetEntity">
+            <summary>
+            得到当前Key所对应的Entity．(Session级有缓存,性能不用考虑．)
+            </summary>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityFinder">
+            <summary>
+            Strong Class EntityFinder
+            </summary>
+        </member>
+        <member name="T:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityList">
+            <summary>
+            EntityList
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityList.#ctor">
+            <summary>
+            EntityList 无参的构造方法,用于其它特殊情况
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityList.#ctor(System.Collections.IList)">
+            <summary>
+            EntityList Constructor With Collection .主要用于查询返回实体集时使用.
+            </summary>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityList.#ctor(System.String,UFSoft.UBF.Business.BusinessEntity,System.String,System.Collections.IList)">
+            <summary>
+             EntityList Constructor , used by  peresidence
+            </summary>
+            <param name="childAttrName">this EntityList's child Attribute Name</param>
+            <param name="parentEntity">this EntityList's Parent Entity </param>
+            <param name="parentAttrName">Parent Entity's Attribute Name with this EntityList's </param>
+            <param name="list">list </param>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityOriginal.ID">
+            <summary>
+             OrginalData属性。只可读。
+            ID (该属性不可为空,且无默认值)
+            ECN信息.Key.ID
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityOriginal.CreatedOn">
+            <summary>
+             OrginalData属性。只可读。
+            创建时间 (该属性可为空,且无默认值)
+            ECN信息.Sys.创建时间
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityOriginal.CreatedBy">
+            <summary>
+             OrginalData属性。只可读。
+            创建人 (该属性可为空,且无默认值)
+            ECN信息.Sys.创建人
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityOriginal.ModifiedOn">
+            <summary>
+             OrginalData属性。只可读。
+            修改时间 (该属性可为空,且无默认值)
+            ECN信息.Sys.修改时间
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityOriginal.ModifiedBy">
+            <summary>
+             OrginalData属性。只可读。
+            修改人 (该属性可为空,且无默认值)
+            ECN信息.Sys.修改人
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityOriginal.SysVersion">
+            <summary>
+             OrginalData属性。只可读。
+            事务版本 (该属性可为空,但有默认值)
+            ECN信息.Sys.事务版本
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityOriginal.ECNDocNo">
+            <summary>
+             OrginalData属性。只可读。
+            ECN单号 (该属性可为空,且无默认值)
+            ECN信息.Misc.ECN单号
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityOriginal.ECNAlter">
+            <summary>
+            ECN变更记录 (该属性可为空,且无默认值)
+            ECN信息.Misc.ECN变更记录
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityRes.GetResource(System.String)">
+            <summary>
+            获取显示名称资源方法
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityRes.BE_Name">
+            <summary>
+            EntityName的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityRes.BE_FullName">
+            <summary>
+            Entity　的全名. 
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityRes.ID">
+            <summary>
+            属性: ID 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityRes.CreatedOn">
+            <summary>
+            属性: 创建时间 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityRes.CreatedBy">
+            <summary>
+            属性: 创建人 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityRes.ModifiedOn">
+            <summary>
+            属性: 修改时间 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityRes.ModifiedBy">
+            <summary>
+            属性: 修改人 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityRes.SysVersion">
+            <summary>
+            属性: 事务版本 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityRes.ECNDocNo">
+            <summary>
+            属性: ECN单号 的名称
+            </summary>
+        </member>
+        <member name="P:UFIDA.U9.Safor.VW.PLMBE.ECNAlterRequestBE.ECNInfo.EntityRes.ECNAlter">
+            <summary>
+            属性: ECN变更记录 的名称
+            </summary>
+        </member>
+    </members>
+</doc>
